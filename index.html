@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mananto Academy</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <!--- <nav> → semantic tag for navigation bar-->
+                <!--- navbar → Bootstrap class that styles it as a navbar -->
+                <!--- navbar-expand-lg → navbar expands (horizontal) on large screens; collapses on smaller screens -->
+                <!--- navbar-dark → dark-colored text/icons for navbar -->
+                <!--- bg-primary → background color from Bootstrap’s primary color -->
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Mananto Academy</a> <!--- Links you back to the homepage -->
+                    <!--- Creates a button that toggles the navigation menu for mobile screens -->
+                    <!--- data-bs-target="#hamburger" When the button is clicked, find the element with id="hamburger" and expand/collapse it. -->
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#hamburger" 
+                        aria-controls="hamburger"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> <!--- This is the icon inside the hamburger button -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="hamburger">
+                      <!--- collapse navbar-collapse: Menu items that collapse on small screens --> 
+                      <!--- id="hamburger" → matches data-bs-target from the button -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> <!--- Links you back to the homepage -->
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fees-payments.html">Fees and Payments</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+           <!--- Hero Section -->
+            <section class="text-center py-5 bg-light">
+                <div class="container">
+                    <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
+                    <p class="mb-0">WHERE LEARNING IS FUN</p>
+                    <p class="display-6 lead mb-4">Learn. Educate. Grow</p>
+                    <a href="#" class="btn btn-primary btn-lg">Register Now</a>
+                </div>
+            </section>
+          <!--- Courses Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Courses</h2>
+      <div class="row g-4">
+        
+        <!-- Course Card 1 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Course 1">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Learn HTML, CSS, JavaScript, and build responsive websites from scratch.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 2 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Course 2">
+            <div class="card-body">
+              <h5 class="card-title">Data Science</h5>
+              <p class="card-text">Master Python, statistics, and machine learning for data analysis and visualization.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 3 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Course 3">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+              <p class="card-text">Design stunning graphics using Photoshop, Illustrator, and Figma.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+        </main>
+        <footer class="text-center mt-5">
+            <p class="mb-0">&copy; 2025 Mananto Academy</p>
+        </footer>
+        <!-- Bootstrap .bundle combines Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
