@@ -5,7 +5,7 @@ The current website will be refurbrished with new colour theme that will make it
 We will apply simplicity attributes and UX that is freindly to the user. The organisation should be able to increase the number registration through the WEB. 
 At a later stage we will include php components like online payments  and leaner portals but at this current stage we would like to give the current website a complete makeover.  
 
-References:
+References:  
 https://www.domains.co.za/web-hosting-south-africa
 Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc.
 https://wireframe.cc/pro/editor/966511
