@@ -18,5 +18,5 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 ### References
 
-- Domains.co.za – Web Hosting South Africa
-- Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
+1. Domains.co.za. (n.d.). Web hosting South Africa. Domains.co.za. https://www.domains.co.za/web-hosting-south-africa
+2. Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
