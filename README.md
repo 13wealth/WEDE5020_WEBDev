@@ -16,7 +16,7 @@ In later phases, additional features will be integrated, including:
 - Learner portals for streamlined interaction with students and staff
 At this stage, the focus is on delivering a complete visual and functional makeover of the current website.
 
-###References
+### References
 
 - Domains.co.za – Web Hosting South Africa
 - Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
