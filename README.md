@@ -4,9 +4,9 @@ This project aims to upgrade and enhance the existing website of an organisation
 
 The primary objectives are:
 
-  Improved User Experience (UX): Introduce a more dynamic and functionally engaging design that minimizes excessive scrolling on the main page. <b>
-  Modern Look & Feel: Refurbish the site with a refreshed colour theme that is visually appealing and aligns with the organisation’s brand. <b>
-  Mobile-First Approach: Apply simplicity and responsive design principles to ensure a seamless user experience across all devices. <b>
+  Improved User Experience (UX): Introduce a more dynamic and functionally engaging design that minimizes excessive scrolling on the main page.<b/>
+  Modern Look & Feel: Refurbish the site with a refreshed colour theme that is visually appealing and aligns with the organisation’s brand.<b/>
+  Mobile-First Approach: Apply simplicity and responsive design principles to ensure a seamless user experience across all devices.<b/>
 
 Increased Conversions: Optimise the site’s layout and navigation to support higher user engagement and drive more registrations through the website.
 
