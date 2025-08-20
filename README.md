@@ -2,7 +2,7 @@
 
 This project aims to upgrade and enhance the existing website of an organisation operating in the Education sector.
 
-<u>The primary objectives are<u/>:
+<u> The primary objectives are <u/>:
 
 Improved User Experience (UX): Introduce a more dynamic and functionally engaging design that minimizes excessive scrolling on the main page.
 
