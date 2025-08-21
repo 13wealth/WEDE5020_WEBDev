@@ -42,11 +42,11 @@
                         <!--- collapse navbar-collapse: Menu items that collapse on small screens -->
                         <!--- id="hamburger" → matches data-bs-target from the button -->
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,60 +54,86 @@
         </header>
         <main>
             <!--- Hero Section -->
-            <section class="text-center py-5 bg-light">
-                <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
+            <section class="text-center py-5 bg-light"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
                 <div class="container hero-container">
                     <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
                     <p class="mb-0">WHERE LEARNING IS FUN</p>
                     <p class="display-6 lead mb-4">Learn. Educate. Grow</p>
-                    <!--- display-6 → slightly smaller heading -->
-                    <!--- lead → makes the text stand out as a lead paragraph -->
-                    <!--- mb-4 → bottom margin -->
+                        <!--- display-6 → slightly smaller heading -->
+                        <!--- lead → makes the text stand out as a lead paragraph -->
+                        <!--- mb-4 → bottom margin -->
                 </div>
             </section>
-                        <!--- side menu section -->
+                <!--- side menu  + subhero sections -->
             <section class="py-5"> <!--- py-5 vertical padding, top and bottom -->
-                <div class="container">
-                    <h2 class="text-left mb-5">What would you like to do?</h2>
-                    <!--- margin-bottom for spacing -->
-                    <div class="row g-4"> <!--- row → Bootstrap grid row, g-4 → gap between columns -->
-                        <!--- menu items go here -->
+                <div class="container parent-container d-flex flex-column flex-md-row gap-4"> <!--- parent display:flex container -->
+                    <div class="side-container flex-fill">
+                        <h2 class="text-left mb-5">What would you like to do?</h2> <!--- margin-bottom for spacing -->
+                        <div class="row g-4">
+                            <!--- row → Bootstrap grid row, g-4 → gap between columns -->
+                            <!--- menu items go here -->
+                        </div>
+                    </div>
+                    <div class="subhero-container flex-fill"> <!--- subhero display:flex container -->
+                        <h2 class="text-center mb-5">Why Choose Us?</h2>
+                        <p class="lead text-center">At Mananto Academy, we prioritize your learning experience.</p>
+                        <ul class="list-unstyled text-center">
+                            <li>Experienced Instructors</li>
+                            <li>Flexible Learning Options</li>
+                            <li>Comprehensive Curriculum</li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <a href="pages/admission.html" class="btn btn-primary btn-lg align-items-center">
+                                Register Now
+                            </a>
+                                <!--- btn → basic button styling -->
+                                <!--- btn-primary → primary color -->
+                                <!--- btn-lg → large button -->
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container subhero-container">
-                    <h2 class="text-center mb-5">Why Choose Us?</h2>
-                    <p class="lead text-center">At Mananto Academy, we prioritize your learning experience.</p>
-                    <ul class="list-unstyled">
-                        <li>Experienced Instructors</li>
-                        <li>Flexible Learning Options</li>
-                        <li>Comprehensive Curriculum</li>
-                    </ul>
-                    <div>
-                        <a href="registration.html" class="btn btn-primary btn-lg">Register Now</a>
-                        <!--- btn → basic button styling -->
-                        <!--- btn-primary → primary color -->
-                        <!--- btn-lg → large button -->
-                    </div>
-                </div>
-            </section>
-
         </main>
-        <footer>
-            
-            <section class="py-5 ">
-                <div class="container 
-                            footer-container 
-                            d-flex 
-                            justify-content-between 
-                            align-items-center">     <!--- use a d-flex or display:flex box for the footer -->
-                    <p class="mb-0"><a href="policy.html">Privacy Policy</a></p>
-                    <p class="mb-0">&copy; 2025 Mananto Academy. All rights reserved.</p>
+        <footer class="py-4 bg-primary text-white">
+            <section>
+                <div class="container d-flex">
+                    <!-- Left side -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img
+                            src="your-image.jpg"
+                            alt="Logo"
+                            style="width: 100px; height: 100px; object-fit: cover"
+                        />
+                        <div>
+                            <h1 class="fw-bold mb-1">Contact Us</h1>
+                            <p>WHERE LEARNING IS FUN!</p>
+                        </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 d-flex align-items-center">
+                                087 183 6053 <br />
+                                admin@manantoacademy.co.za <br />
+                                www.manantoacademy.co.za <br />
+                                12027 Popular Street<br />
+                                Kagiso, Hospital view<br />
+                                1754
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </footer>
-        <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+        <section>
+            <div class="container-fluid footer-container d-flex justify-content-between align-items-center">
+                <!--- use a d-flex or display:flex box for the footer -->
+                <p class="mb-0"><a href="policy.html">Privacy Policy</a></p>
+                <p class="mb-0">&copy; 2025 Mananto Academy. All rights reserved.</p>
+            </div>
+        </section>
+            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

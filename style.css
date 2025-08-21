@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+.footer-container {
+  height: 20px;          /* set the height you want */
+  display: flex;         /* ensures flexbox still applies */
+  align-items: center;   /* vertically centers content */
+}
