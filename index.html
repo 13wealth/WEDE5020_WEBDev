@@ -1,18 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>Mananto Academy</title> 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" href="icons/favicon-main.ico" type="image/x-icon" />
-        <title>Mananto Academy</title>
-        <!--- Bootstrap CSS v5.3.2 -->
+        <link rel="icon" href="../icons/ic_school_128_28729.ico" type="image/x-icon" />
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous" />
-        <!--- Bootstrap CSS v5.2.1 -->
-        <link rel="stylesheet" href="styles.css" />
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet"/> <!--- Bootstrap CSS v5.3.2 -->
+        <link rel="stylesheet" href="styles.css" /> <!--- .CSS styling file -->
+            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <header>
@@ -23,17 +21,16 @@
                 <!--- navbar-dark → dark-colored text/icons for navbar -->
                 <!--- bg-primary → background color from Bootstrap’s primary color -->
                 <div class="container nav-container">
-                    <!--- container centers content horizontally and adds side padding -->
+                        <!--- container centers content horizontally and adds side padding -->
                     <a class="navbar-brand" href="index.html">
                         <img
-                            src="images/cropped_circle_image2.png"
+                            src="images/logo.jpg"
                             alt="Mananto Academy"
-                            class="img-fluid"
+                            class="rounded img-fluid"
                             style="max-height: 100px" />
                     </a>
-
-                    <!--- Creates a button that toggles the navigation menu for mobile screens -->
-                    <!--- data-bs-target="#hamburger" When the button is clicked, find the element with id="hamburger" and expand/collapse it. -->
+                        <!--- Creates a button that toggles the navigation menu for mobile screens -->
+                        <!--- data-bs-target="#hamburger" When the button is clicked, find the element with id="hamburger" and expand/collapse it. -->
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -42,12 +39,11 @@
                         aria-controls="hamburger"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <!--- This is the icon inside the hamburger button -->
+                        <span class="navbar-toggler-icon"></span> <!--- This is the icon inside the hamburger button -->
                     </button>
                     <div class="collapse navbar-collapse" id="hamburger">
-                        <!--- collapse navbar-collapse: Menu items that collapse on small screens -->
-                        <!--- id="hamburger" → matches data-bs-target from the button -->
+                            <!--- collapse navbar-collapse: Menu items that collapse on small screens -->
+                            <!--- id="hamburger" → matches data-bs-target from the button -->
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
@@ -60,72 +56,101 @@
             </nav>
         </header>
         <main>
-            <!--- Hero Section -->
+                <!--- Hero Section -->
             <section class="text-center py-5 bg-light">
-                <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
                 <div class="container hero-container">
                     <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
                     <p class="mb-0">WHERE LEARNING IS FUN</p>
                     <p class="display-6 lead mb-4">Learn. Educate. Grow</p>
-                    <!--- display-6 → slightly smaller heading -->
-                    <!--- lead → makes the text stand out as a lead paragraph -->
-                    <!--- mb-4 → bottom margin -->
+                        <!--- display-6 → slightly smaller heading -->
+                        <!--- lead → makes the text stand out as a lead paragraph -->
+                        <!--- mb-4 → bottom margin -->
+                </div>
+                <div class="col-12 mt-3">
+                            <a href="pages/admission.html" class="btn btn-primary btn-lg"> Register your child </a>
+                        </div>
+            </section>
+                <!--- Middle Column: ImageCarousel -->
+            <section>
+                <div id="academyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators (dots at bottom) -->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#academyCarousel"
+                            data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#academyCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#academyCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <!-- Carousel images -->
+                    <div class="carousel-inner bg-primary" style="max-height: auto">
+                        <div class="carousel-item active">
+                            <img
+                                src="images/10.jpeg"
+                                class="d-block mx-auto"
+                                style="width: 400px; height: 400px; object-fit: cover"
+                                alt="Fun learning at Mananto Academy" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/11.jpeg"
+                                class="d-block mx-auto"
+                                style="width: 400px; height: 400px; object-fit: cover"
+                                alt="Creative activities" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/12.jpeg"
+                                class="d-block mx-auto"
+                                style="width: 400px; height: 400px; object-fit: cover"
+                                alt="Outdoor play" />
+                        </div>
+                    </div>
+
+                    <!-- Controls (prev/next arrows) -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#academyCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#academyCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </section>
-            <!--- side menu  + subhero sections -->
+                <!--- Main Content Section -->
             <section class="py-5">
+                <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
                 <div class="container">
-                    <div class="row g-4">
-                        <!-- Left Column: Side Container -->
-                        <div class="col-12 col-md-3">
-                            <div class="side-container">
-                                <h2 class="mb-5">What would you like to do?</h2>
-                                <div class="row g-4">
-                                    <!-- menu items go here -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Middle Column: Motion Gallery -->
-                        <div class="col-12 col-md-5">
-                            <div class="motion-gallery d-flex flex-column align-items-center justify-content-center">
-                                <h3 class="mb-4 text-center">Our Learning in Action</h3>
-                                <div class="row g-3">
-                                    <div class="col-6 col-md-4">
-                                        <img
-                                            src="images/gallery1.jpg"
-                                            class="img-fluid rounded shadow-sm animate__animated animate__fadeInUp"
-                                            alt="Gallery 1" />
-                                    </div>
-                                    <div class="col-6 col-md-4">
-                                        <img
-                                            src="images/gallery2.jpg"
-                                            class="img-fluid rounded shadow-sm animate__animated animate__fadeInUp animate__delay-1s"
-                                            alt="Gallery 2" />
-                                    </div>
-                                    <div class="col-6 col-md-4">
-                                        <img
-                                            src="images/gallery3.jpg"
-                                            class="img-fluid rounded shadow-sm animate__animated animate__fadeInUp animate__delay-2s"
-                                            alt="Gallery 3" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right Column: Subhero Container -->
-                        <div class="col-12 col-md-4">
-                            <div
-                                class="subhero-container d-flex flex-column justify-content-center align-items-end text-end">
+                    <!--- Main/mother container for the section -->
+                    <div class="row g-4"> <!--- align items in a row and apply gutter spacing g-4 between them -->
+                            <!--- Right Column: Our story -->
+                        <div class="col-12 col-md-6">
+                            <div class="subhero-container d-flex flex-column justify-content-start">
                                 <h2 class="mb-5">Why Choose Us?</h2>
-                                <p class="lead">At Mananto Academy, we prioritize your learning experience.</p>
+                                <p class="lead">
+                                    <strong>At Mananto Academy, we prioritise your learning experience.</strong>
+                                </p>
                                 <ul class="list-unstyled">
                                     <li>Experienced Instructors</li>
                                     <li>Flexible Learning Options</li>
                                     <li>Comprehensive Curriculum</li>
                                 </ul>
-                                <div class="d-flex justify-content-end mt-3">
-                                    <a href="pages/admission.html" class="btn btn-primary btn-lg"> Register Now </a>
+                            </div>
+                        </div>
+                            <!--- Left Column: Reviews -->
+                        <div class="col-12 col-md-6">
+                            <div class="side-container d-flex flex-column justify-content-end">
+                                <h2 class="mb-5">What other parents say</h2>
+                                <div class="row g-4">
+                                    <!-- menu items go here -->
                                 </div>
                             </div>
                         </div>
@@ -166,7 +191,5 @@
                 <p class="mb-0">&copy; 2025 Mananto Academy. All rights reserved.</p>
             </div>
         </section>
-        <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
