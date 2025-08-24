@@ -1,9 +1,14 @@
 
+/*------------ Services Dropdown ------------*/
+/*- Open dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 /*------------ Carousel Items ------------*/
 .carousel-item {
   position: relative;
-  height: 400px; /* adjust to match your carousel height */
+  height: 400px;                                                      /*- adjust to match your carousel height */
   overflow: hidden;
 }
 
@@ -15,8 +20,8 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(10px) brightness(70%); /* blur + darken */
-  transform: scale(1.1); /* avoid empty edges when blurring */
+  filter: blur(10px) brightness(70%);                                 /*- blur + darken */
+  transform: scale(1.1);                                              /*- avoid empty edges when blurring */
   z-index: 1;
 }
 
@@ -26,5 +31,5 @@
   height: 400px;
   width: 800px;
   object-fit: cover;
-  border-radius: 12px; /* optional for nice rounded edges */
+  border-radius: 12px;                                                /*- nice rounded edges */
 }
