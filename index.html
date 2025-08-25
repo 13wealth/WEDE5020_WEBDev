@@ -12,10 +12,15 @@
         <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
         </script> <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+         <style>
+            body {
+                padding-top: 100px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
                 <!--- <nav> → semantic tag for navigation bar-->
                 <!--- navbar → Bootstrap class that styles it as a navigation bar -->
                 <!--- navbar-expand-lg → navbar expands (horizontal) on large screens; collapses on smaller screens -->
@@ -57,7 +62,6 @@
                                 <a 
                                     class="nav-link" 
                                     href="#" 
-                                    
                                     data-bs-toggle="dropdown" 
                                     aria-expanded="false"> 
                                     Services
@@ -85,61 +89,64 @@
                         <!--- lead → makes the text stand out as a lead paragraph -->
                         <!--- mb-4 → bottom margin -->
                 </div>
-                <div class="col-12 mt-3">
-                            <a href="pages/admission.html" class="btn btn-primary btn-lg"> Register your child </a>
-                        </div>
+                <div>
+                    <a 
+                        href="pages/admission.html" 
+                        class="btn btn-primary btn-lg"> 
+                        Register your child 
+                    </a>
+                </div>
             </section>
                 <!--- Images Carousel -->
             <section>
                 <div id="academyCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators"></div>
-                    <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-bg" style="background-image: url('images/1.jpg')"></div>
+                    <div class="carousel-indicators"></div> <!--- Displays small indicators at the bottom of the carousel -->
+                        <!--- Images -->
+                    <div class="carousel-inner"> <!--- is the container for all the slides in a Bootstrap carousel -->
+                        <div class="carousel-item active"> <!---active tells bootstrap that this is the first item when carousel starts-->
+                            <div class="carousel-bg" style="background-image: url('images/1.jpg')"></div> <!--- Background image with blur effect -->
                             <img
                                 src="images/1.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Fun learning at Mananto Academy" />
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item"> <!---Tells bootstrap that this is a carousel item-->
                             <div class="carousel-bg" style="background-image: url('images/2.jpg')"></div>
                             <img
                                 src="images/2.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Creative activities" />
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-bg" style="background-image: url('images/3.jpg')"></div>
                             <img
                                 src="images/3.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Outdoor play" />
                         </div>
                          <div class="carousel-item">
                             <div class="carousel-bg" style="background-image: url('images/4.jpg')"></div>
                             <img
                                 src="images/4.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Outdoor play" />
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-bg" style="background-image: url('images/5.jpg')"></div>
                             <img
                                 src="images/5.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Outdoor play" />
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-bg" style="background-image: url('images/6.jpg')"></div>
                             <img
                                 src="images/6.jpg"
-                                class="d-block mx-auto carousel-foreground"
+                                class="d-block mx-auto carousel-foreground img-fluid"
                                 alt="Outdoor play" />
                         </div>
                     </div>
-
-                    <!-- Controls (prev/next arrows) -->
+                        <!--- Controls for prev and next arrows) -->
                     <button
                         class="carousel-control-prev"
                         type="button"
@@ -157,14 +164,12 @@
                 </div>
             </section>
                 <!--- Main Content Section -->
-            <section class="py-5">
-                <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
-                <div class="container">
-                    <!--- Main/mother container for the section -->
+            <section class="py-5"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
+                <div class="container-fluid"> <!--- Main/mother container for the section -->
                     <div class="row g-4"> <!--- align items in a row and apply gutter spacing g-4 between them -->
-                            <!--- Right Column: Our story -->
-                        <div class="col-12 col-md-6">
-                            <div class="subhero-container d-flex flex-column justify-content-start">
+                        <!--- Right Column: Why choose us -->
+                        <div class="col-12 col-md-4">
+                            <div class="container py-3 d-flex flex-column justify-content-start">
                                 <h2 class="mb-5">Why Choose Us?</h2>
                                 <p class="lead">
                                     <strong>At Mananto Academy, we prioritise your learning experience.</strong>
@@ -174,27 +179,80 @@
                                     <li>Flexible Learning Options</li>
                                     <li>Comprehensive Curriculum</li>
                                 </ul>
+                                <h4 class="lead"><strong><u>CLASSROOMS</u></strong></h4>
+                                <p class="text-justify">
+                                    Our classrooms are designed to provide a conducive learning environment, 
+                                    equipped with modern technology and resources. Entering our classroom, 
+                                    you will immediately notice a calm but busy atmosphere, where the children 
+                                    are involved in small groups or individual activities.
+                                    The children are given freedom within a structured environment to choose 
+                                    activities that interest them, and to work with the materials for as long as
+                                    they need. We support the need for each child to develop their learning and 
+                                    their own individual pace.
+                                </p>
                             </div>
                         </div>
-                            <!--- Left Column: Reviews -->
-                        <div class="col-12 col-md-6">
-                            <div class="side-container d-flex flex-column justify-content-end">
+                        <div class="col-md-2 d-none d-md-block"></div> <!--- Empty spacer column -->
+                        <!--- Left Columns: Reviews -->
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex flex-column justify-content-end">
                                 <h2 class="mb-5">What other parents say</h2>
-                                <div class="row g-4">
-                                    <!-- menu items go here -->
+                                <h2 class="mb-3">Latest Review</h2>
+                                <!--- Latest review will be inserted here -->
+                                <div id="latest-review" class="mb-4">
+                                    <p>Loading latest review...</p>
                                 </div>
+                                <!--- Load More -->
+                                <div class="mt-3">
+                                    <a href="pages/reviews.html" class="text-decoration-none"> Load more reviews → </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Review Form -->
+                        <div class="col-12 col-md-3">
+                            <div class="d-flex flex-column justify-content-end">
+                                <h3 class="mb-2">Write a Review</h3>
+                                <form id="review-form" class="mb-3">
+                                    <div class="mb-2">
+                                        <input
+                                            type="text"
+                                            id="reviewer-name"
+                                            class="form-control"
+                                            placeholder="Your Name"
+                                            required />
+                                    </div>
+                                    <div class="mb-2">
+                                        <input
+                                            type="email"
+                                            id="reviewer-email"
+                                            class="form-control"
+                                            placeholder="Your Email"
+                                            required />
+                                    </div>
+                                    <div class="mb-2">
+                                        <textarea
+                                            id="review-message"
+                                            class="form-control"
+                                            rows="3"
+                                            placeholder="Your Review"
+                                            required>
+                                        </textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+<hr />        
         <footer class="py-4 bg-primary text-white">
             <section>
                 <div class="container">
                     <div class="row">
                         <!--- Left side -->
-                        <div class="text-center col-md-6">
+                        <div class="col-md-6 flex-column justify-content-start">
                             <h1 class="fw-bold mb-1">👋Say Hello!</h1>
                             <p>WHERE LEARNING IS FUN!</p>
                         </div>
@@ -223,20 +281,30 @@
             </div>
         </section>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const carousel = document.querySelector("#academyCarousel");
-                const indicators = carousel.querySelector(".carousel-indicators");
-                const items = carousel.querySelectorAll(".carousel-item");
+            /*
+            * This JavaScript generates the below indicators below automatically based on however many .carousel-items you have
+            * If you add/remove images, the indicators update automatically
+            *   <button data-bs-target="#academyCarousel" data-bs-slide-to="0" class="active"></button>
+            *   <button data-bs-target="#academyCarousel" data-bs-slide-to="1"></button>
+            *   <button data-bs-target="#academyCarousel" data-bs-slide-to="2"></button>
+            */
+            document.addEventListener("DOMContentLoaded", function () 
+            {
+                const carousel = document.querySelector("#academyCarousel");        //Finds the carousel element with the ID academyCarousel
+                const indicators = carousel.querySelector(".carousel-indicators");  //Finds <div class="carousel-indicators"> within the carousel
+                const items = carousel.querySelectorAll(".carousel-item");          //Grabs all the slides inside the carousel <div class="carousel-item">...</div>
 
-                items.forEach((_, index) => {
-                    const button = document.createElement("button");
-                    button.type = "button";
-                    button.setAttribute("data-bs-target", "#academyCarousel");
-                    button.setAttribute("data-bs-slide-to", index);
+                items.forEach((_, index) =>                                         /*Loops through each slide (.carousel-item).
+                                                                                      The index gives the position of each slide (0, 1, 2, …).*/
+                {
+                    const button = document.createElement("button");                //Creates a new <button> for each slide.
+                    button.type = "button";                                         //Sets the button type to "button".
+                    button.setAttribute("data-bs-target", "#academyCarousel");      //data-bs-target="#academyCarousel" links the button to your carousel.
+                    button.setAttribute("data-bs-slide-to", index);                 /*data-bs-slide-to="index" 
+                                                                                      Tells Bootstrap which slide to jump to when the button is clicked.*/
+                    if (index === 0) button.classList.add("active");                //Adds the "active" class to the first button
 
-                    if (index === 0) button.classList.add("active");
-
-                    indicators.appendChild(button);
+                    indicators.appendChild(button);                                 //Adds the button into the .carousel-indicators container.
                 });
             });
         </script>
