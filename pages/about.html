@@ -1,24 +1,28 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Mananto Academy</title> 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" href="../icons/ic_school_128_28729.ico" type="image/x-icon" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-            rel="stylesheet"/> 
-        <link rel="stylesheet" href="styles.css" />
+        <title>Mananto Academy</title>
+        <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            body {
+                padding-top: 130px;
+            }
+        </style>
     </head>
-    <body class="d-flex flex-column min-vh-100">
+    <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <div class="container nav-container">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../images/cropped_circle_image2.png" 
-                            alt="Mananto Academy" 
-                            class="img-fluid" 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="../index.html">
+                        <img
+                            src="../images/logo.jpg"
+                            alt="Mananto Academy"
+                            class="rounded img-fluid"
                             style="max-height: 100px" />
                     </a>
                     <button
@@ -36,7 +40,16 @@
                             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                                    <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
+                                    <li><a class="dropdown-item" href="activities.html">Extra Mural Activities</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -46,42 +59,66 @@
         <main>
             <section class="py-5">
                 <div class="container">
-                    <h2 class="mb-4">Welcome to Mananto Academy</h2>
-                    <p>Your journey to knowledge starts here.</p>
-                </div>
-            </section>
-        </main>
-        <footer class="mt-auto py-4 bg-primary text-white">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center col-md-6">
-                            <h1 class="fw-bold mb-1">👋 Say Hello!</h1>
-                            <p>WHERE LEARNING IS FUN!</p>
+                    <div class="row g-5">
+                        <div class="col-12 col-md-6">
+                            <h2 class="fw-bold mb-4">Our Story</h2>
+                            <p class="text-justify">
+                                Our classrooms are designed to provide a conducive learning environment, equipped with
+                                modern technology and resources. Entering our classroom, you will immediately notice a
+                                calm but busy atmosphere, where the children are involved in small groups or individual
+                                activities. The children are given freedom within a structured environment to choose
+                                activities that interest them, and to work with the materials for as long as they need.
+                                We support the need for each child to develop their learning and their own individual
+                                pace.
+                            </p>
                         </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-1 d-flex align-items-center">
-                                    087 183 6053 <br />
-                                    admin@manantoacademy.co.za <br />
-                                    www.manantoacademy.co.za <br />
-                                    12027 Popular Street<br />
-                                    Kagiso, Hospital view<br />
-                                    1754
-                                </li>
-                            </ul>
+                        <div class="col-12 col-md-6">
+                            <h2 class="fw-bold mb-4">Our Vision</h2>
+                            <p class="text-justify">
+                                At Mananto Academy, we envision a world where every child has access to quality
+                                education that nurtures their unique talents and abilities. We strive to create a
+                                learning environment that is inclusive, engaging, and supportive, allowing each child to
+                                thrive academically, socially, and emotionally.
+                            </p>
+                            <h2 class="fw-bold mt-5 mb-4">Our Mission</h2>
+                            <p class="text-justify">
+                                Our mission at Mananto Academy is to provide a holistic education that fosters creativity,
+                                critical thinking, and a love for learning. We are committed to nurturing each child's
+                                potential and preparing them for a successful future.
+                            </p>
+                            <h2 class="fw-bold mt-5 mb-4">Our Values</h2>
+                            <p class="text-justify">
+                                At Mananto Academy, we uphold the values of integrity, respect, and excellence. We believe
+                                in fostering a culture of kindness and empathy, where every child is valued and supported
+                                in their learning journey.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-                <section>
-        <div class="container-fluid footer-container d-flex justify-content-between align-items-center">
-            <p class="mb-0"><a href="../policy.html">Privacy Policy</a></p>
-            <p class="mb-0">&copy; 2025 Mananto Academy. All rights reserved.</p>
-        </div>
-    </section>
+        </main>
+
+        <footer class="py-4 bg-primary text-white fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 flex-column justify-content-start">
+                        <h1 class="fw-bold mb-1">👋Say Hello!</h1>
+                        <p>WHERE LEARNING IS FUN!</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 d-flex align-items-center">
+                                087 183 6053 <br />
+                                admin@manantoacademy.co.za <br />
+                                www.manantoacademy.co.za <br />
+                                12027 Popular Street<br />
+                                Kagiso, Hospital view<br />
+                                1754
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
