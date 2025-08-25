@@ -34,3 +34,23 @@
   object-fit: cover;
   border-radius: 12px;                                                /*- nice rounded edges */
 }
+
+#galleryCarousel,
+#galleryCarousel .carousel-inner,
+#galleryCarousel .carousel-item {
+    height: 700px; /* fixed height for carousel */
+}
+
+#galleryCarousel .carousel-item img {
+    height: 100%;        /* fill the parent height */
+    width: 100%;
+    object-fit: cover;   /* crop to fit nicely */
+}
+
+
+/*------------ Gallery Items ------------*/
+.gallery-thumb {
+    height: 150px;                                                    /*- pick whatever height fits your design */
+    width: 100%;                                                      /*- fill the column width */
+    object-fit: cover;                                                /*- scale and crop the image to fit without distortion */
+}
