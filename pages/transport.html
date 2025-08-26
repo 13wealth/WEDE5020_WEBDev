@@ -3,23 +3,26 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" href="../icons/favicon-main.ico" type="image/x-icon" />
         <title>Mananto Academy</title>
-        <link 
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-            rel="stylesheet" 
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="../styles.css" />
+        <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+         <style>
+            body {
+                padding-top: 100px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <div class="container nav-container">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../images/cropped_circle_image2.png" 
-                            alt="Mananto Academy" 
-                            class="img-fluid" 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="../index.html">
+                        <img
+                            src="../images/logo.jpg"
+                            alt="Mananto Academy"
+                            class="rounded img-fluid"
                             style="max-height: 100px" />
                     </a>
                     <button
@@ -37,7 +40,17 @@
                             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services    
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                                    <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
+                                    <li><a class="dropdown-item" href="activities.html">Extra Mural Activities</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -47,41 +60,54 @@
         <main>
             <section class="py-5">
                 <div class="container">
-                    <h2 class="mb-4">Welcome to Mananto Academy</h2>
-                    <p>Your journey to knowledge starts here.</p>
-                </div>
-            </section>
-        </main>
-        <footer class="py-4 bg-primary text-white">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center col-md-6">
-                            <h1 class="fw-bold mb-1">👋 Say Hello!</h1>
-                            <p>WHERE LEARNING IS FUN!</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-1 d-flex align-items-center">
-                                    087 183 6053 <br />
-                                    admin@manantoacademy.co.za <br />
-                                    www.manantoacademy.co.za <br />
-                                    12027 Popular Street<br />
-                                    Kagiso, Hospital view<br />
-                                    1754
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="row g-4">
+                        <h2 class="fw-bold mb-4">TRANSPORTATION</h2>
+                        <p>At Mananto Academy, we understand the importance of safe and reliable transportation for our students. Our dedicated transport service ensures that children are picked up and dropped off at their homes with the utmost care.</p>
+                    </div>
+            <hr />
+                    <div class="row g-4">
+                        <div class="col-md-6 py-5">
+                        <h5 class="fw-bold mb-4">OUR TRANSPORT SERVICES INCLUDE:</h5>
+                        <ul>
+                            <li>Safe and reliable pick-up and drop-off</li>
+                            <li>GPS tracking for parents</li>
+                            <li>Trained and vetted drivers</li>
+                            <li>Regular vehicle maintenance and safety checks</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 py-5">
+                        <h5 class="fw-bold mb-4">DETAILS</h5>
+                        <p>If you have any questions or would like to learn more about our transport services, please don't hesitate to contact us.</p>
+                        <ul>
+                            <li>087 183 6053</li>
+                            <li>admin@manantoacademy.co.za</li>
+                        </ul>
                     </div>
                 </div>
             </section>
+        </main>
+
+        <footer class="py-4 bg-primary text-white fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 flex-column justify-content-start">
+                        <h1 class="fw-bold mb-1">👋Say Hello!</h1>
+                        <p>WHERE LEARNING IS FUN!</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 d-flex align-items-center">
+                                087 183 6053 <br />
+                                admin@manantoacademy.co.za <br />
+                                www.manantoacademy.co.za <br />
+                                12027 Popular Street<br />
+                                Kagiso, Hospital view<br />
+                                1754
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
-        <section>
-        <div class="container-fluid footer-container d-flex justify-content-between align-items-center">
-            <p class="mb-0"><a href="../policy.html">Privacy Policy</a></p>
-            <p class="mb-0">&copy; 2025 Mananto Academy. All rights reserved.</p>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
