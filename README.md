@@ -1,4 +1,4 @@
-<img width="697" height="226" alt="image" src="https://github.com/user-attachments/assets/0ea9b80f-3049-4ece-9280-8abef8ee1ac5" /># Project: Website Enhancement for Education Organisation
+# Project: Website Enhancement for Education Organisation
 
 This project aims to upgrade and enhance the existing website of an organisation operating in the Education sector.
 
