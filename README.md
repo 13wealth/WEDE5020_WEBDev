@@ -1,4 +1,4 @@
-# Project: Website Enhancement for Education Organisation
+<img width="697" height="226" alt="image" src="https://github.com/user-attachments/assets/0ea9b80f-3049-4ece-9280-8abef8ee1ac5" /># Project: Website Enhancement for Education Organisation
 
 This project aims to upgrade and enhance the existing website of an organisation operating in the Education sector.
 
@@ -18,14 +18,14 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 ### References
 
-Bootstrap Icons. (2025). Icon pack [Icon set]. https://icons.getbootstrap.com/
-Canva. (2025). Pre-school education images [Images]. Canva. https://www.canva.com/
-Domains.co.za. (n.d.). Web hosting South Africa. https://www.domains.co.za/web-hosting-south-africa
-Favicon.io. (2025). Favicon generator [Tool]. https://favicon.io/
-Friend, N. (2025). Tree [Folder structure diagram generator]. https://tree.nathanfriend.com/
-GitHub. (2025). WEDE5020_PoE [Source code]. GitHub. https://github.com/13wealth/WEDE5020_PoE
-Mananto Academy. (2025). School logo [Image]. Mananto Academy Website. https://www.manantoacademy.co.za
-OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/
-Stack Overflow. (n.d.). JavaScript DOM manipulation answers. https://stackoverflow.com/
-Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
+Bootstrap Icons. (2025). Icon pack [Icon set]. https://icons.getbootstrap.com/ <br>
+Canva. (2025). Pre-school education images [Images]. Canva. https://www.canva.com/ <br>
+Domains.co.za. (n.d.). Web hosting South Africa. https://www.domains.co.za/web-hosting-south-africa <br>
+Favicon.io. (2025). Favicon generator [Tool]. https://favicon.io/ <br>
+Friend, N. (2025). Tree [Folder structure diagram generator]. https://tree.nathanfriend.com/ <br>
+GitHub. (2025). WEDE5020_PoE [Source code]. GitHub. https://github.com/13wealth/WEDE5020_PoE <br>
+Mananto Academy. (2025). School logo [Image]. Mananto Academy Website. https://www.manantoacademy.co.za <br>
+OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/ <br>
+Stack Overflow. (n.d.). JavaScript DOM manipulation answers. https://stackoverflow.com/ <br>
+Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511 <br>
 
