@@ -49,7 +49,8 @@
     height: 700px; /* fixed height for carousel */
 }
 
-#galleryCarousel .carousel-item img {
+#galleryCarousel 
+.carousel-item img {
     height: 100%;        /* fill the parent height */
     width: 100%;
     object-fit: cover;   /* crop to fit nicely */
