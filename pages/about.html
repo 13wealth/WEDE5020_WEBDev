@@ -5,14 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Mananto Academy</title>
         <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="../style.css" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+            <!--- .CSS styling file link-->
+        <link rel="stylesheet" href="style.css" /> 
+            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
         <style>
             body {
-                padding-top: 130px;
+                padding-top: 100px;
             }
         </style>
+            <!--- Bootstrap Icons link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -40,14 +44,18 @@
                             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
+                           <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
+                                <a 
+                                    class="nav-link" 
+                                    href="#" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                    Services    
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
                                     <li><a class="dropdown-item" href="classes.html">Classes</a></li>
                                     <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                    <li><a class="dropdown-item" href="activities.html">Extra Mural Activities</a></li>
+                                    <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
@@ -58,45 +66,49 @@
             </nav>
         </header>
         <main>
-            <section class="py-5">
+            <section class="py-5 bg-light">
                 <div class="container">
                     <div class="row g-5">
                             <!--- Left column: Our story column -->
                         <div class="col-12 col-md-6">
-                            <h2 class="fw-bold mb-4">Our Story</h2>
-                            <p class="text-justify">
-                                Our classrooms are designed to provide a conducive learning environment, equipped with
-                                modern technology and resources. Entering our classroom, you will immediately notice a
-                                calm but busy atmosphere, where the children are involved in small groups or individual
-                                activities. The children are given freedom within a structured environment to choose
-                                activities that interest them, and to work with the materials for as long as they need.
-                                We support the need for each child to develop their learning and their own individual
-                                pace.
-                            </p>
+                            <div class="p-4 bg-white shadow-sm rounded h-100"> 
+                                <h2 class="fw-bold mb-4">Our Story</h2>
+                                <p class="text-justify">
+                                    Our classrooms are designed to provide a conducive learning environment, equipped with
+                                    modern technology and resources. Entering our classroom, you will immediately notice a
+                                    calm but busy atmosphere, where the children are involved in small groups or individual
+                                    activities. The children are given freedom within a structured environment to choose
+                                    activities that interest them, and to work with the materials for as long as they need.
+                                    We support the need for each child to develop their learning and their own individual
+                                    pace.
+                                </p>
+                           </div> 
                         </div>
                             <!--- Right column: Our vision column -->
                         <div class="col-12 col-md-6">
-                            <h2 class="fw-bold mb-4">Our Vision</h2>
-                            <p class="text-justify">
-                                At Mananto Academy, we envision a world where every child has access to quality
-                                education that nurtures their unique talents and abilities. We strive to create a
-                                learning environment that is inclusive, engaging, and supportive, allowing each child to
-                                thrive academically, socially, and emotionally.
-                            </p>
-                                <!--- Our mission row in the right column -->
-                            <h2 class="fw-bold mt-5 mb-4">Our Mission</h2>
-                            <p class="text-justify">
-                                Our mission at Mananto Academy is to provide a holistic education that fosters creativity,
-                                critical thinking, and a love for learning. We are committed to nurturing each child's
-                                potential and preparing them for a successful future.
-                            </p>
-                                <!--- Our values row in the right column -->
-                            <h2 class="fw-bold mt-5 mb-4">Our Values</h2>
-                            <p class="text-justify">
-                                At Mananto Academy, we uphold the values of integrity, respect, and excellence. We believe
-                                in fostering a culture of kindness and empathy, where every child is valued and supported
-                                in their learning journey.
-                            </p>
+                            <div class="p-4 bg-white shadow-sm rounded h-100"> 
+                                <h2 class="fw-bold mb-4">Our Vision</h2>
+                                <p class="text-justify">
+                                    At Mananto Academy, we envision a world where every child has access to quality
+                                    education that nurtures their unique talents and abilities. We strive to create a
+                                    learning environment that is inclusive, engaging, and supportive, allowing each child to
+                                    thrive academically, socially, and emotionally.
+                                </p>
+                                    <!--- Our mission row in the right column -->
+                                <h2 class="fw-bold mt-5 mb-4">Our Mission</h2>
+                                <p class="text-justify">
+                                    Our mission at Mananto Academy is to provide a holistic education that fosters creativity,
+                                    critical thinking, and a love for learning. We are committed to nurturing each child's
+                                    potential and preparing them for a successful future.
+                                </p>
+                                    <!--- Our values row in the right column -->
+                                <h2 class="fw-bold mt-5 mb-4">Our Values</h2>
+                                <p class="text-justify">
+                                    At Mananto Academy, we uphold the values of integrity, respect, and excellence. We believe
+                                    in fostering a culture of kindness and empathy, where every child is valued and supported
+                                    in their learning journey.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

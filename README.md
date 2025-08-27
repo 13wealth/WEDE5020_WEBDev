@@ -18,5 +18,14 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 ### References
 
-1. Domains.co.za. (n.d.). Web hosting South Africa. Domains.co.za. https://www.domains.co.za/web-hosting-south-africa
-2. Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
+Bootstrap Icons. (2025). Icon pack [Icon set]. https://icons.getbootstrap.com/
+Canva. (2025). Pre-school education images [Images]. Canva. https://www.canva.com/
+Domains.co.za. (n.d.). Web hosting South Africa. https://www.domains.co.za/web-hosting-south-africa
+Favicon.io. (2025). Favicon generator [Tool]. https://favicon.io/
+Friend, N. (2025). Tree [Folder structure diagram generator]. https://tree.nathanfriend.com/
+GitHub. (2025). WEDE5020_PoE [Source code]. GitHub. https://github.com/13wealth/WEDE5020_PoE
+Mananto Academy. (2025). School logo [Image]. Mananto Academy Website. https://www.manantoacademy.co.za
+OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/
+Stack Overflow. (n.d.). JavaScript DOM manipulation answers. https://stackoverflow.com/
+Wireframe.cc. (2025). Homepage wireframe for Mananto Academy. Wireframe.cc. https://wireframe.cc/pro/editor/966511
+

@@ -5,14 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Mananto Academy</title>
         <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="../style.css" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-         <style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+            <!--- .CSS styling file link-->
+        <link rel="stylesheet" href="style.css" /> 
+            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <style>
             body {
                 padding-top: 100px;
             }
         </style>
+            <!--- Bootstrap Icons link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -40,14 +44,18 @@
                             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
+                                <a 
+                                    class="nav-link" 
+                                    href="#" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
                                     Services    
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
                                     <li><a class="dropdown-item" href="classes.html">Classes</a></li>
                                     <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                    <li><a class="dropdown-item" href="activities.html">Extra Mural Activities</a></li>
+                                    <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
@@ -58,25 +66,30 @@
             </nav>
         </header>
         <main>
-            <section class="py-5">
-                <div class="container"> <!--- Parent container of the Admission Section --->
-                    <div class="row g-4 text-center"> <!--- Row 1: Text only --->
+             <section class="py-5">
+                <div class="container">
+                    <!--- Parent container of the Admission Section --->
+                    <div class="row g-4 text-center">
+                        <!--- Row 1: Text only --->
                         <h2 class="fw-bold mb-4">🌟JOIN OUR LEARNING FAMILY</h2>
                     </div>
-                    <div class="row g-5"> <!--- Row 2: To contain Admission Requirements and Online Admission -->
-                            <!--- Admission Requirements -->
+                    <div class="row g-5">
+                        <!--- Row 2: To contain Admission Requirements and Online Admission -->
+                        <!--- Admission Requirements -->
                         <div class="col-md-6 py-5">
                             <h5 class="fw-semibold mb-4 text-center">ADMISSION REQUIREMENTS</h5>
                             <div class="row g-4">
-                                <div class="col-md-6"> <!--- Creates a column for Office Admission -->
-                                    <div class="card"> <!---Creates a card inside a column for Office Admission -->
+                                <div class="col-md-6">
+                                    <!--- Creates a column for Office Admission -->
+                                    <div class="card">
+                                        <!---Creates a card inside a column for Office Admission -->
                                         <div class="card-body">
                                             <h5 class="card-title lead">Office Admission:</h5>
                                             <p>
-                                                <u
-                                                    >To register your child at the office, please bring the following
-                                                    documents:</u
-                                                >
+                                                <u>
+                                                    To register your child at the office, please bring the following
+                                                    documents:
+                                                </u>
                                             </p>
                                             <ul>
                                                 <li>Birth Certificate</li>
@@ -86,9 +99,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--- Online Admission -->
-                                <div class="col-md-6">  <!--- Creates a column for Online Admission -->
+                                    <!--- Online Admission -->
+                                <div class="col-md-6"> <!--- Creates a column for Online Admission -->  
                                     <div class="card"> <!---Creates a card inside a column for Online Admission -->
+                                        
                                         <div class="card-body">
                                             <h5 class="card-title lead">Online Admission:</h5>
                                             <p><u>To register your child online, please follow these steps:</u></p>
@@ -106,10 +120,10 @@
                         </div>
                         <div class="col-md-6 py-5 text-center">
                             <h5 class="w-semibold mb-4 text-center">ONLINE ADMISSION</h5>
-                            <form class="p-4 border rounded bg-light">
-                                    <!--- Child Name -->
+                            <form class="p-4 border rounded bg-light" id="admissionForm">
+                                <!--- Child Name -->
                                 <div class="mb-3">
-                                    <label for="childName" class="form-label">Child's Full Name</label>
+                                    <label for="childName" class="form-label">Child's Full Name:</label>
                                     <input
                                         type="text"
                                         class="form-control"
@@ -118,26 +132,25 @@
                                         required />
                                 </div>
 
-                                    <!--- Date of Birth -->
+                                <!--- Date of Birth -->
                                 <div class="mb-3">
-                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <label for="dob" class="form-label">Date of Birth:</label>
                                     <input type="date" class="form-control" id="dob" required />
                                 </div>
 
-                                    <!--- Grade Applying For -->
+                                <!--- Grade Applying For -->
                                 <div class="mb-3">
-                                    <label for="grade" class="form-label">Grade Applying For</label>
+                                    <label for="grade" class="form-label">Class Applying For:</label>
                                     <select class="form-select" id="grade" required>
-                                        <option selected disabled>Choose grade</option>
+                                        <option selected disabled>Choose class</option>
+                                        <!--- Automatically selected and disabled option as a placeholder -->
+                                        <option>Toddlers (2-3 years)</option>
+                                        <option>Kindergarteners (4-6 years)</option>
                                         <option>Grade R</option>
-                                        <option>Grade 1</option>
-                                        <option>Grade 2</option>
-                                        <option>Grade 3</option>
-                                        <!-- add more grades as needed -->
                                     </select>
                                 </div>
 
-                                    <!--- Parent/Guardian Contact -->
+                                <!--- Parent/Guardian Contact -->
                                 <div class="mb-3">
                                     <label for="parentContact" class="form-label">Parent/Guardian Phone</label>
                                     <input
@@ -148,7 +161,7 @@
                                         required />
                                 </div>
 
-                                    <!--- Upload Documents -->
+                                <!--- Upload Documents -->
                                 <div class="mb-3">
                                     <label for="documents" class="form-label">Upload Documents (PDF or JPG)</label>
                                     <input
@@ -159,11 +172,8 @@
                                         multiple
                                         required />
                                 </div>
-
-                                    <!--- Submit Button -->
-                                <div class="d-grid mt-4">
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
-                                </div>
+                                <!--- Submit Button -->
+                                <button type="submit" class="btn btn-primary">Submit Application</button>
                             </form>
                         </div>
                     </div>
@@ -192,5 +202,16 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function()                    //Wraps the code to ensure it runs after the DOM is fully loaded
+            {
+                document.getElementById("admissionForm").addEventListener("submit", function(e) 
+                {
+                    e.preventDefault();                                                 //Stops the form from submitting and refreshing
+                    alert("Thank you! Your message has been received.");                //Notification when submit is clicked
+                });
+            });
+        </script>
     </body>
 </html>
