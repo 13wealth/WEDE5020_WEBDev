@@ -216,7 +216,15 @@
                                 <h2 class="mb-3">Latest Review</h2>
                                 <!--- Latest review will be inserted here -->
                                 <div id="latest-review" class="mb-4">
-                                    <p>Loading latest review...</p>
+                                    <p>
+                                        ⭐⭐⭐⭐⭐ November 17, 2023 <br/>
+                                        1️⃣ MaNanto is a registered institution fully compliant with safety, health, and environmental management laws. <br/>
+                                        2️⃣ Sina Nanto believes the best way to help children succeed is to teach them to be creative, confident, and analytical thinkers.<br/>
+                                        3️⃣ MaNanto Academy offers a research-based curriculum that ensures that all learning outcomes are achieved.<br/>
+                                        4️⃣ MaNanto Academy adheres to hygiene regulations and nutrition standards. The academy offers nutritious, balanced, delicious meals.<br/>
+                                        5️⃣ Sina has built relationships with doctors, nurses, health advisors, and mental health professionals. She stays abreast of the latest developments in health and education. She believes in promoting children’s health as an important aspect of good quality childcare.<br/>
+                                        6️⃣ MaNanto Academy is a place where learning is fun. A body of neuroscientific research proves that dopamine makes learning addictive and endorphins make it pleasurable. This connects new information from outside the brain with stored memories inside… and that’s called learning!
+                                    </p>
                                 </div>
                                 <!--- Load More -->
                                 <div class="mt-3">
@@ -256,6 +264,10 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit Review</button>
                                 </form>
+                                    <!--- Success message placeholder -->
+                                <div id="review-success" class="alert alert-success mt-3 d-none">
+                                ✅ Thank you! Your review has been submitted.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -297,6 +309,13 @@
             </div>
         </section>
         <script>
+            document.getElementById("review-form").addEventListener("submit", function (e) 
+            {
+                e.preventDefault();                                                 //stop page reload
+                document.getElementById("review-success").classList.remove("d-none");
+    
+                e.target.reset();                                                   //Reset form
+                });
             /*
             * This JavaScript generates the below indicators below automatically based on however many .carousel-items you have
             * If you add/remove images, the indicators update automatically
@@ -323,6 +342,7 @@
                     indicators.appendChild(button);                                 //Adds the button into the .carousel-indicators container.
                 });
             });
+            
         </script>
     </body>
 </html>
