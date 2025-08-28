@@ -1,482 +1,423 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Mananto Academy</title>
-         <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
-            <!--- Bootstrap CSS v5.3.2 link-->
-        <<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" /> 
-            <!--- .CSS styling file link-->
-         <link rel="stylesheet" href="style.css" /> 
-            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
-        <style>
-            body {
-                padding-top: 100px;
-            }
-        </style>
-            <!--- Bootstrap Icons link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-                <div class="container">
-                    <a class="navbar-brand fw-bold" href="../index.html">
-                        <img
-                            src="../images/logo.jpg"
-                            alt="Mananto Academy"
-                            class="rounded img-fluid"
-                            style="max-height: 100px" />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#hamburger"
-                        aria-controls="hamburger"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="hamburger">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
-                                <a 
-                                    class="nav-link" 
-                                    href="#" 
-                                    data-bs-toggle="dropdown" 
-                                    aria-expanded="false">
-                                    Services    
-                                </a>
-                                <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
-                                    <li><a class="dropdown-item" href="classes.html">Classes</a></li>
-                                    <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                    <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-                <!--- Gallery Section -->
-            <section class="py-5">
-                <div class="container-fluid"> <!--- Fluid container spans full-width images -->
-                    <div class="row g-4">
-                            <!--- Gallery Thumbnails -->
-                        <div class="col-12 col-md-6">
-                            <h2 class="fw-bold mb-4 text-center">Our Story in Pictures</h2>
-                            <div class="row g-2">
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/1.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/1.jpg"
-                                        alt="Image 1" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/2.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/2.jpg"
-                                        alt="Image 2" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/3.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/3.jpg"
-                                        alt="Image 3" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/4.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/4.jpg"
-                                        alt="Image 4" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/5.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/5.jpg"
-                                        alt="Image 5" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/6.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/6.jpg"
-                                        alt="Image 6" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/7.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/7.jpg"
-                                        alt="Image 7" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/8.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/8.jpg"
-                                        alt="Image 8" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/9.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/9.jpg"
-                                        alt="Image 9" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/10.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/10.jpg"
-                                        alt="Image 10" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/11.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/11.jpg"
-                                        alt="Image 11" />
-                                </div>
-                                <div class="col-6 col-sm-4 mb-3">
-                                    <img
-                                        src="../images/12.jpg"
-                                        class="img-fluid rounded gallery-thumb"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#imageModal"
-                                        data-bs-src="../images/12.jpg"
-                                        alt="Image 12" />
-                                </div>
 
-                                    <!--- Hidden extra images (initially not displayed) -->
-                                <div class="extra-images d-none">
-                                    <div class="col-6 col-sm-4 mb-3">
-                                        <img
-                                            src="../images/13.jpg"
-                                            class="img-fluid rounded gallery-thumb"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#imageModal"
-                                            data-bs-src="../images/13.jpg"
-                                            alt="Image 13" />
-                                    </div>
-                                    <div class="col-6 col-sm-4 mb-3">
-                                        <img
-                                            src="../images/14.jpg"
-                                            class="img-fluid rounded gallery-thumb"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#imageModal"
-                                            data-bs-src="../images/14.jpg"
-                                            alt="Image 14" />
-                                    </div>
-                                    <div class="col-6 col-sm-4 mb-3">
-                                        <img
-                                            src="../images/15.jpg"
-                                            class="img-fluid rounded gallery-thumb"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#imageModal"
-                                            data-bs-src="../images/15.jpg"
-                                            alt="Image 15" />
-                                    </div>
-                                </div>
-                            </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mananto Academy</title>
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <!--- Bootstrap CSS v5.3.2 link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--- .CSS styling file link-->
+    <link rel="stylesheet" href="../style.css" />
+    <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            padding-top: 100px;
+        }
+    </style>
+    <!--- Bootstrap Icons link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-                                <!--- Load More button -->
-                            <div class="text-center mt-3">
-                                <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
-                            </div>
-                        </div>
-
-                            <!--- Right Column: Carousel -->
-                        <div class="col-12 col-md-6 py-5"> <!--- Divide/Span the parent container -->                                             
-                            <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"> <!--- Item settings -->
-                                <div class="carousel-inner"> <!--- Creates the item inside the parent container -->       
-                                        <!--- First image must have "active" -->
-                                    <div class="carousel-item active">
-                                        <img src="../images/1.jpg" class="d-block w-100 rounded" alt="Image 1" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/2.jpg" class="d-block w-100 rounded" alt="Image 2" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/3.jpg" class="d-block w-100 rounded" alt="Image 3" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/4.jpg" class="d-block w-100 rounded" alt="Image 4" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/5.jpg" class="d-block w-100 rounded" alt="Image 5" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/6.jpg" class="d-block w-100 rounded" alt="Image 6" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/7.jpg" class="d-block w-100 rounded" alt="Image 7" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/8.jpg" class="d-block w-100 rounded" alt="Image 8" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/9.jpg" class="d-block w-100 rounded" alt="Image 9" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/10.jpg" class="d-block w-100 rounded" alt="Image 10" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/11.jpg" class="d-block w-100 rounded" alt="Image 11" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/12.jpg" class="d-block w-100 rounded" alt="Image 12" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/13.jpg" class="d-block w-100 rounded" alt="Image 13" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/14.jpg" class="d-block w-100 rounded" alt="Image 14" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../images/15.jpg" class="d-block w-100 rounded" alt="Image 15" />
-                                    </div>
-                                </div>
-                                <button
-                                    class="carousel-control-prev"
-                                    type="button"
-                                    data-bs-target="#galleryCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button
-                                    class="carousel-control-next"
-                                    type="button"
-                                    data-bs-target="#galleryCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <!--- Modal for enlarged image -->
-                <!-- 
-                                This modal is a pop-up image viewer. When you click a thumbnail, JavaScript updates #modalImage’s 
-                                src with that thumbnail’s full-size image, and Bootstrap opens this modal in the center of the screen. 
-                                -->
-                <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-                    <!--
-                                                                                                        Creates a Bootstrap modal component for displaying enlarged images
-                                                                                                          modal → tells Bootstrap this is a modal.
-                                                                                                          fade → adds the fade-in / fade-out animation.
-                                                                                                          id="imageModal" → unique identifier, so when you click a thumbnail with data-bs-target="#imageModal", this modal opens
-                                                                                                          tabindex="-1" → makes the modal focusable, but removes it from normal tab order until it’s opened.
-                                                                                                          aria-hidden="true" → accessibility attribute meaning “hidden from screen readers until shown.”
-                                                                                                        -->
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <!--
-                                                                                        modal-dialog → wrapper for the modal window.
-                                                                                        modal-dialog-centered → vertically centers the modal in the viewport.
-                                                                                        modal-lg → makes the modal large (lg = large size, wider than default).
-                                                                                    -->
-
-                        <div class="modal-content bg-transparent border-0">
-                            <!--
-                                                                                        modal-content → the actual content box inside the modal.
-                                                                                        bg-transparent → Bootstrap utility class, removes the white background, so the modal content is transparent.
-                                                                                        border-0 → removes the default border around the modal.
-                                                                                    -->
-
-                            <div class="modal-body p-0">
-                                <!--
-                                                                        modal-body → main body section of the modal.
-                                                                        p-0 → Bootstrap spacing utility, removes all padding inside the modal body (so the image touches the edges).
-                                                                    -->
-
-                                <img src="" id="modalImage" class="img-fluid rounded" alt="Enlarged Image" />
-                                <!--
-                                                                                                                             <img> → actual image displayed in the modal.
-                                                                                                                            src="" → placeholder, will be replaced dynamically (via JavaScript) with the clicked thumbnail’s image.
-                                                                                                                            id="modalImage" → used in JavaScript to easily target and swap the image source.
-                                                                                                                            class="img-fluid rounded" →
-                                                                                                                            img-fluid → makes the image scale to fit the modal width, staying responsive.
-                                                                                                                            rounded → applies Bootstrap’s default border-radius (slightly rounded corners).
-                                                                                                                            alt="Enlarged Image" → accessibility description in case the image can’t load.
-                                                                                                                            -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <hr />
-            <section>
-                <div class="container"> <!--- Creates a parent container for this section-->
-                    <div class="row g-4"> <!--- First row in the parent container -->
-                        <div class="col-12">
-                            <h2 class="fw-bold mb-4 text-center">Let's take you on a journey...</h2>
-                        </div>
-                    </div>
-                    <div class="row g-4"> <!--- Second row in the parent container -->
-                        <div class="col-12 col-md-4 py-5"> <!--- First child-container in the Second row in the parent container -->
-                            <h2 class="fw-bold mb-4 text-center">WHERE IT STARTED</h2>
-                            <div id="alphaCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <!--
-                                                                    Carousel settings: 
-                                                                        id="alphaCarousel" → unique identifier (used by indicators/controls to target this carousel).
-                                                                        class="carousel" → tells Bootstrap it’s a carousel.
-                                                                        slide → enables slide transitions between items.
-                                                                        data-bs-ride="carousel" → makes the carousel auto-start cycling.
-                                                                    -->
-                                <div class="carousel-inner"> <!--- Creates a wrapper that holds the carousel items --->
-                                    <div class="carousel-item active">
-                                        <img
-                                            src="../images/a1.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Alpha Image 1" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/a2.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Alpha Image 2" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/a3.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Alpha Image 3" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 py-5">
-                            <h2 class="fw-bold mb-4 text-center">WHERE IT IS NOW</h2>
-                            <div id="omegaCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img
-                                            src="../images/b1.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Omega Image 1" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/b2.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Omega Image 2" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/b3.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Omega Image 3" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 py-5">
-                            <h2 class="fw-bold mb-4 text-center">EXTRA MURAL</h2>
-                            <div id="extraCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img
-                                            src="../images/c1.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Extra Mural Image 1" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/c2.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Extra Mural Image 2" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            src="../images/c3.jpg"
-                                            class="d-block w-100 carousel-alpha"
-                                            alt="Extra Mural Image 3" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script>
-            const modalImage = document.getElementById('modalImage');                       //Get modal image element
-            const thumbnails = document.querySelectorAll('.gallery-thumb');                 //Get all thumbnail elements
-
-            thumbnails.forEach(thumb =>                                                     //Iterate over each thumbnail
-            {
-                thumb.addEventListener('click', function()                                  //Add click event listener to each thumbnail
-                {
-                    modalImage.src = this.dataset.bsSrc;                                    //Set modal image source to clicked thumbnail's source
-                });
-            });
-
-            document.getElementById("loadMoreBtn").addEventListener("click", function ()    //Load more images button
-            {
-                const extra = document.querySelector(".extra-images");                      //Select extra images container
-                extra.classList.remove("d-none");                                           //Show extra images
-                this.style.display = "none";                                                //Hide button after click
-            });
-        </script>
-
-        <footer class="py-4 bg-primary text-white">
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 flex-column justify-content-start">
-                        <h1 class="fw-bold mb-1">👋Say Hello!</h1>
-                        <p>WHERE LEARNING IS FUN!</p>
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="../images/logo.jpg" alt="Mananto Academy" class="rounded img-fluid"
+                        style="max-height: 100px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger"
+                    aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hamburger">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
+                                <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                                <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
+                                <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--- Gallery Section -->
+        <section class="py-5">
+            <div class="container-fluid"> <!--- Fluid container spans full-width images -->
+                <div class="row g-4">
+                    <!--- Left column: Gallery Thumbnails -->
+                    <div class="col-12 col-md-6">
+                        <h2 class="fw-bold mb-4 text-center">Our Story in Pictures</h2>
+                        <div class="row g-2" id="thumbnailRow">
+                            <!--- Gallery thumbnails -->
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/1.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/1.jpg"
+                                    alt="Image 1" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/2.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/2.jpg"
+                                    alt="Image 2" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/3.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/3.jpg"
+                                    alt="Image 3" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/4.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/4.jpg"
+                                    alt="Image 4" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/5.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/5.jpg"
+                                    alt="Image 5" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/6.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/6.jpg"
+                                    alt="Image 6" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/7.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/7.jpg"
+                                    alt="Image 7" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/8.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/8.jpg"
+                                    alt="Image 8" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/9.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/9.jpg"
+                                    alt="Image 9" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/10.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/10.jpg"
+                                    alt="Image 10" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/11.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/11.jpg"
+                                    alt="Image 11" />
+                            </div>
+                            <div class="col-6 col-sm-4 mb-3">
+                                <img src="../images/12.jpg" class="img-fluid rounded gallery-thumb"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="../images/12.jpg"
+                                    alt="Image 12" />
+                            </div>
+
+                            <!--- Hidden extra images (initially not displayed) -->
+                            <div class="extra-images d-none">
+                                <div class="col-6 col-sm-4 mb-3">
+                                    <img src="../images/13.jpg" class="img-fluid rounded gallery-thumb"
+                                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        data-bs-src="../images/13.jpg" alt="Image 13" />
+                                </div>
+                                <div class="col-6 col-sm-4 mb-3">
+                                    <img src="../images/14.jpg" class="img-fluid rounded gallery-thumb"
+                                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        data-bs-src="../images/14.jpg" alt="Image 14" />
+                                </div>
+                                <div class="col-6 col-sm-4 mb-3">
+                                    <img src="../images/15.jpg" class="img-fluid rounded gallery-thumb"
+                                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        data-bs-src="../images/15.jpg" alt="Image 15" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- Load More button -->
+                        <div class="text-center mt-3">
+                            <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
+                        </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-1 d-flex align-items-center">
-                                087 183 6053 <br />
-                                admin@manantoacademy.co.za <br />
-                                www.manantoacademy.co.za <br />
-                                12027 Popular Street<br />
-                                Kagiso, Hospital view<br />
-                                1754
-                            </li>
-                        </ul>
+
+                    <!--- Right Column: Carousel -->
+                    <div class="col-12 col-md-6 py-5"> <!--- Divide/Span the parent container -->
+                        <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <!--- Carousel container attributes -->
+                            <div class="carousel-inner"> <!--- Creates the item inside the carousel container -->
+                                <div class="carousel-item active"> <!--- First image must have "active" -->
+                                    <img src="../images/1.jpg" class="d-block w-100 rounded" alt="Image 1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/2.jpg" class="d-block w-100 rounded" alt="Image 2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/3.jpg" class="d-block w-100 rounded" alt="Image 3" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/4.jpg" class="d-block w-100 rounded" alt="Image 4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/5.jpg" class="d-block w-100 rounded" alt="Image 5" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/6.jpg" class="d-block w-100 rounded" alt="Image 6" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/7.jpg" class="d-block w-100 rounded" alt="Image 7" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/8.jpg" class="d-block w-100 rounded" alt="Image 8" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/9.jpg" class="d-block w-100 rounded" alt="Image 9" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/10.jpg" class="d-block w-100 rounded" alt="Image 10" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/11.jpg" class="d-block w-100 rounded" alt="Image 11" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/12.jpg" class="d-block w-100 rounded" alt="Image 12" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/13.jpg" class="d-block w-100 rounded" alt="Image 13" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/14.jpg" class="d-block w-100 rounded" alt="Image 14" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/15.jpg" class="d-block w-100 rounded" alt="Image 15" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+            <!--- Modal for enlarged image -->
+            <!-- 
+                This modal is a pop-up image viewer. When you click a thumbnail, JavaScript updates #modalImage’s 
+                src with that thumbnail’s full-size image, and Bootstrap opens this modal in the center of the screen. 
+            -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                <!--
+                                                                                        Creates a Bootstrap modal component for displaying enlarged images
+                                                                                        modal → tells Bootstrap this is a modal.
+                                                                                        fade → adds the fade-in / fade-out animation.
+                                                                                        id="imageModal" → unique identifier, so when you click a thumbnail with data-bs-target="#imageModal", this modal opens
+                                                                                        tabindex="-1" → makes the modal focusable, but removes it from normal tab order until it’s opened.
+                                                                                        aria-hidden="true" → accessibility attribute meaning “hidden from screen readers until shown.”
+                -->
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <!--
+                                                                                        modal-dialog → wrapper for the modal window.
+                                                                                        modal-dialog-centered → vertically centers the modal in the viewport.
+                                                                                        modal-lg → makes the modal large (lg = large size, wider than default).
+                    -->
+
+                    <div class="modal-content bg-transparent border-0">
+                        <!--
+                                                                                        modal-content → the actual content box inside the modal.
+                                                                                        bg-transparent → Bootstrap utility class, removes the white background, so the modal content is transparent.
+                                                                                        border-0 → removes the default border around the modal.
+                        -->
+
+                        <div class="modal-body p-0">
+                            <!--
+                                                                                        modal-body → main body section of the modal.
+                                                                                        p-0 → Bootstrap spacing utility, removes all padding inside the modal body (so the image touches the edges).
+                            -->
+                            <div id="modalCarousel" class="carousel slide" data-bs-ride="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="" id="modalImage" class="img-fluid rounded" alt="Enlarged Image" />
+                                    </div>
+                                    <!--
+                                                                                        <img> → actual image displayed in the modal.
+                                                                                        src="" → placeholder, will be replaced dynamically (via JavaScript) with the clicked thumbnail’s image.
+                                                                                        id="modalImage" → used in JavaScript to easily target and swap the image source.
+                                                                                        img-fluid → makes the image scale to fit the modal width, staying responsive.
+                                                                                        rounded → applies Bootstrap’s default border-radius (slightly rounded corners).
+                                                                                        alt="Enlarged Image" → accessibility description in case the image can’t load.
+                                     -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="container"> <!--- Creates a parent container for this section-->
+                <div class="row g-4"> <!--- First row in the parent container -->
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-4 text-center">Let's take you on a journey...</h2>
+                    </div>
+                </div>
+                <div class="row g-4"> <!--- Second row in the parent container -->
+                    <div class="col-12 col-md-4 py-5">
+                        <!--- First child-container in the Second row in the parent container -->
+                        <h2 class="fw-bold mb-4 text-center">WHERE IT STARTED</h2>
+                        <div id="alphaCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!--
+                                                                                        Carousel settings: 
+                                                                                        id="alphaCarousel" → unique identifier (used by indicators/controls to target this carousel).
+                                                                                        class="carousel" → tells Bootstrap it’s a carousel.
+                                                                                        slide → enables slide transitions between items.
+                                                                                        data-bs-ride="carousel" → makes the carousel auto-start cycling.
+                            -->
+                            <div class="carousel-inner"> <!--- Creates a wrapper that holds the carousel items --->
+                                <div class="carousel-item active">
+                                    <img src="../images/a1.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Alpha Image 1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/a2.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Alpha Image 2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/a3.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Alpha Image 3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 py-5">
+                        <h2 class="fw-bold mb-4 text-center">WHERE IT IS NOW</h2>
+                        <div id="omegaCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../images/b1.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Omega Image 1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/b2.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Omega Image 2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/b3.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Omega Image 3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 py-5">
+                        <h2 class="fw-bold mb-4 text-center">EXTRA MURAL</h2>
+                        <div id="extraCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../images/c1.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Extra Mural Image 1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/c2.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Extra Mural Image 2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/c3.jpg" class="d-block w-100 carousel-alpha"
+                                        alt="Extra Mural Image 3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        /*
+         * THUMBNAIL MODAL LOGIC
+         * =============================
+         * 
+         */
+        const modalImage = document.getElementById('modalImage'); // Get the modal image element
+
+        // Get all gallery thumbnails
+        const thumbnails = document.querySelectorAll('.gallery-thumb');
+
+        // Add click event to each thumbnail
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                // Set modal image source to clicked thumbnail's data-bs-src
+                modalImage.src = thumb.dataset.bsSrc;
+
+                // Create and show a Bootstrap modal instance
+                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                modal.show();
+            });
+        });
+
+        /*
+         * LOAD MORE IMAGES BUTTON
+         * =============================
+         * 
+         */
+        document.getElementById('loadMoreBtn').addEventListener('click', function () {
+            // Select the hidden extra images container
+            const extra = document.querySelector('.extra-images');
+
+            // Show extra images
+            extra.classList.remove('d-none');
+
+            // Hide the load more button after click
+            this.style.display = 'none';
+        });
+
+        /*
+         * RIGHT COLUMN CAROUSEL
+         * =============================
+         * No custom JS needed here because Bootstrap's data attributes handle the carousel:
+         * - data-bs-ride="carousel" → allows scrolling
+         * - carousel-control-prev / carousel-control-next → handle navigation
+         * The carousel works independently from the modal thumbnails
+         */
+    </script>
+    <!--- Footer Section -->
+    <footer class="py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 flex-column justify-content-start">
+                    <h1 class="fw-bold mb-1">👋Say Hello!</h1>
+                    <p>WHERE LEARNING IS FUN!</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1 d-flex align-items-center">
+                            087 183 6053 <br />
+                            admin@manantoacademy.co.za <br />
+                            www.manantoacademy.co.za <br />
+                            12027 Popular Street<br />
+                            Kagiso, Hospital view<br />
+                            1754
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

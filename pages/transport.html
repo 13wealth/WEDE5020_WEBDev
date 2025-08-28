@@ -1,123 +1,118 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Mananto Academy</title>
-         <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
-            <!--- Bootstrap CSS v5.3.2 link-->
-        <<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" /> 
-            <!--- .CSS styling file link-->
-         <link rel="stylesheet" href="style.css" /> 
-            <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
-        <style>
-            body {
-                padding-top: 100px;
-            }
-        </style>
-            <!--- Bootstrap Icons link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-                <div class="container">
-                    <a class="navbar-brand fw-bold" href="../index.html">
-                        <img
-                            src="../images/logo.jpg"
-                            alt="Mananto Academy"
-                            class="rounded img-fluid"
-                            style="max-height: 100px" />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#hamburger"
-                        aria-controls="hamburger"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="hamburger">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
-                                <a 
-                                    class="nav-link" 
-                                    href="#" 
-                                    data-bs-toggle="dropdown" 
-                                    aria-expanded="false">
-                                    Services    
-                                </a>
-                                <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
-                                    <li><a class="dropdown-item" href="classes.html">Classes</a></li>
-                                    <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                    <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mananto Academy</title>
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <!--- Bootstrap CSS v5.3.2 link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--- .CSS styling file link-->
+    <link rel="stylesheet" href="../style.css" />
+    <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            padding-top: 100px;
+        }
+    </style>
+    <!--- Bootstrap Icons link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="../images/logo.jpg" alt="Mananto Academy" class="rounded img-fluid"
+                        style="max-height: 100px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger"
+                    aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hamburger">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
+                                <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                                <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
+                                <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="py-5 bg-light">
-                <div class="container">
-                    <div class="p-4 bg-white shadow-sm rounded h-100"> <!--- Appies pdding, shadow and rounded edges-->
-                        <div class="row g-4">
-                            <h2 class="fw-bold mb-4">TRANSPORTATION</h2>
-                            <p>At Mananto Academy, we understand the importance of safe and reliable transportation for our students. Our dedicated transport service ensures that children are picked up and dropped off at their homes with the utmost care.</p>
-                        </div>
-                <hr />
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="p-4 bg-white shadow-lg rounded h-100"> <!--- Appies pdding, shadow and rounded edges-->
+                    <div class="row g-4">
+                        <h2 class="fw-bold mb-4">TRANSPORTATION</h2>
+                        <p>At Mananto Academy, we understand the importance of safe and reliable transportation for our
+                            students. Our dedicated transport service ensures that children are picked up and dropped
+                            off at their homes with the utmost care.</p>
+                    </div>
+                    <hr />
                     <div class="row g-4">
                         <div class="col-md-6 py-5">
-                        <h5 class="fw-bold mb-4">OUR TRANSPORT SERVICES INCLUDE:</h5>
-                        <ul>
-                            <li>Safe and reliable pick-up and drop-off</li>
-                            <li>GPS tracking for parents</li>
-                            <li>Trained and vetted drivers</li>
-                            <li>Regular vehicle maintenance and safety checks</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 py-5">
-                        <h5 class="fw-bold mb-4">DETAILS</h5>
-                        <p>If you have any questions or would like to learn more about our transport services, please don't hesitate to contact us.</p>
-                        <ul>
-                            <li>087 183 6053</li>
-                            <li>admin@manantoacademy.co.za</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="py-4 bg-primary text-white fixed-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 flex-column justify-content-start">
-                        <h1 class="fw-bold mb-1">👋Say Hello!</h1>
-                        <p>WHERE LEARNING IS FUN!</p>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-1 d-flex align-items-center">
-                                087 183 6053 <br />
-                                admin@manantoacademy.co.za <br />
-                                www.manantoacademy.co.za <br />
-                                12027 Popular Street<br />
-                                Kagiso, Hospital view<br />
-                                1754
-                            </li>
-                        </ul>
+                            <h5 class="fw-bold mb-4">OUR TRANSPORT SERVICES INCLUDE:</h5>
+                            <ul>
+                                <li>Safe and reliable pick-up and drop-off</li>
+                                <li>GPS tracking for parents</li>
+                                <li>Trained and vetted drivers</li>
+                                <li>Regular vehicle maintenance and safety checks</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 py-5">
+                            <h5 class="fw-bold mb-4">DETAILS</h5>
+                            <p>If you have any questions or would like to learn more about our transport services,
+                                please don't hesitate to contact us.</p>
+                            <ul>
+                                <li>087 183 6053</li>
+                                <li>admin@manantoacademy.co.za</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-primary text-white fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 flex-column justify-content-start">
+                    <h1 class="fw-bold mb-1">👋Say Hello!</h1>
+                    <p>WHERE LEARNING IS FUN!</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1 d-flex align-items-center">
+                            087 183 6053 <br />
+                            admin@manantoacademy.co.za <br />
+                            www.manantoacademy.co.za <br />
+                            12027 Popular Street<br />
+                            Kagiso, Hospital view<br />
+                            1754
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

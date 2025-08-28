@@ -2,11 +2,12 @@
 
 /*------------ Services Dropdown ------------*/
 /*- Open dropdown on hover */
-.dropdown:hover .dropdown-menu {
+.dropdown:hover 
+.dropdown-menu {
     display: block;
 }
 
-/*------------ Carousel Items ------------*/
+/*------------ Carousel Items: index.html ------------*/
 .carousel-item {
   position: relative;
   height: 400px;                                                      /*- adjust to match your carousel height */
@@ -43,6 +44,7 @@
   border-radius: 12px;                                                /*- nice rounded edges */
 }
 
+/*------------ Carousel Items: gallery.html ------------*/
 #galleryCarousel,
 #galleryCarousel .carousel-inner,
 #galleryCarousel .carousel-item {
