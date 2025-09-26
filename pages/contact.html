@@ -7,7 +7,7 @@
     <title>Mananto Academy</title>
     <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
     <!--- Bootstrap CSS v5.3.2 link-->
-    <<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!--- .CSS styling file link-->
     <link rel="stylesheet" href="../style.css" />
     <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
@@ -57,66 +57,51 @@
     </header>
 
     <main>
-        <section class="py-5 bg-light" id="contact">
+        <section class="py-5 bg-light contact">
             <div class="container"> <!--- Parent container for the contact us section -->
-                <div class="row g-4 text-center"> <!--- Sets up a row to fill up and center content -->
-                    <div class="col-md-12 mb-4"> <!--- Row takes full-width column for the heading -->
+                <!--- Heading -->
+                <div class="row g-4 text-center mb-5"> <!--- Sets up a row to fill up and center content -->
+                    <div class="col-12"> <!--- Row takes full-width column for the heading -->
                         <h2 class="fw-bold">Contact Us</h2>
+                        <p class="text-muted">We'd love to hear from you! Reach out with any questions or inquiries.</p>
                     </div>
                 </div> <!--- End of the heading row -->
-
-                <div class="row"> <!--- Sets up a row for the contact information and form -->
+                <!--- Contact Info & Form -->
+                <div class="row g-4"> <!--- Sets up a row for the contact information and form -->
                     <div class="col-md-6"> <!--- Column for contact information -->
-                        <div class="p-4 bg-white shadow-lg rounded h-100">
-                            <!--- Appies pdding, shadow and rounded edges-->
-                            <h5 class="fw-bold mb-3">Get in Touch</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li><i class="bi bi-telephone-fill me-2 text-primary"></i> 087 183 6053</li>
-                                <li><i class="bi bi-envelope-fill me-2 text-primary"></i> admin@manantoacademy.co.za
-                                </li>
-                                <li><i class="bi bi-globe2 me-2 text-primary"></i> www.manantoacademy.co.za</li>
-                                <li><i class="bi bi-geo-alt-fill me-2 text-primary"></i> 12027 Popular Street, Kagiso,
-                                    Hospital view, 1754</li>
+                        <div class="contact-info-card p-4 shadow-lg rounded">
+                            <!--- Applies padding, shadow and rounded edges-->
+                            <h5 class="fw-bold mb-3">Get in Touch <span class="sticker honey">🍯</span></h5>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-telephone-fill me-2"></i>087 183 6053</li>
+                                <li><i class="bi bi-envelope-fill me-2"></i>admin@manantoacademy.co.za</li>
+                                <li><i class="bi bi-globe2 me-2"></i>www.manantoacademy.co.za</li>
+                                <li><i class="bi bi-geo-alt-fill me-2"></i>12027 Popular Street, Kagiso, Hospital view, 1754</li>
                             </ul>
                             <hr />
-                            <!--- Adds social media links and icons -->
-                            <h6 class="fw-bold">Follow Us</h6>
-                            <a href="#" class="me-3 text-decoration-none text-dark">
-                                <i class="bi bi-facebook fs-4"></i>
-                            </a>
-                            <a href="#" class="me-3 text-decoration-none text-dark">
-                                <i class="bi bi-twitter fs-4"></i>
-                            </a>
-                            <a href="#" class="me-3 text-decoration-none text-dark">
-                                <i class="bi bi-instagram fs-4"></i>
-                            </a>
-                            <a href="#" class="text-decoration-none text-dark">
-                                <i class="bi bi-whatsapp fs-4"></i>
-                            </a>
-
-                            <!--- Map iframe -->
-                            <div class="col-md-6 py-4">
-                                <div class="ratio ratio-16x9 shadow">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.879304057634!2d27.793435075086506!3d-26.168059977098828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a3e6e7e9b02f%3A0x71268bbc215e23a4!2sMa%20%E2%80%99Nanto%20Academy!5e0!3m2!1sen!2sza!4v1756327516702!5m2!1sen!2sza"
-                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade">
-                                    </iframe>
-                                </div>
+                            <h6 class="fw-bold mb-3">Follow Us <span class="sticker bee">🐝</span></h6>
+                            <div class="social-icons mb-3">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                            <div class="ratio ratio-16x9 shadow">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.879304057634!2d27.793435075086506!3d-26.168059977098828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a3e6e7e9b02f%3A0x71268bbc215e23a4!2sMa%20%E2%80%99Nanto%20Academy!5e0!3m2!1sen!2sza!4v1756327516702!5m2!1sen!2sza"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
 
                     <!--- Contact Form -->
-                    <div class="col-md-6 mb-4">
-                        <p class="text-muted"> <!--- muted-text makes text appear less prominent -->
-                            We'd love to hear from you! Fill out the form and we’ll get back to you shortly.
-                        </p>
-                        <form id="contactForm" class="shadow-lg"> <!--- id for the contact form used in JS-->
-                            <div class="mb-3"> <!--- Bottom margin for name section -->
+                    <div class="col-md-6">
+                        <form id="contactForm" class="contact-form p-4 shadow-lg rounded">
+                            <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter your full name"
-                                    required /> <!--- required field -->
+                                    required />
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
@@ -127,22 +112,24 @@
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" rows="5" placeholder="Write your message..."
                                     required></textarea>
-                                <!--- Send button-->
                             </div>
-                            <button type="submit" class="btn btn-primary">
-                                Send Message
-                            </button>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="bg-primary text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Mananto Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script>
         document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault();                                                             //Stops the form from submitting and refreshing
-            const name = document.getElementById("name").value;                             //Gets the name value and return it in the notification
-            alert("Thank you " + name + "! Your message has been received.");               //Notification when clicking the send button
+            e.preventDefault();                                                                     //Stops the form from submitting and refreshing
+            const name = document.getElementById("name").value;                                     //Gets the name value and return it in the notification
+            alert("Thank you " + name + "! Your message has been received.");                       //Notification when clicking the send button
         });
     </script>
 </body>

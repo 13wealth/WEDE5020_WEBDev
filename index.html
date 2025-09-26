@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <!--- <nav> → semantic tag for navigation bar-->
             <!--- navbar → Bootstrap class that styles it as a navigation bar -->
             <!--- navbar-expand-lg → navbar expands (horizontal) on large screens; collapses on smaller screens -->
@@ -72,7 +72,7 @@
     </header>
     <main class="main-content">
         <!--- Hero Section -->
-        <section class="text-center py-5 bg-light">
+        <section class="text-center py-5">
             <div class="container hero-container">
                 <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
                 <p class="mb-0">WHERE LEARNING IS FUN</p>
@@ -87,64 +87,13 @@
                 </a>
             </div>
         </section>
-        <!--- Images Carousel -->
-        <section>
-            <div id="academyCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators"></div>
-                <!--- Displays small indicators at the bottom of the carousel -->
-                <!--- Images -->
-                <div class="carousel-inner"> <!--- is the container for all the slides in a Bootstrap carousel -->
-                    <div class="carousel-item active">
-                        <!---active tells bootstrap that this is the first item when carousel starts-->
-                        <div class="carousel-bg" style="background-image: url('images/1.jpg')"></div>
-                        <!--- Background image with blur effect -->
-                        <img src="images/1.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 1" />
-                    </div>
-                    <div class="carousel-item"> <!---Tells bootstrap that this is a carousel item-->
-                        <div class="carousel-bg" style="background-image: url('images/2.jpg')"></div>
-                        <img src="images/2.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 2" />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-bg" style="background-image: url('images/3.jpg')"></div>
-                        <img src="images/3.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 3" />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-bg" style="background-image: url('images/4.jpg')"></div>
-                        <img src="images/4.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 4" />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-bg" style="background-image: url('images/5.jpg')"></div>
-                        <img src="images/5.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 5" />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-bg" style="background-image: url('images/6.jpg')"></div>
-                        <img src="images/6.jpg" class="d-block mx-auto carousel-foreground img-fluid"
-                            alt="image 6" />
-                    </div>
-                </div>
-                <!--- Controls for prev and next arrows) -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#academyCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#academyCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </section>
         <!--- Main Content Section -->
         <section class="py-5"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
             <div class="container-fluid"> <!--- Main/mother container for the section -->
                 <div class="row g-4"> <!--- align items in a row and apply gutter spacing g-4 between them -->
                     <!--- Right Column: Why choose us -->
                     <div class="col-12 col-md-4">
-                        <div class="container py-3 justify-content-start border rounded bg-light shadow-lg">
+                        <div class="container py-3 justify-content-start border rounded bg-light shadow-lg card">
                             <h2 class="mb-5">Why Choose Us?</h2>
                             <p class="lead">
                                 <strong>At Mananto Academy, we prioritise your learning experience.</strong>
@@ -206,7 +155,7 @@
 
                     <!--- Left Columns: Reviews -->
                     <div class="col-12 col-md-4 shadow-lg">
-                        <div class=" justify-content-end">
+                        <div class="card justify-content-end">
                             <h2 class="mb-5">What other parents say</h2>
                             <h2 class="mb-3">Latest Review</h2>
                             <div id="latest-review" class="mb-4"> <!--- Latest review will be inserted here -->
@@ -249,35 +198,31 @@
                     </div>
                     <!--- Review Form -->
                     <div class="col-12 col-md-3">
-                        <div class="d-flex flex-column justify-content-end">
-                            <h3 class="mb-2">Tell us what you think...</h3>
-                            <form id="review-form" class="mb-3">
-                                <div class="mb-2">
-                                    <input type="text" id="reviewer-name" class="form-control" placeholder="Your Name"
-                                        required />
-                                </div>
-                                <div class="mb-2">
-                                    <input type="email" id="reviewer-email" class="form-control"
-                                        placeholder="Your Email" required />
-                                </div>
-                                <div class="mb-2">
-                                    <textarea id="review-message" class="form-control" rows="3"
-                                        placeholder="Your Review" required>
-                                        </textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit Review</button>
-                            </form>
-                            <!--- Success message placeholder -->
-                            <div id="review-success" class="alert alert-success mt-3 d-none">
-                                ✅ Thank you! Your review has been submitted.
-                            </div>
-                        </div>
-                    </div>
+  <div class="card">
+    <h3 class="mb-2">Tell us what you think...</h3>
+    <form id="review-form" class="review-form">
+      <div class="mb-2">
+        <input type="text" id="reviewer-name" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-2">
+        <input type="email" id="reviewer-email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="mb-2">
+        <textarea id="review-message" class="form-control" rows="3" placeholder="Your Review" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+    <div id="review-success" class="alert alert-success mt-3 d-none">
+      ✅ Thank you! Your review has been submitted.
+    </div>
+  </div>
+</div>
+
                 </div>
             </div>
         </section>
     </main>
-    <hr />
+<hr />
     <footer class="py-4 bg-primary text-white">
         <section>
             <div class="container">

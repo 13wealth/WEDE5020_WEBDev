@@ -1,67 +1,395 @@
+/* ======================================================================================
+                                    GLOBAL STYLES
+   ====================================================================================== */
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    background: #fffbee; /* Soft light yellow for bee theme */
+    color: #333;
+    padding-top: 100px; /* Space for fixed navbar */
+}
+
+body::before { /* Background Image */
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('bg/25058.jpg') top center no-repeat;
+    background-size: cover;
+    transform: scale(1.1) translateY(-5%); /* zoom + move up */
+    z-index: -1;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+h2, h5, h6 {
+    color: #f4b400; /* Honey-yellow headings */
+}
 
 
-/*------------ Services Dropdown ------------*/
-/*- Open dropdown on hover */
-.dropdown:hover 
-.dropdown-menu {
+/* ======================================================================================
+                                        NAVBAR
+   ====================================================================================== */
+.navbar {
+    background: transparent;
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar .nav-link.active {
+    color: #d97c00;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+/* Dropdown on hover */
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/*------------ Carousel Items: index.html ------------*/
+
+/* ======================================================================================
+                                        HERO SECTION
+   ====================================================================================== */
+.hero-container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 80px 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.hero-container h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-container p.lead {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.hero-container .btn-primary {
+    background-color: #ffb400;
+    border-color: #ffb400;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-container .btn-primary:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+}
+
+
+/* ======================================================================================
+                                        CARDS
+   ====================================================================================== */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+.card h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff9500;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.card i {
+    font-size: 2.2rem;
+    color: #ffb400;
+    margin-bottom: 15px;
+}
+
+
+/* ======================================================================================
+                                        FORMS
+   ====================================================================================== */
+form {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form .form-control {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #ffb400;
+    box-shadow: 0 0 8px rgba(255,180,0,0.4);
+    outline: none;
+}
+
+form button {
+    background: #ffb400;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #ff9500;
+    transform: scale(1.05);
+}
+
+
+/* ======================================================================================
+                                        CAROUSEL
+   ====================================================================================== */
+/* Index page */
 .carousel-item {
-  position: relative;
-  height: 400px;                                                      /*- adjust to match your carousel height */
-  overflow: hidden;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .carousel-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  filter: blur(10px) brightness(70%);                                 /*- blur + darken */
-  transform: scale(1.1);                                              /*- avoid empty edges when blurring */
-  z-index: 1;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px) brightness(70%);
+    transform: scale(1.1);
+    z-index: 1;
 }
 
-.carousel-foreground {
-  position: relative;
-  z-index: 2;
-  height: 400px;
-  width: 800px;
-  object-fit: cover;
-  border-radius: 12px;                                                /*- nice rounded edges */
-}
+.carousel-foreground,
 .carousel-alpha {
-  position: relative;
-  z-index: 2;
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 12px;                                                /*- nice rounded edges */
+    position: relative;
+    z-index: 2;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-/*------------ Carousel Items: gallery.html ------------*/
+.carousel-foreground { width: 800px; }
+.carousel-alpha { width: 400px; }
+
+.carousel-item h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff9500;
+}
+
+.carousel-item p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #ffb400;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Gallery page */
 #galleryCarousel,
 #galleryCarousel .carousel-inner,
 #galleryCarousel .carousel-item {
-    height: 700px; /* fixed height for carousel */
+    height: 700px;
 }
 
-#galleryCarousel 
-.carousel-item img {
-    height: 100%;        /* fill the parent height */
+#galleryCarousel .carousel-item img {
+    height: 100%;
     width: 100%;
-    object-fit: cover;   /* crop to fit nicely */
+    object-fit: cover;
+}
+
+/* Gallery thumbnails */
+.gallery-thumb {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
 }
 
 
-/*------------ Gallery Items ------------*/
-.gallery-thumb {
-    height: 150px;                                                    /*- pick whatever height fits your design */
-    width: 100%;                                                      /*- fill the column width */
-    object-fit: cover;                                                /*- scale and crop the image to fit without distortion */
+/* ======================================================================================
+                                    CONTACT INFO
+   ====================================================================================== */
+.contact-info-card {
+    background: #fffbee;
+    border: 3px dashed #f4b400;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info-card h5 {
+    color: #ff9900;
+}
+
+.contact-info-card ul li {
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+}
+
+.contact-info-card i {
+    color: #ff9900;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: rotate(-15deg) scale(1.2);
+    color: #d97c00;
+}
+
+
+/* ======================================================================================
+                                        ANIMATED BEES
+   ====================================================================================== */
+.bee {
+    position: absolute;
+    font-size: 2rem;
+    z-index: 999;
+    animation: fly 8s infinite ease-in-out;
+}
+
+.bee1 { top: 20%; left: 10%; animation-duration: 6s; }
+.bee2 { top: 60%; left: 80%; animation-duration: 10s; }
+.bee3 { top: 40%; left: 30%; animation-duration: 8s; }
+
+@keyframes fly {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(50px, -30px) rotate(20deg); }
+    50%  { transform: translate(-40px, 40px) rotate(-20deg); }
+    75%  { transform: translate(30px, -50px) rotate(15deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Decorative bees in cards/forms */
+.contact-info-card::before {
+    content: "🐝";
+    font-size: 5rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 0.1;
+}
+
+.contact-info-card::after {
+    content: "🐝";
+    font-size: 4rem;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    opacity: 0.08;
+}
+
+#contactForm::before {
+    content: "🐝";
+    font-size: 4rem;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    opacity: 0.08;
+}
+
+#contactForm::after {
+    content: "🐝";
+    font-size: 5rem;
+}
+
+
+/* ======================================================================================
+                                        MAP
+   ====================================================================================== */
+.ratio iframe {
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+}
+
+
+/* ======================================================================================
+                                        FOOTER
+   ====================================================================================== */
+footer {
+    background: #ffcc00;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* ======================================================================================
+                                        RESPONSIVE
+   ====================================================================================== */
+@media (max-width: 768px) {
+    .hero-container { padding: 50px 15px; border-radius: 15px; }
+    .hero-container h1 { font-size: 2.2rem; }
+    .hero-container p.lead { font-size: 1.2rem; }
+    .hero-container .btn-primary { padding: 10px 20px; }
+
+    .contact-info-card::before { font-size: 3rem; }
+    .contact-form input, .contact-form textarea { font-size: 0.9rem; }
+
+    .card, form, .carousel-item { padding: 20px; border-radius: 15px; }
+    .card h5 { font-size: 1.1rem; }
+    form button { width: 100%; }
 }
