@@ -5,13 +5,15 @@
     <title>Mananto Academy</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
-    <!--- Bootstrap CSS v5.3.2 link-->
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" /> <!--- Bootstrap CSS v5.3.2 link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!--- .CSS styling file link-->
-    <link rel="stylesheet" href="style.css" />
-    <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
+    <link rel="stylesheet" href="style.css" /> <!--- Bootstrap .bundle combines Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--- Animate.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+
     <style>
         body {
             padding-top: 100px;
@@ -29,51 +31,54 @@
             <!--- navbar-expand-lg → navbar expands (horizontal) on large screens; collapses on smaller screens -->
             <!--- navbar-dark → dark-colored text/icons for navbar -->
             <!--- bg-primary → background color from Bootstrap’s primary color -->
-            <div class="container nav-container"> <!--- container centers content horizontally and adds side padding -->
-                <a class="navbar-brand fw-bold" href="index.html">
-                    <!--- navbar-brand → styles the brand/logo of the navbar -->
-                    <img src="images/logo.jpg" alt="Mananto Academy" class="rounded img-fluid"
-                        style="max-height: 100px" />
-                </a>
-                <!--- Creates a button that is only visible on mobile screens -->
-                <!--- navbar-toggler → styles the button to look like a hamburger icon -->
-                <!--- data-bs-toggle="collapse" → Tells Bootstrap JavaScript to treat the button as a expand/collapse trigger -->
-                <!--- data-bs-target="#hamburger" → Connects the button to the collapsible element with the id hamburger -->
-                <!--- aria-controls="hamburger" → Accessibility attribute (ARIA) that indicates this button controls element with id hamburger -->
-                <!--- aria-expanded="false" → Tells assistive tech whether the menu is currently expanded or collapsed -->
-                <!--- aria-label="Toggle navigation" → Accessibility label for the button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger"
-                    aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> <!--- This is the icon inside the hamburger button -->
-                </button>
-                <div class="collapse navbar-collapse" id="hamburger">
-                    <!--- collapse navbar-collapse: Menu items that collapse on small screens -->
-                    <!--- id="hamburger" → matches data-bs-target from the button -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
-                        <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
-                                <li><a class="dropdown-item" href="classes.html">Classes</a></li>
-                                <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="pages/admission.html">Registration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
-                    </ul>
+            <div class="container justify-content-center">
+
+                <!-- Centered wrapper for logo + nav -->
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                    <a class="navbar-brand mb-2 mb-lg-0 me-lg-3" href="index.html"> <!--- Logo -->
+                        <img src="images/logo-removebg.png" alt="Mananto Academy" class="logo-img img-fluid rounded" />
+                    </a>
+                    <!--- hamburger button -->
+                    <button class="navbar-toggler mb-2 mb-lg-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCenter" aria-controls="navbarCenter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--- Creates a button that is only visible on mobile screens -->
+                    <!--- navbar-toggler → styles the button to look like a hamburger icon -->
+                    <!--- data-bs-toggle="collapse" → Tells Bootstrap JavaScript to treat the button as a expand/collapse trigger -->
+                    <!--- data-bs-target="#hamburger" → Connects the button to the collapsible element with the id hamburger -->
+                    <!--- aria-controls="hamburger" → Accessibility attribute (ARIA) that indicates this button controls element with id hamburger -->
+                    <!--- aria-expanded="false" → Tells assistive tech whether the menu is currently expanded or collapsed -->
+                    <!--- aria-label="Toggle navigation" → Accessibility label for the button -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarCenter"> <!--- Nav links -->
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/about.html">About</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
+                            <li class="nav-item dropdown mx-lg-2">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/classes.html">Classes</a></li>
+                                    <li><a class="dropdown-item" href="pages/transport.html">Transportation</a></li>
+                                    <li><a class="dropdown-item" href="pages/fees-payments.html">Fees & Payments</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link"
+                                    href="pages/admission.html">Registration</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="main-content">
-        <!--- Hero Section -->
+
+    <main class="main-content"> <!--- Hero Section -->
         <section class="text-center py-5">
-            <div class="container hero-container">
+            <div class="container hero-container mt-5">
                 <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
                 <p class="mb-0">WHERE LEARNING IS FUN</p>
                 <p class="display-6 lead mb-4">Learn. Educate. Grow</p>
@@ -81,148 +86,94 @@
                 <!--- lead → makes the text stand out as a lead paragraph -->
                 <!--- mb-4 → bottom margin -->
             </div>
-            <div>
+            <div class="mt-3">
                 <a href="pages/admission.html" class="btn btn-primary btn-lg">
                     Register your child
                 </a>
             </div>
         </section>
+        <div class="py-5 mt-5"></div>
         <!--- Main Content Section -->
         <section class="py-5"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
             <div class="container-fluid"> <!--- Main/mother container for the section -->
                 <div class="row g-4"> <!--- align items in a row and apply gutter spacing g-4 between them -->
                     <!--- Right Column: Why choose us -->
                     <div class="col-12 col-md-4">
-                        <div class="container py-3 justify-content-start border rounded bg-light shadow-lg card">
-                            <h2 class="mb-5">Why Choose Us?</h2>
-                            <p class="lead">
-                                <strong>At Mananto Academy, we prioritise your learning experience.</strong>
-                            </p>
-                            <ul class="list-unstyled">
-                                <li>Experienced Instructors</li>
-                                <li>Flexible Learning Options</li>
-                                <li>Comprehensive Curriculum</li>
+                        <div class="why-choose-honey-jar">
+                            <h2 class="jar-title">Why Choose Us?</h2>
+                            <ul class="list-unstyled why-us-list">
+                                <li class="animate__animated animate__fadeInUp">Experienced Instructors</li>
+                                <li class="animate__animated animate__zoomIn">Flexible Learning Options</li>
+                                <li class="animate__animated animate__fadeInRight">Strong Parent Involvement</li>
+                                <li class="animate__animated animate__fadeInUp">Creative Learning Activities</li>
+                                <li class="animate__animated animate__fadeInRight">Safe and Fun Environment</li>
+                                <li class="animate__animated animate__fadeInLeft">Comprehensive Curriculum</li>
+                                <li class="animate__animated animate__zoomIn">Focus on Holistic Growth</li>
+                                <li class="animate__animated animate__fadeInLeft">Modern Facilities</li>
+                                <li class="animate__animated animate__fadeInUp">Small Class Sizes</li>
+                                <li class="animate__animated animate__zoomIn">Affordable Tuition</li>
+
                             </ul>
-                            <h4 class="lead"><strong><u>CLASSROOMS</u></strong></h4>
-                            <p class="text-justify">
-                                Our classrooms are designed to provide a conducive learning environment,
-                                equipped with modern technology and resources. Entering our classroom,
-                                you will immediately notice a calm but busy atmosphere, where the children
-                                are involved in small groups or individual activities.
-                                The children are given freedom within a structured environment to choose
-                                activities that interest them, and to work with the materials for as long as
-                                they need. We support the need for each child to develop their learning and
-                                their own individual pace.
-                            <h2 class="fw-bold mb-4">10 More Reasons You Should Choose Us</h2>
-                            <ol>
-                                <li>MaNanto is a registered institution fully compliant with safety, health, and
-                                    environmental management laws.</li>
-                                <li>Sina Nanto believes the best way to help children succeed is to teach them to be
-                                    creative, confident, and analytical thinkers.</li>
-                                <li>MaNanto Academy offers a research-based curriculum that ensures that all learning
-                                    outcomes are achieved.</li>
-                                <li>MaNanto Academy adheres to hygiene regulations and nutrition standards. The academy
-                                    offers nutritious, balanced, delicious meals.</li>
-                                <li>Sina has built relationships with doctors, nurses, health advisors, and mental
-                                    health professionals. She stays abreast of the latest developments in health and
-                                    education. She believes in promoting children's health as an important aspect of
-                                    good quality childcare.</li>
-                                <li>MaNanto Academy is a place where learning is fun. A body of neuroscientific research
-                                    proves that dopamine makes learning addictive and endorphins make it pleasurable.
-                                    This connects new information from outside the brain with stored memories inside…
-                                    and that's called learning!</li>
-                                <li>MaNanto Academy is a fun and safe environment for children. Your little one will
-                                    enjoy a range of entertainment and activities designed to keep him or her
-                                    stimulated.</li>
-                                <li>MaNanto Academy is conveniently located near taxi routes. The academy offers a safe
-                                    and reliable transport that routinely picks up and drops kids back home after
-                                    creche.</li>
-                                <li>MaNanto offers affordable and flexible payment plans. In this tough economic
-                                    climate, every cent we save makes a difference. The academy also offers a wide range
-                                    of extra mural activities such as swimming, creative arts, etc.</li>
-                                <li>Teachers at MaNanto Academy are trained to empower your child to make sense of what
-                                    happens in his or her mind and life. They help children in a way that they
-                                    understand. They will enable you to understand your child a little more with the
-                                    help of the assessments they offer. They inform parents about their child and enable
-                                    them to form better strategies for dealing with and understanding their child's
-                                    emotional behavior at home.
-                                    Secure your child's future. Choose MaNanto Academy, where learning is fun</li>
-                            </ol>
-                            </p>
                         </div>
                     </div>
-                    <div class="col-md-1 d-none d-md-block"></div> <!--- Empty spacer column -->
 
-                    <!--- Left Columns: Reviews -->
-                    <div class="col-12 col-md-4 shadow-lg">
-                        <div class="card justify-content-end">
-                            <h2 class="mb-5">What other parents say</h2>
-                            <h2 class="mb-3">Latest Review</h2>
-                            <div id="latest-review" class="mb-4"> <!--- Latest review will be inserted here -->
-                                <p>
-                                    ⭐⭐⭐⭐⭐ November 17, 2023 <br />
-                                    1️⃣ MaNanto is a registered institution fully compliant with safety, health,
-                                    and
-                                    environmental management laws. <br />
-                                    2️⃣ Sina Nanto believes the best way to help children succeed is to teach
-                                    them
-                                    to be
-                                    creative, confident, and analytical thinkers.<br />
-                                    3️⃣ MaNanto Academy offers a research-based curriculum that ensures that all
-                                    learning outcomes are achieved.<br />
-                                    4️⃣ MaNanto Academy adheres to hygiene regulations and nutrition standards.
-                                    The
-                                    academy offers nutritious, balanced, delicious meals.<br />
-                                    5️⃣ Sina has built relationships with doctors, nurses, health advisors, and
-                                    mental
-                                    health professionals. She stays abreast of the latest developments in health
-                                    and
-                                    education. She believes in promoting children’s health as an important
-                                    aspect of
-                                    good quality childcare.<br />
-                                    6️⃣ MaNanto Academy is a place where learning is fun. A body of
-                                    neuroscientific
-                                    research proves that dopamine makes learning addictive and endorphins make
-                                    it
-                                    pleasurable. This connects new information from outside the brain with
-                                    stored
-                                    memories inside… and that’s called learning!
-                                </p>
-                            </div>
-                            <!--- Load More -->
-                            <div class="mt-3">
-                                <a href="pages/reviews.html" class="text-decoration-none"> Load more reviews →
-                                </a>
+                    <!--- Left Columns: Reviews --->
+                    <div class="col-12 col-md-6 position-relative">
+                        <div class="reviews-honey-jar position-relative">
+                            <!-- Jar image -->
+                            <img src="cards/honey_jar_1.png" alt="Honey Jar" class="w-100 jar-img">
+
+                            <!-- Text content overlaid -->
+                            <div class="jar-content position-absolute top-0 start-0 w-100 h-100">
+                                <h2 class="jar-title mb-3">What other parents say</h2>
+                                <h2 class="mb-3">Latest Review</h2>
+                                <div class="honey-text">
+                                    <p>
+                                        ⭐⭐⭐⭐⭐ November 17, 2023 <br>
+                                        1️ MaNanto is a registered institution fully compliant <br>with safety, health, and
+                                        environmental management laws. <br>
+                                        2️ Sina Nanto believes the best way to help children <br> succeed is to teach them to
+                                        be creative, confident, and analytical thinkers.<br>
+                                        3️ MaNanto Academy offers a research-based curriculum<br> that ensures that all
+                                        learning outcomes are achieved.<br>
+                                        4️ MaNanto Academy adheres to hygiene <br>regulations and nutrition standards. <br>
+                                        5️ Sina has built relationships with <br>doctors, nurses, and health advisors.<br>
+                                        6️ MaNanto Academy is a place where learning is fun.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <!--- Review Form -->
-                    <div class="col-12 col-md-3">
-  <div class="card">
-    <h3 class="mb-2">Tell us what you think...</h3>
-    <form id="review-form" class="review-form">
-      <div class="mb-2">
-        <input type="text" id="reviewer-name" class="form-control" placeholder="Your Name" required />
-      </div>
-      <div class="mb-2">
-        <input type="email" id="reviewer-email" class="form-control" placeholder="Your Email" required />
-      </div>
-      <div class="mb-2">
-        <textarea id="review-message" class="form-control" rows="3" placeholder="Your Review" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit Review</button>
-    </form>
-    <div id="review-success" class="alert alert-success mt-3 d-none">
-      ✅ Thank you! Your review has been submitted.
-    </div>
-  </div>
-</div>
-
+                    <div class="col-12 col-md-2">
+                        <div class="card">
+                            <h3 class="mb-2">Tell us what you think...</h3>
+                            <form id="review-form" class="review-form">
+                                <div class="mb-2">
+                                    <input type="text" id="reviewer-name" class="form-control" placeholder="Your Name"
+                                        required />
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" id="reviewer-email" class="form-control"
+                                        placeholder="Your Email" required />
+                                </div>
+                                <div class="mb-2">
+                                    <textarea id="review-message" class="form-control" rows="3"
+                                        placeholder="Your Review" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                            <div id="review-success" class="alert alert-success mt-3 d-none">
+                                ✅ Thank you! Your review has been submitted.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-<hr />
+    <hr />
     <footer class="py-4 bg-primary text-white">
         <section>
             <div class="container">
@@ -271,23 +222,83 @@
         *   <button data-bs-target="#academyCarousel" data-bs-slide-to="2"></button>
         */
         document.addEventListener("DOMContentLoaded", function () {
-            const carousel = document.querySelector("#academyCarousel");        //Finds the carousel element with the ID academyCarousel
-            const indicators = carousel.querySelector(".carousel-indicators");  //Finds <div class="carousel-indicators"> within the carousel
-            const items = carousel.querySelectorAll(".carousel-item");          //Grabs all the slides inside the carousel <div class="carousel-item">...</div>
+            const carousel = document.querySelector("#academyCarousel");                            //Finds the carousel element with the ID academyCarousel
+            const indicators = carousel.querySelector(".carousel-indicators");                      //Finds <div class="carousel-indicators"> within the carousel
+            const items = carousel.querySelectorAll(".carousel-item");                              //Grabs all the slides inside the carousel <div class="carousel-item">...</div>
 
             items.forEach((_, index) =>                                         /*Loops through each slide (.carousel-item).
-                                                                                      The index gives the position of each slide (0, 1, 2, …).*/ {
-                const button = document.createElement("button");                //Creates a new <button> for each slide.
-                button.type = "button";                                         //Sets the button type to "button".
-                button.setAttribute("data-bs-target", "#academyCarousel");      //data-bs-target="#academyCarousel" links the button to your carousel.
+                                                                                                        The index gives the position of each slide (0, 1, 2, …).*/ {
+                const button = document.createElement("button");                                    //Creates a new <button> for each slide.
+                button.type = "button";                                                             //Sets the button type to "button".
+                button.setAttribute("data-bs-target", "#academyCarousel");                          //data-bs-target="#academyCarousel" links the button to your carousel.
                 button.setAttribute("data-bs-slide-to", index);                 /*data-bs-slide-to="index" 
-                                                                                      Tells Bootstrap which slide to jump to when the button is clicked.*/
-                if (index === 0) button.classList.add("active");                //Adds the "active" class to the first button
+                                                                                                        Tells Bootstrap which slide to jump to when the button is clicked.*/
+                if (index === 0) button.classList.add("active");                                    //Adds the "active" class to the first button
 
-                indicators.appendChild(button);                                 //Adds the button into the .carousel-indicators container.
+                indicators.appendChild(button);                                                     //Adds the button into the .carousel-indicators container.
             });
         });
 
+    </script>
+    <script>                                                                                        <!--- Animation Script -->
+        document.addEventListener("DOMContentLoaded", () => {
+            const listItems = document.querySelectorAll(".why-us-list li");
+            const whyUsList = document.querySelector(".why-us-list");
+
+            const animations = [
+                "animate__fadeInUp",
+                "animate__zoomIn",
+                "animate__fadeInLeft",
+                "animate__fadeInRight",
+                "animate__fadeInUp",
+                "animate__zoomIn",
+                "animate__fadeInLeft",
+                "animate__fadeInRight",
+                "animate__fadeInUp",
+                "animate__zoomIn"
+            ];
+
+            function animateList() {
+                listItems.forEach((li, i) => {
+                    li.style.opacity = 0;
+                    li.className = "animate__animated"; // reset classes
+                    setTimeout(() => {
+                        li.style.opacity = 1;
+                        li.classList.add(animations[i]);
+                    }, i * 800);                                                                                  //Staggered timing
+                });
+
+                const totalTime = listItems.length * 800 + 1800;                                                //Time until fade out
+                setTimeout(() => {
+                    whyUsList.style.transition = "opacity 1s ease";
+                    whyUsList.style.opacity = 0;
+
+                    setTimeout(() => {
+                        whyUsList.style.opacity = 1;
+                        whyUsList.classList.add("squirrel");
+
+                        setTimeout(() => {
+                            whyUsList.classList.remove("squirrel");
+                            animateList();                                                                            //Repeat
+                        }, 1200);
+                    }, 1000);
+                }, totalTime);
+            }
+
+            animateList();
+        });
+
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) { // Adjust scroll threshold
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
 
