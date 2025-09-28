@@ -3,19 +3,24 @@
    ====================================================================================== */
 body {
     font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
-    background: #fffbee; /* Soft light yellow for bee theme */
+    background: #fffbee;
+    /* Soft light yellow for bee theme */
     color: #333;
-    padding-top: 100px; /* Space for fixed navbar */
+    padding-top: 100px;
+    /* Space for fixed navbar */
 }
 
-body::before { /* Background Image */
+body::before {
+    /* Background Image */
     content: "";
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: url('bg/6631302.jpg') top center no-repeat;
     background-size: cover;
-    
+
     z-index: -1;
 }
 
@@ -25,8 +30,11 @@ body::before { /* Background Image */
     padding: 20px;
 }
 
-h2, h5, h6 {
-    color: #f4b400; /* Honey-yellow headings */
+h2,
+h5,
+h6 {
+    color: #f4b400;
+    /* Honey-yellow headings */
 }
 
 /* ======================================================================================
@@ -34,43 +42,82 @@ h2, h5, h6 {
    ====================================================================================== */
 
 .why-us-list {
-    list-style: none;                                                                                 /* Remove default bullets */
-    padding-left: 7rem;                                                                               /* Remove default padding */
+    list-style: none;
+    /* Remove default bullets */
+    padding-left: 7rem;
+    /* Remove default padding */
     margin: 0;
     color: #333;
 }
-   
+
 .why-us-list li {
     animation-duration: 1s;
-    animation-fill-mode: forwards;                                                                    /* Avoids fading out */
-    position: relative;                                                                               /* Keep animation from shifting layout */
-    padding-left: 1.5rem;                                                                             /* Space for checkmark */
-    margin-bottom: 0.2rem;                                                                            /* Vertical spacing */
-    text-align: left;  
-    color: #8B0000;                                                                                   /* Ensure left alignment */
+    animation-fill-mode: forwards;
+    /* Avoids fading out */
+    position: relative;
+    /* Keep animation from shifting layout */
+    padding-left: 1.5rem;
+    /* Space for checkmark */
+    margin-bottom: 0.2rem;
+    /* Vertical spacing */
+    text-align: left;
+    color: #8B0000;
+    /* Ensure left alignment */
 }
 
-.why-us-list li::before {                                                                           /* Checkmark */
+.why-us-list li::before {
+    /* Checkmark */
     content: "🍡";
     position: absolute;
-    left: 0;                                                                                          /* Fix position at the left */
+    left: 0;
+    /* Fix position at the left */
     top: 0;
 }
 
 /* Staggered delays applied to li directly */
-.why-us-list li:nth-child(1) { animation-delay: 0.2s; }
-.why-us-list li:nth-child(2) { animation-delay: 0.4s; }
-.why-us-list li:nth-child(3) { animation-delay: 0.6s; }
-.why-us-list li:nth-child(4) { animation-delay: 0.8s; }
-.why-us-list li:nth-child(5) { animation-delay: 1s; }
-.why-us-list li:nth-child(6) { animation-delay: 1.2s; }
-.why-us-list li:nth-child(7) { animation-delay: 1.4s; }
-.why-us-list li:nth-child(8) { animation-delay: 1.6s; }
-.why-us-list li:nth-child(9) { animation-delay: 1.8s; }
-.why-us-list li:nth-child(10){ animation-delay: 2s; }
+.why-us-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.why-us-list li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.why-us-list li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.why-us-list li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.why-us-list li:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.why-us-list li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.why-us-list li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.why-us-list li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.why-us-list li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+.why-us-list li:nth-child(10) {
+    animation-delay: 2s;
+}
 
 
-.animate__animated {                                                                                /* Keep Animate.css animations final state */
+.animate__animated {
+    /* Keep Animate.css animations final state */
     animation-fill-mode: forwards !important;
 }
 
@@ -81,16 +128,44 @@ h2, h5, h6 {
     animation: fly 8s infinite ease-in-out;
 }
 
-.bee1 { top: 20%; left: 10%; animation-duration: 6s; }
-.bee2 { top: 60%; left: 80%; animation-duration: 10s; }
-.bee3 { top: 40%; left: 30%; animation-duration: 8s; }
+.bee1 {
+    top: 20%;
+    left: 10%;
+    animation-duration: 6s;
+}
+
+.bee2 {
+    top: 60%;
+    left: 80%;
+    animation-duration: 10s;
+}
+
+.bee3 {
+    top: 40%;
+    left: 30%;
+    animation-duration: 8s;
+}
 
 @keyframes fly {
-    0%   { transform: translate(0, 0) rotate(0deg); }
-    25%  { transform: translate(50px, -30px) rotate(20deg); }
-    50%  { transform: translate(-40px, 40px) rotate(-20deg); }
-    75%  { transform: translate(30px, -50px) rotate(15deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(50px, -30px) rotate(20deg);
+    }
+
+    50% {
+        transform: translate(-40px, 40px) rotate(-20deg);
+    }
+
+    75% {
+        transform: translate(30px, -50px) rotate(15deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
 }
 
 /* Decorative bees in cards/forms */
@@ -152,15 +227,20 @@ h2, h5, h6 {
     display: block;
 }
 
-.navbar.scrolled {                                                                                  /* Smooth transition for background and shadow */
-    backdrop-filter: blur(10px);                                                                    /* Blurs the background behind navbar */
+.navbar.scrolled {
+    /* Smooth transition for background and shadow */
+    backdrop-filter: blur(10px);
+    /* Blurs the background behind navbar */
     background-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                                                     /* Shadow below navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow below navbar */
     transition: all 0.3s ease;
-    
+
 }
 
-.navbar a.nav-link, .navbar-brand {                                                                 /* Smooth transition for text color if needed */
+.navbar a.nav-link,
+.navbar-brand {
+    /* Smooth transition for text color if needed */
     transition: color 0.3s ease;
 }
 
@@ -179,13 +259,18 @@ h2, h5, h6 {
 .hero-container::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(55, 52, 52, 0.2);                                                            /* dark overlay with a soft touch */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 52, 52, 0.2);
+    /* dark overlay with a soft touch */
     border-radius: 12px;
 }
+
 .hero-container * {
-    position: relative; /* keep text above overlay */
+    position: relative;
+    /* keep text above overlay */
 }
 
 .hero-container h1 {
@@ -225,11 +310,11 @@ h2, h5, h6 {
     background: url('cards/honey_jar_1.png') no-repeat center top;
     background-size: contain;
     position: relative;
-    min-height: 900px; 
+    min-height: 900px;
     width: 100%;
     text-align: left;
     overflow: hidden;
-    padding: 0;     
+    padding: 0;
 }
 
 /* Title inside jar */
@@ -243,29 +328,39 @@ h2, h5, h6 {
 }
 
 .reviews-honey-jar {
-  position: relative;
+    position: relative;
 }
 
 .jar-img {
-  width: 100%;      /* scales with column */
-  height: auto;     /* keeps aspect ratio */
-  display: block;
+    width: 100%;
+    /* scales with column */
+    height: auto;
+    /* keeps aspect ratio */
+    display: block;
 }
 
 .jar-content {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0; /* fill the jar */
-  padding: 3rem 2rem 2rem 2rem;         /* adjust to fit text inside jar walls */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* fill the jar */
+    padding: 3rem 2rem 2rem 2rem;
+    /* adjust to fit text inside jar walls */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #333;
 }
 
 .honey-text {
-  overflow-y: auto;       /* scroll if content exceeds jar */
-  max-height: calc(100% - 6rem);  /* leave space for titles */
-  padding-right: 0.5rem;  /* prevent scrollbar from overlapping text */
+    overflow-y: auto;
+    /* scroll if content exceeds jar */
+    max-height: calc(100% - 6rem);
+    /* leave space for titles */
+    padding-right: 0.5rem;
+    /* prevent scrollbar from overlapping text */
 }
 
 
@@ -276,7 +371,7 @@ form {
     background: rgba(255, 255, 255, 0.92);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -299,7 +394,7 @@ form .form-control {
 
 form .form-control:focus {
     border-color: #ffb400;
-    box-shadow: 0 0 8px rgba(255,180,0,0.4);
+    box-shadow: 0 0 8px rgba(255, 180, 0, 0.4);
     outline: none;
 }
 
@@ -333,15 +428,17 @@ form button:hover {
     padding: 60px 20px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     max-width: 900px;
     margin: 0 auto;
 }
 
 .carousel-bg {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     filter: blur(10px) brightness(70%);
@@ -358,8 +455,13 @@ form button:hover {
     border-radius: 12px;
 }
 
-.carousel-foreground { width: 800px; }
-.carousel-alpha { width: 400px; }
+.carousel-foreground {
+    width: 800px;
+}
+
+.carousel-alpha {
+    width: 400px;
+}
 
 .carousel-item h5 {
     font-size: 1.5rem;
@@ -431,7 +533,7 @@ form button:hover {
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -472,37 +574,70 @@ footer {
                                         RESPONSIVE
    ====================================================================================== */
 @media (max-width: 768px) {
-    .hero-container { padding: 50px 15px; border-radius: 15px; }
-    .hero-container h1 { font-size: 2.2rem; }
-    .hero-container p.lead { font-size: 1.2rem; }
-    .hero-container .btn-primary { padding: 10px 20px; }
+    .hero-container {
+        padding: 50px 15px;
+        border-radius: 15px;
+    }
 
-    .contact-info-card::before { font-size: 3rem; }
-    .contact-form input, .contact-form textarea { font-size: 0.9rem; }
+    .hero-container h1 {
+        font-size: 2.2rem;
+    }
 
-    .card, form, .carousel-item { padding: 20px; border-radius: 15px; }
-    .card h5 { font-size: 1.1rem; }
-    form button { width: 100%; }
+    .hero-container p.lead {
+        font-size: 1.2rem;
+    }
+
+    .hero-container .btn-primary {
+        padding: 10px 20px;
+    }
+
+    .contact-info-card::before {
+        font-size: 3rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .card,
+    form,
+    .carousel-item {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-  .logo-img {
-    max-height: 50px;                                                                               /* shrink logo on tablets/phones */
-  }
+    .logo-img {
+        max-height: 50px;
+        /* shrink logo on tablets/phones */
+    }
 }
 
 @media (max-width: 576px) {
-  .logo-img {
-    max-height: 40px;                                                                               /* extra small screens */
-  }
+    .logo-img {
+        max-height: 40px;
+        /* extra small screens */
+    }
 }
 
 .navbar-nav .nav-link {
-  font-size: clamp(0.85rem, 2vw, 1rem);
+    font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
-.logo-img {                                                                                         /* Logo Responsiveness */
-  max-height: 120px;                                                                                /* default for desktops */
-  height: auto;
-  width: auto;
+.logo-img {
+    /* Logo Responsiveness */
+    max-height: 120px;
+    /* default for desktops */
+    height: auto;
+    width: auto;
 }
