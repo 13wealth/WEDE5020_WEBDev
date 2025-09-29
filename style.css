@@ -139,32 +139,34 @@ h6 {
                                         CARDS
    ====================================================================================== */
 
-/* Honey Jar Image Card */
+
+                                /* === WHY CHOOSE US === */
 
 .why-choose-honey-jar {
-    background: url('cards/honey_jar_2.png') no-repeat center top;
+    background: url('cards/honey_jar_3.png') no-repeat center top;
     background-size: contain;
-    position: relative;
+    background-position: relative;
     min-height: 900px;
     width: 100%;
     text-align: left;
     overflow: hidden;
     padding: 0;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
-/* Title inside jar */
+/* Why choose us title inside jar */
 .why-choose-honey-jar .jar-title {
     padding-left: 7rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
     color: #f2ff00;
     font-weight: bold;
-    font-size: 1.1rem;                                                                              /* ~13px if base is 16px */
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
     margin-top: 1rem;
     text-shadow: 1px 1px 2px #00000080;
 }
 
 .why-us-list {
-    padding-top: 3rem;
+    /*padding-top: 2rem;*/
     list-style: none;                                                                               /* Remove default bullets */ 
     padding-left: 6rem;                                                                             /* Apply indentation for all items */
     margin: 0;
@@ -179,7 +181,7 @@ h6 {
     margin-bottom: 0.2rem;                                                                          /* Space for checkmark */
     text-align: left;                                                                               /* Vertical spacing */
     color: #8B0000;                                                                               /* Ensure left alignment */
-    font-size: 0.8rem;                                                                              /* ~13px if base is 16px */
+    /*font-size: 0.8rem;                                                                              /* ~13px if base is 16px */
 }
 
 .why-us-list li::before {
@@ -189,37 +191,48 @@ h6 {
     top: 0;                                                                                         /* Fix position at the left */
 }
 
+                                    /* === REVIEWS === */
+
 .reviews-honey-jar {
-    position: relative;
+    background: url('cards/honey_jar_3.png') no-repeat center top;
+    background-size: contain;
+    width: 100%;
+    min-height: 700px;                                                                              /* optional, can replace with aspect-ratio */
+    position: relative;                                                                             /* to allow absolute positioning of child content */
+    text-align: left;
+    overflow: hidden;
+    padding: 2rem;                                                                                  /* inner spacing */
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
-.jar-img {
-    width: 100%;
-    /* scales with column */
-    height: auto;
-    /* keeps aspect ratio */
-    display: block;
+.reviews-honey-jar .jar-title {
+    color: #f2ff00;
+    font-weight: bold;
+    font-size: clamp(1.0rem, 2vw, 2rem);
+    text-shadow: 1px 1px 2px #00000080;
+    margin: 1rem 0;                                                                                 /* spacing above/below */
 }
 
 .reviews-list {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    /* fill the jar */
-    padding: 3rem 2rem 2rem 2rem;
-    /* adjust to fit text inside jar walls */
+    width: 100%;
+    height: 100%;
+    padding: 9rem 2rem 2rem 2rem;                                                                   /* increase top padding */
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    color: #333;
+    align-items: center;                                                                            /* horizontal center */
+    justify-content: flex-start;                                                                    /* top alignment */
+    text-align: center;
 }
 
-.honey-text {                                                                                       /* scroll if content exceeds jar */
-    overflow-y: auto;
-    max-height: calc(100% - 6rem);                                                                  /* leave space for titles */
-    padding-right: 0.5rem;                                                                          /* prevent scrollbar from overlapping text */
+.reviews-text p {
+    color: #333;
+    line-height: 1.5;
+    font-size: clamp(0.85rem, 1.1vw, 1rem);
+    padding: 3rem 2rem 2rem 2rem; 
 }
 
 
