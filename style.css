@@ -33,19 +33,140 @@ body::before {
 h2,
 h5,
 h6 {
-    color: #f4b400;
-    /* Honey-yellow headings */
+    color: #f4b400;                                                                               /* Honey-yellow headings */
 }
 
 /* ======================================================================================
-                                        ANIMATIONS
+                                        NAVBAR
+   ====================================================================================== */
+.navbar {
+    background: transparent;
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar .nav-link.active {
+    color: #d97c00;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+
+}
+
+/* Dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar.scrolled {
+    /* Smooth transition for background and shadow */
+    backdrop-filter: blur(10px);
+    /* Blurs the background behind navbar */
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow below navbar */
+    transition: all 0.3s ease;
+
+}
+
+.navbar a.nav-link,
+.navbar-brand {
+    /* Smooth transition for text color if needed */
+    transition: color 0.3s ease;
+}
+
+
+/* ======================================================================================
+                                        HERO SECTION
    ====================================================================================== */
 
-.why-us-list {
-    list-style: none;
-    /* Remove default bullets */
+.hero-container {
+    border-radius: 12px;
+    padding: 5rem 2rem;
+    color: white;
+    position: relative;
+}
+
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 52, 52, 0.2);
+    /* dark overlay with a soft touch */
+    border-radius: 12px;
+}
+
+.hero-container * {
+    position: relative;
+    /* keep text above overlay */
+}
+
+.hero-container h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: rgb(251, 242, 1);
+}
+
+.hero-container p.lead {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: yellowgreen;
+}
+
+.hero-container .btn-primary {
+    background-color: #ffb400;
+    border-color: #ffb400;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-container .btn-primary:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+}
+
+
+/* ======================================================================================
+                                        CARDS
+   ====================================================================================== */
+
+/* Honey Jar Image Card */
+
+.why-choose-honey-jar {
+    background: url('cards/honey_jar_2.png') no-repeat center top;
+    background-size: contain;
+    position: relative;
+    min-height: 900px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Title inside jar */
+.why-choose-honey-jar .jar-title {
     padding-left: 7rem;
-    /* Remove default padding */
+    padding-top: 5rem;
+    color: #f2ff00;
+    font-weight: bold;
+    font-size: 1.1rem;                                                                              /* ~13px if base is 16px */
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+.why-us-list {
+    padding-top: 3rem;
+    list-style: none;                                                                               /* Remove default bullets */ 
+    padding-left: 6rem;                                                                             /* Apply indentation for all items */
     margin: 0;
     color: #333;
 }
@@ -53,26 +174,263 @@ h6 {
 .why-us-list li {
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    /* Avoids fading out */
-    position: relative;
-    /* Keep animation from shifting layout */
-    padding-left: 1.5rem;
-    /* Space for checkmark */
-    margin-bottom: 0.2rem;
-    /* Vertical spacing */
-    text-align: left;
-    color: #8B0000;
-    /* Ensure left alignment */
+    position: relative;                                                                             /* Avoids fading out */
+    padding-left: 1.5rem;                                                                           /* Keep animation from shifting layout */
+    margin-bottom: 0.2rem;                                                                          /* Space for checkmark */
+    text-align: left;                                                                               /* Vertical spacing */
+    color: #8B0000;                                                                               /* Ensure left alignment */
+    font-size: 0.8rem;                                                                              /* ~13px if base is 16px */
 }
 
 .why-us-list li::before {
-    /* Checkmark */
-    content: "🍡";
+    content: "🍡";                                                                                  /* Checkmark */
     position: absolute;
     left: 0;
-    /* Fix position at the left */
-    top: 0;
+    top: 0;                                                                                         /* Fix position at the left */
 }
+
+.reviews-honey-jar {
+    position: relative;
+}
+
+.jar-img {
+    width: 100%;
+    /* scales with column */
+    height: auto;
+    /* keeps aspect ratio */
+    display: block;
+}
+
+.reviews-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* fill the jar */
+    padding: 3rem 2rem 2rem 2rem;
+    /* adjust to fit text inside jar walls */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #333;
+}
+
+.honey-text {                                                                                       /* scroll if content exceeds jar */
+    overflow-y: auto;
+    max-height: calc(100% - 6rem);                                                                  /* leave space for titles */
+    padding-right: 0.5rem;                                                                          /* prevent scrollbar from overlapping text */
+}
+
+
+/* ======================================================================================
+                                        FORMS
+   ====================================================================================== */
+form {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form .form-control {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #ffb400;
+    box-shadow: 0 0 8px rgba(255, 180, 0, 0.4);
+    outline: none;
+}
+
+form button {
+    background: #ffb400;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #ff9500;
+    transform: scale(1.05);
+}
+
+
+/* ======================================================================================
+                                    CONTACT INFO
+   ====================================================================================== */
+.contact-info-card {
+    background: #fffbee;
+    border: 3px dashed #f4b400;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info-card h5 {
+    color: #ff9900;
+}
+
+.contact-info-card ul li {
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+}
+
+.contact-info-card i {
+    color: #ff9900;
+}
+
+#contactForm {
+    background: #fffbee;
+    border: 3px dashed #f4b400;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: rotate(-15deg) scale(1.2);
+    color: #d97c00;
+}
+
+
+/* ======================================================================================
+                                        MAP
+   ====================================================================================== */
+.ratio iframe {
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+}
+
+
+/* ======================================================================================
+                                        FOOTER
+   ====================================================================================== */
+footer {
+    background: #ffcc00;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* ======================================================================================
+                                        CAROUSEL
+   ====================================================================================== */
+/* Index page */
+.carousel-item {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px) brightness(70%);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.carousel-foreground,
+.carousel-alpha {
+    position: relative;
+    z-index: 2;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-foreground {
+    width: 800px;
+}
+
+.carousel-alpha {
+    width: 400px;
+}
+
+.carousel-item h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff9500;
+}
+
+.carousel-item p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #ffb400;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Gallery page */
+#galleryCarousel,
+#galleryCarousel .carousel-inner,
+#galleryCarousel .carousel-item {
+    height: 700px;
+}
+
+#galleryCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Gallery thumbnails */
+.gallery-thumb {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ======================================================================================
+                                        ANIMATIONS
+   ====================================================================================== */
 
 /* Staggered delays applied to li directly */
 .why-us-list li:nth-child(1) {
@@ -200,375 +558,6 @@ h6 {
     content: "🐝";
     font-size: 5rem;
 }
-
-/* ======================================================================================
-                                        NAVBAR
-   ====================================================================================== */
-.navbar {
-    background: transparent;
-}
-
-.navbar .nav-link {
-    color: #333;
-    font-weight: 600;
-}
-
-.navbar .nav-link.active {
-    color: #d97c00;
-}
-
-.navbar-brand img {
-    border-radius: 50%;
-
-}
-
-/* Dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar.scrolled {
-    /* Smooth transition for background and shadow */
-    backdrop-filter: blur(10px);
-    /* Blurs the background behind navbar */
-    background-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Shadow below navbar */
-    transition: all 0.3s ease;
-
-}
-
-.navbar a.nav-link,
-.navbar-brand {
-    /* Smooth transition for text color if needed */
-    transition: color 0.3s ease;
-}
-
-
-/* ======================================================================================
-                                        HERO SECTION
-   ====================================================================================== */
-
-.hero-container {
-    border-radius: 12px;
-    padding: 5rem 2rem;
-    color: white;
-    position: relative;
-}
-
-.hero-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(55, 52, 52, 0.2);
-    /* dark overlay with a soft touch */
-    border-radius: 12px;
-}
-
-.hero-container * {
-    position: relative;
-    /* keep text above overlay */
-}
-
-.hero-container h1 {
-    font-weight: 800;
-    font-size: 3rem;
-    color: rgb(251, 242, 1);
-}
-
-.hero-container p.lead {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    color: yellowgreen;
-}
-
-.hero-container .btn-primary {
-    background-color: #ffb400;
-    border-color: #ffb400;
-    font-weight: bold;
-    padding: 12px 28px;
-    border-radius: 10px;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.hero-container .btn-primary:hover {
-    background-color: #ff9500;
-    transform: translateY(-2px);
-}
-
-
-/* ======================================================================================
-                                        CARDS
-   ====================================================================================== */
-
-/* Honey Jar Image Card */
-
-.why-choose-honey-jar {
-    background: url('cards/honey_jar_1.png') no-repeat center top;
-    background-size: contain;
-    position: relative;
-    min-height: 900px;
-    width: 100%;
-    text-align: left;
-    overflow: hidden;
-    padding: 0;
-}
-
-/* Title inside jar */
-.why-choose-honey-jar .jar-title {
-    padding-left: 7rem;
-    color: #f2ff00;
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 1rem;
-    text-shadow: 1px 1px 2px #00000080;
-}
-
-.reviews-honey-jar {
-    position: relative;
-}
-
-.jar-img {
-    width: 100%;
-    /* scales with column */
-    height: auto;
-    /* keeps aspect ratio */
-    display: block;
-}
-
-.jar-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* fill the jar */
-    padding: 3rem 2rem 2rem 2rem;
-    /* adjust to fit text inside jar walls */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: #333;
-}
-
-.honey-text {
-    overflow-y: auto;
-    /* scroll if content exceeds jar */
-    max-height: calc(100% - 6rem);
-    /* leave space for titles */
-    padding-right: 0.5rem;
-    /* prevent scrollbar from overlapping text */
-}
-
-
-/* ======================================================================================
-                                        FORMS
-   ====================================================================================== */
-form {
-    background: rgba(255, 255, 255, 0.92);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-form .form-control {
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    padding: 12px;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-form .form-control:focus {
-    border-color: #ffb400;
-    box-shadow: 0 0 8px rgba(255, 180, 0, 0.4);
-    outline: none;
-}
-
-form button {
-    background: #ffb400;
-    border: none;
-    padding: 12px 28px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 12px;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-form button:hover {
-    background: #ff9500;
-    transform: scale(1.05);
-}
-
-
-/* ======================================================================================
-                                        CAROUSEL
-   ====================================================================================== */
-/* Index page */
-.carousel-item {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    text-align: center;
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.carousel-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px) brightness(70%);
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.carousel-foreground,
-.carousel-alpha {
-    position: relative;
-    z-index: 2;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.carousel-foreground {
-    width: 800px;
-}
-
-.carousel-alpha {
-    width: 400px;
-}
-
-.carousel-item h5 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ff9500;
-}
-
-.carousel-item p {
-    font-size: 1.1rem;
-    color: #444;
-    margin-top: 10px;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #ffb400;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-/* Gallery page */
-#galleryCarousel,
-#galleryCarousel .carousel-inner,
-#galleryCarousel .carousel-item {
-    height: 700px;
-}
-
-#galleryCarousel .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* Gallery thumbnails */
-.gallery-thumb {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-/* ======================================================================================
-                                    CONTACT INFO
-   ====================================================================================== */
-.contact-info-card {
-    background: #fffbee;
-    border: 3px dashed #f4b400;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-info-card h5 {
-    color: #ff9900;
-}
-
-.contact-info-card ul li {
-    margin-bottom: 0.7rem;
-    font-size: 0.95rem;
-}
-
-.contact-info-card i {
-    color: #ff9900;
-}
-
-#contactForm {
-    background: #fffbee;
-    border: 3px dashed #f4b400;
-    position: relative;
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-
-/* Social Icons */
-.social-icons a {
-    font-size: 1.5rem;
-    color: #ff9900;
-    margin-right: 10px;
-    transition: transform 0.2s ease;
-}
-
-.social-icons a:hover {
-    transform: rotate(-15deg) scale(1.2);
-    color: #d97c00;
-}
-
-
-/* ======================================================================================
-                                        MAP
-   ====================================================================================== */
-.ratio iframe {
-    border-radius: 12px;
-    border: 2px solid #ffcc00;
-}
-
-
-/* ======================================================================================
-                                        FOOTER
-   ====================================================================================== */
-footer {
-    background: #ffcc00;
-    color: #333;
-    font-weight: 600;
-}
-
 
 /* ======================================================================================
                                         RESPONSIVE
