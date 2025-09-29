@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--- Animate.css -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/roughjs@4.4.1/bundled/rough.min.js"></script>
 
     <style>
         body {
@@ -92,6 +93,60 @@
                 </a>
             </div>
         </section>
+        <!--- Features Section -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="display-5 mb-2">We are the <span class="text-primary">best</span></h2>
+                <p class="lead mb-5">When it comes to...</p>
+
+                <div class="row g-4 justify-content-center">
+                    <!--- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-card position-relative p-4 h-100">
+                            <canvas class="rough-canvas"></canvas>
+                            <div class="content">
+                                <div class="icon mb-3">🎨</div>
+                                <h5>Creative Learning</h5>
+                                <p>Hands-on activities to develop imagination and critical thinking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-card position-relative p-4 h-100">
+                            <canvas class="rough-canvas"></canvas>
+                            <div class="content">
+                                <div class="icon mb-3">🧑‍🏫</div>
+                                <h5>Experienced Teachers</h5>
+                                <p>Our staff are passionate, qualified, and caring educators.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-card position-relative p-4 h-100">
+                            <canvas class="rough-canvas"></canvas>
+                            <div class="content">
+                                <div class="icon mb-3">🏃‍♂️</div>
+                                <h5>Active Play</h5>
+                                <p>Physical activities to keep kids healthy, happy, and energetic.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Card 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-card position-relative p-4 h-100">
+                            <canvas class="rough-canvas"></canvas>
+                            <div class="content">
+                                <div class="icon mb-3">🍯</div>
+                                <h5>Fun & Safe Environment</h5>
+                                <p>Our classrooms are safe, cheerful, and full of joy!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="py-5 mt-5"> <!--- Main Content Section -->
             <div class="py-5"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
                 <div class="container-fluid"> <!--- Main/mother container for the section -->
@@ -168,8 +223,6 @@
                 </div>
             </div>
         </div>
-
-
     </main>
     <hr />
     <footer class="py-4 bg-primary text-white">
@@ -238,55 +291,6 @@
         });
 
     </script>
-    <script>                                                                                        <!--- Animation Script -->
-        document.addEventListener("DOMContentLoaded", () => {
-            const listItems = document.querySelectorAll(".why-us-list li");
-            const whyUsList = document.querySelector(".why-us-list");
-
-            const animations = [
-                "animate__fadeInUp",
-                "animate__zoomIn",
-                "animate__fadeInLeft",
-                "animate__fadeInRight",
-                "animate__fadeInUp",
-                "animate__zoomIn",
-                "animate__fadeInLeft",
-                "animate__fadeInRight",
-                "animate__fadeInUp",
-                "animate__zoomIn"
-            ];
-
-            function animateList() {
-                listItems.forEach((li, i) => {
-                    li.style.opacity = 0;
-                    li.className = "animate__animated"; // reset classes
-                    setTimeout(() => {
-                        li.style.opacity = 1;
-                        li.classList.add(animations[i]);
-                    }, i * 800);                                                                                  //Staggered timing
-                });
-
-                const totalTime = listItems.length * 800 + 1800;                                                //Time until fade out
-                setTimeout(() => {
-                    whyUsList.style.transition = "opacity 1s ease";
-                    whyUsList.style.opacity = 0;
-
-                    setTimeout(() => {
-                        whyUsList.style.opacity = 1;
-                        whyUsList.classList.add("squirrel");
-
-                        setTimeout(() => {
-                            whyUsList.classList.remove("squirrel");
-                            animateList();                                                                            //Repeat
-                        }, 1200);
-                    }, 1000);
-                }, totalTime);
-            }
-
-            animateList();
-        });
-
-    </script>
 
     <script>
         window.addEventListener('scroll', function () {
@@ -296,6 +300,23 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.feature-card').forEach(card => {
+            const canvas = card.querySelector('canvas.rough-canvas');
+            const rc = rough.canvas(canvas);
+
+            canvas.width = card.offsetWidth;
+            canvas.height = card.offsetHeight;
+
+            // Draw a wiggly rectangle around the card
+            rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4, {
+                stroke: '#fff200',
+                strokeWidth: 3,
+                roughness: 3,
+                bowing: 2
+            });
         });
     </script>
 </body>

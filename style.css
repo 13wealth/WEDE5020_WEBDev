@@ -86,7 +86,7 @@ h6 {
 
 .hero-container {
     border-radius: 12px;
-    padding: 10rem 2rem;
+     padding: clamp(5rem, 7vw, 10rem) 2rem; /* top/bottom responsive, left/right fixed */
     color: white;
     position: sticky;        /* keeps hero content in place during scroll */
     top: 0;                  /* starts at top of viewport */
@@ -150,6 +150,54 @@ h6 {
 /* ======================================================================================
                                         CARDS
    ====================================================================================== */
+
+                                /* Feature Card Styles */
+.feature-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.feature-card:hover {
+    animation: crazy-rotate 1s infinite;
+}
+
+/* Crazy rotation keyframes */
+@keyframes crazy-rotate {
+    0% { transform: rotate(0deg) scale(1.05); }
+    10% { transform: rotate(10deg) scale(1.07); }
+    20% { transform: rotate(-8deg) scale(1.06); }
+    30% { transform: rotate(12deg) scale(1.08); }
+    40% { transform: rotate(-10deg) scale(1.07); }
+    50% { transform: rotate(8deg) scale(1.08); }
+    60% { transform: rotate(-12deg) scale(1.09); }
+    70% { transform: rotate(10deg) scale(1.08); }
+    80% { transform: rotate(-6deg) scale(1.07); }
+    90% { transform: rotate(12deg) scale(1.09); }
+    100% { transform: rotate(0deg) scale(1.05); }
+}
+
+
+.feature-card .content {
+    position: relative;
+    z-index: 1; /* text above canvas */
+}
+
+.feature-card canvas.rough-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;                                                                           /* allows hover on card */
+}
+
+.feature-card .icon {
+    font-size: 2.5rem;
+}
+
 
 
                                 /* === WHY CHOOSE US === */
@@ -366,93 +414,6 @@ footer {
     font-weight: 600;
 }
 
-
-/* ======================================================================================
-                                        CAROUSEL
-   ====================================================================================== */
-/* Index page */
-.carousel-item {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    text-align: center;
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.carousel-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px) brightness(70%);
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.carousel-foreground,
-.carousel-alpha {
-    position: relative;
-    z-index: 2;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.carousel-foreground {
-    width: 800px;
-}
-
-.carousel-alpha {
-    width: 400px;
-}
-
-.carousel-item h5 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ff9500;
-}
-
-.carousel-item p {
-    font-size: 1.1rem;
-    color: #444;
-    margin-top: 10px;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #ffb400;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-/* Gallery page */
-#galleryCarousel,
-#galleryCarousel .carousel-inner,
-#galleryCarousel .carousel-item {
-    height: 700px;
-}
-
-#galleryCarousel .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* Gallery thumbnails */
-.gallery-thumb {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-}
-
 /* ======================================================================================
                                         ANIMATIONS
    ====================================================================================== */
@@ -655,3 +616,5 @@ footer {
     height: auto;
     width: auto;
 }
+
+
