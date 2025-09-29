@@ -224,7 +224,7 @@
             const indicators = carousel.querySelector(".carousel-indicators");                      //Finds <div class="carousel-indicators"> within the carousel
             const items = carousel.querySelectorAll(".carousel-item");                              //Grabs all the slides inside the carousel <div class="carousel-item">...</div>
 
-            items.forEach((_, index) =>                                         /*Loops through each slide (.carousel-item).
+            items.forEach((_, index) =>                                                 /*Loops through each slide (.carousel-item).
                                                                                                         The index gives the position of each slide (0, 1, 2, …).*/ {
                 const button = document.createElement("button");                                    //Creates a new <button> for each slide.
                 button.type = "button";                                                             //Sets the button type to "button".
