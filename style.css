@@ -1,17 +1,14 @@
 /* ======================================================================================
                                     GLOBAL STYLES
    ====================================================================================== */
-body {
+body { 
     font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
-    background: #fffbee;
-    /* Soft light yellow for bee theme */
+    background: #fffbee;                                                                          /* Soft light yellow for bee theme */
     color: #333;
-    padding-top: 100px;
-    /* Space for fixed navbar */
+    padding-top: 100px;                                                                             /* Space for fixed navbar */
 }
 
-body::before {
-    /* Background Image */
+body::before {                                                                                      /* Background Image */
     content: "";
     position: fixed;
     top: 0;
@@ -33,7 +30,7 @@ body::before {
 h2,
 h5,
 h6 {
-    color: #f4b400;                                                                               /* Honey-yellow headings */
+    color: #ff9800;                                                                               /* Honey-yellow headings */
 }
 
 /* ======================================================================================
@@ -57,28 +54,21 @@ h6 {
 
 }
 
-/* Dropdown on hover */
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {                                                                    /* Dropdown on hover */
     display: block;
 }
 
-.navbar.scrolled {
-    /* Smooth transition for background and shadow */
-    backdrop-filter: blur(10px);
-    /* Blurs the background behind navbar */
-    background-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Shadow below navbar */
+.navbar.scrolled {                                                                                  /* Smooth transition for background and shadow */
+    backdrop-filter: blur(10px);                                                                    /* Blurs the background behind navbar */
+    background-color: transparent; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                                                     /* Shadow below navbar */
     transition: all 0.3s ease;
-
 }
 
 .navbar a.nav-link,
-.navbar-brand {
-    /* Smooth transition for text color if needed */
+.navbar-brand {                                                                                     /* Smooth transition for text color if needed */
     transition: color 0.3s ease;
 }
-
 
 /* ======================================================================================
                                         HERO SECTION
@@ -86,14 +76,14 @@ h6 {
 
 .hero-container {
     border-radius: 12px;
-     padding: clamp(5rem, 7vw, 10rem) 2rem; /* top/bottom responsive, left/right fixed */
+     padding: clamp(5rem, 7vw, 10rem) 2rem;                                                         /* top/bottom responsive, left/right fixed */
     color: white;
-    position: sticky;        /* keeps hero content in place during scroll */
-    top: 0;                  /* starts at top of viewport */
+    position: sticky;                                                                               /* keeps hero content in place during scroll */
+    top: 0;                                                                                         /* starts at top of viewport */
     background: url("https://images.unsplash.com/photo-1588072432836-e10032774350") 
                 no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* parallax for bg */
+    background-attachment: fixed;                                                                   /* parallax for bg */
     overflow: hidden;
     z-index: 0;
 }
@@ -105,14 +95,14 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(55, 52, 52, 0.3); /* darker overlay */
+    background: rgba(55, 52, 52, 0.3);                                                            /* darker overlay */
     border-radius: 12px;
     z-index: 0;
 }
 
 .hero-container * {
     position: relative;
-    z-index: 1;               /* text above overlay */
+    z-index: 1;                                                                                     /* text above overlay */
 }
 
 /* Text styling */
@@ -128,9 +118,7 @@ h6 {
     color: yellowgreen;
 }
 
-
-
-                                        /* Hero Button Styles */
+                                        /*=== Hero Button Styles ===*/
 
 .hero-container .btn-primary {
     background-color: #ffb400;
@@ -146,12 +134,93 @@ h6 {
     transform: translateY(-2px);
 }
 
+/* ======================================================================================
+                                        MAIN CONTENT
+   ====================================================================================== */
+
+                            /*=== General Info & Carousel ===*/
+#intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro-card {
+    border: 3px dashed #6476e0;     /* funky dashed border */
+    border-radius: 20px 5px 25px 10px;  /* playful uneven rounding */
+    padding: 20px;
+    background: transparent;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15); /* subtle lift */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro-card:hover {
+    transform: rotate(7deg) scale(1.03); /* fun tilt on hover */
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+#introCarousel {
+    max-height: 500px;                                                                               /* Limit carousel height */
+    border-radius: 15px;                                                                             /* Rounded corners */
+    overflow: hidden;                                                                                /* Keeps images inside rounded edges */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);                                                     /* Soft shadow */
+}
+
+#introCarousel .carousel-inner img {
+    height: 100%;                                                                                   /* Sets image height to fill container */
+    object-fit: cover;                                                                              /* Keeps aspect ratio, crops nicely */
+}
+
+#introCarousel .carousel-caption h5 {                                                               /* Ensure captions remain readable */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.info-card {
+    border-radius: 12px;                                                                            /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);                                                    /* Base shadow */
+    transition: transform 0.3s, box-shadow 0.3s;                                                    /* Smooth hover animation */
+}
+
+.info-card:hover {
+    transform: translateY(-5px);                                                                    /* Lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);                                                    /* Stronger shadow on hover */
+}
+                                /*=== Statistics Card Styles ===*/                 
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.stat-card p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #666;
+}
 
 /* ======================================================================================
                                         CARDS
    ====================================================================================== */
 
-                                /* Feature Card Styles */
+                                /*=== Feature Card Styles ===*/
+.feature-caption {
+    position: relative; /* allows canvas to be positioned behind text */
+    display: inline-block;
+}
+
+.feature-caption h2, p {
+    position: relative;
+    padding: 0.2em 0.5em; /* spacing so paint stripe shows nicely */
+}
+
+.brush-stripe {
+    position: absolute;
+    z-index: -1;        /* keep behind text */
+    pointer-events: none;
+}
+
 .feature-card {
     border-radius: 20px;
     overflow: hidden;
@@ -164,8 +233,7 @@ h6 {
     animation: crazy-rotate 1s infinite;
 }
 
-/* Crazy rotation keyframes */
-@keyframes crazy-rotate {
+@keyframes crazy-rotate {                                                                           /* Crazy rotation keyframes */
     0% { transform: rotate(0deg) scale(1.05); }
     10% { transform: rotate(10deg) scale(1.07); }
     20% { transform: rotate(-8deg) scale(1.06); }
@@ -179,10 +247,9 @@ h6 {
     100% { transform: rotate(0deg) scale(1.05); }
 }
 
-
 .feature-card .content {
     position: relative;
-    z-index: 1; /* text above canvas */
+    z-index: 1;                                                                                     /* text above canvas */
 }
 
 .feature-card canvas.rough-canvas {
@@ -197,10 +264,7 @@ h6 {
 .feature-card .icon {
     font-size: 2.5rem;
 }
-
-
-
-                                /* === WHY CHOOSE US === */
+                                /*=== Why choose us ===*/
 
 .why-choose-honey-jar {
     background: url('cards/honey_jar_3.png') no-repeat center top;
@@ -251,7 +315,7 @@ h6 {
     top: 0;                                                                                         /* Fix position at the left */
 }
 
-                                    /* === REVIEWS === */
+                                    /*=== REVIEWS ===*/
 
 .reviews-honey-jar {
     background: url('cards/honey_jar_3.png') no-repeat center top;
@@ -294,7 +358,6 @@ h6 {
     font-size: clamp(0.85rem, 1.1vw, 1rem);
     padding: 3rem 2rem 2rem 2rem; 
 }
-
 
 /* ======================================================================================
                                         FORMS
@@ -418,7 +481,8 @@ footer {
                                         ANIMATIONS
    ====================================================================================== */
 
-/* Staggered delays applied to li directly */
+                            /*=== Staggered delays applied to li directly ===*/
+
 .why-us-list li:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -459,9 +523,8 @@ footer {
     animation-delay: 2s;
 }
 
-
-.animate__animated {
-    /* Keep Animate.css animations final state */
+ 
+.animate__animated {                                                                                /* Keep Animate.css animations final state */
     animation-fill-mode: forwards !important;
 }
 
@@ -512,7 +575,7 @@ footer {
     }
 }
 
-/* Decorative bees in cards/forms */
+                                    /*=== Decorative bees in cards/forms ===*/
 .contact-info-card::before {
     content: "🐝";
     font-size: 5rem;
@@ -591,17 +654,15 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {                                                                         /* shrink logo on tablets/phones */
     .logo-img {
         max-height: 50px;
-        /* shrink logo on tablets/phones */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) {                                                                         /* extra small screens */
     .logo-img {
         max-height: 40px;
-        /* extra small screens */
     }
 }
 
@@ -609,10 +670,8 @@ footer {
     font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
-.logo-img {
-    /* Logo Responsiveness */
-    max-height: 120px;
-    /* default for desktops */
+.logo-img {                                                                                         /* Logo Responsiveness */
+    max-height: 120px;                                                                              /* default for desktops */
     height: auto;
     width: auto;
 }
