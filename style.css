@@ -27,10 +27,19 @@ body::before {                                                                  
     padding: 20px;
 }
 
-h2,
-h5,
-h6 {
-    color: #ff9800;                                                                               /* Honey-yellow headings */
+h2, h5, h6 {
+    color: yellow;                                                                               /* Honey-yellow headings */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Chewy', cursive;                                                                   /* Fun, playful font for headings */
+}
+
+.zigzag-hr {
+    width: 200px;         /* small portion of the screen */
+    height: 20px;
+    display: block;
+    margin: 2rem auto;    /* center horizontally */
 }
 
 /* ======================================================================================
@@ -205,21 +214,6 @@ h6 {
    ====================================================================================== */
 
                                 /*=== Feature Card Styles ===*/
-.feature-caption {
-    position: relative; /* allows canvas to be positioned behind text */
-    display: inline-block;
-}
-
-.feature-caption h2, p {
-    position: relative;
-    padding: 0.2em 0.5em; /* spacing so paint stripe shows nicely */
-}
-
-.brush-stripe {
-    position: absolute;
-    z-index: -1;        /* keep behind text */
-    pointer-events: none;
-}
 
 .feature-card {
     border-radius: 20px;
@@ -264,6 +258,95 @@ h6 {
 .feature-card .icon {
     font-size: 2.5rem;
 }
+                                    /*=== Our Values ===*/
+
+.values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.value-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 165, 0, 0.6);                                                           /* semi-transparent playful orange */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);                                                       /* slightly stronger shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    animation: float 4s ease-in-out infinite;                                                       /* subtle floating animation */
+}
+
+.value-card:hover {
+    transform: translateY(-10px) rotate(-1deg);                                                     /* playful hover effect */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);                                                     /* stronger shadow on hover */
+}
+
+.value-card img.floating-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    animation: icon-float 3s ease-in-out infinite;                                                  /* floating icon */
+}
+
+.value-card h5 {
+    font-size: 1.25rem;
+    color: #ff7f50;                                                                               /* fun coral color */
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Floating animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-8px); }
+    50% { transform: translateY(-4px); }
+    75% { transform: translateY(-6px); }
+}
+
+                                    /*=== Process Cards ===*/
+.process-card {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;                                                                           /* ensures badge, text, etc. flow neatly */
+  justify-content: flex-start;
+  height: 100%;                                                                                     /* stretch equally */
+  min-height: 420px;                                                                                /* makes them tall */
+}
+
+.process-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.process-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.process-card .badge {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+}
+
                                 /*=== Why choose us ===*/
 
 .why-choose-honey-jar {
@@ -471,11 +554,25 @@ form button:hover {
 /* ======================================================================================
                                         FOOTER
    ====================================================================================== */
-footer {
-    background: #ffcc00;
-    color: #333;
-    font-weight: 600;
+footer.beeful {
+  background-image: url('footer/220302.jpg');
+  background-size: cover;                                                                           /* or “contain” or use “repeat” if pattern */
+  background-position: center;
+  background-repeat: no-repeat;    /* or “repeat” if it’s a tiling pattern */
+  color: #fff;                      /* ensure text is visible */
+  position: relative;              /* to allow overlays if needed */
+  padding: 60px 0;
 }
+
+footer.beeful::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);                                                           /* dark overlay to help text stand out */
+  pointer-events: none;
+}
+
+
 
 /* ======================================================================================
                                         ANIMATIONS
@@ -668,6 +765,7 @@ footer {
 
 .navbar-nav .nav-link {
     font-size: clamp(0.85rem, 2vw, 1rem);
+    font-family: 'font-short', cursive;
 }
 
 .logo-img {                                                                                         /* Logo Responsiveness */
@@ -677,3 +775,31 @@ footer {
 }
 
 
+/* ======================================================================================
+                                        FONTS
+   ====================================================================================== */
+
+/* Handwriting / playful fonts */
+.font-chewy { font-family: 'Chewy', cursive; }
+.font-comic { font-family: 'Comic Neue', cursive; }
+.font-patrick { font-family: 'Patrick Hand', cursive; }
+.font-gloria { font-family: 'Gloria Hallelujah', cursive; }
+.font-short { font-family: 'Short Stack', cursive; }
+.font-bubblegum { font-family: 'Bubblegum Sans', cursive; }
+.font-delius { font-family: 'Delius Swash Caps', cursive; }
+.font-boogaloo { font-family: 'Boogaloo', cursive; }
+.font-love { font-family: 'Love Ya Like A Sister', cursive; }
+.font-lucky { font-family: 'Luckiest Guy', cursive; }
+
+
+.handwritten-underline {                                                                            /* CSS Hand-drawn underline effect */
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+}
+
+.zigzag-hr .zigzag-line {
+    stroke: #ff6347;                                                                              /* line color */
+    stroke-width: 3;                                                                                /* line thickness */
+    fill: none;                                                                                     /* no fill */
+}
