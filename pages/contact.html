@@ -24,33 +24,39 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="../index.html">
-                    <img src="../images/logo.jpg" alt="Mananto Academy" class="rounded img-fluid"
-                        style="max-height: 100px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger"
-                    aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="hamburger">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item dropdown"> <!--- Sets up a dropdown menu for services -->
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu"> <!--- Dropdown menu links for services -->
-                                <li><a class="dropdown-item" href="classes.html">Classes</a></li>
-                                <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
-                                <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="admission.html">Registration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+            <div class="container justify-content-center">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                    <!---- Centered wrapper for logo + nav -->
+                    <a class="navbar-brand mb-2 mb-lg-0 me-lg-3" href="../index.html"> <!--- Logo -->
+                        <img src="../images/logo-removebg.png" alt="Mananto Academy"
+                            class="logo-img img-fluid rounded" />
+                    </a>
+                    <!--- hamburger button -->
+                    <button class="navbar-toggler mb-2 mb-lg-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCenter" aria-controls="navbarCenter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarCenter"> <!--- Nav links -->
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item dropdown mx-lg-2">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                                    <li><a class="dropdown-item" href="transport.html">Transportation</a></li>
+                                    <li><a class="dropdown-item" href="fees-payments.html">Fees & Payments</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link"
+                                    href="pages/admission.html">Registration</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -76,7 +82,8 @@
                                 <li><i class="bi bi-telephone-fill me-2"></i>087 183 6053</li>
                                 <li><i class="bi bi-envelope-fill me-2"></i>admin@manantoacademy.co.za</li>
                                 <li><i class="bi bi-globe2 me-2"></i>www.manantoacademy.co.za</li>
-                                <li><i class="bi bi-geo-alt-fill me-2"></i>12027 Popular Street, Kagiso, Hospital view, 1754</li>
+                                <li><i class="bi bi-geo-alt-fill me-2"></i>12027 Popular Street, Kagiso, Hospital view,
+                                    1754</li>
                             </ul>
                             <hr />
                             <h6 class="fw-bold mb-3">Follow Us <span class="sticker bee">🐝</span></h6>
@@ -130,6 +137,119 @@
             e.preventDefault();                                                                     //Stops the form from submitting and refreshing
             const name = document.getElementById("name").value;                                     //Gets the name value and return it in the notification
             alert("Thank you " + name + "! Your message has been received.");                       //Notification when clicking the send button
+        });
+    </script>
+    <script>                                                                                        //SCROLLED.JS
+        window.addEventListener('scroll', function ()                                               //Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
+        {
+            const navbar = document.querySelector('.navbar');                                       //Selects the element with the class .navbar
+            if (window.scrollY > 50)                                                                //Checks if the user has scrolled more than 50px from the top
+            {
+                navbar.classList.add('scrolled');                                                   //If true, adds the class scrolled to the navbar
+            } else {
+                navbar.classList.remove('scrolled');                                                //If the scroll position is 50px or less, it removes the scrolled class, returning the navbar to its original style.
+            }
+        });
+    </script>
+    <script>                                                                                        //ROUGH.JS
+        document.querySelectorAll('.feature-card').forEach(card =>                                  //Handles Rough.js hand-drawn border generator for the feature cards
+        {                                                                                           //.forEach loops over each one to apply the hand-drawn effect individually
+            const canvas = card.querySelector('canvas.rough-canvas');                               //Inside each card, we find <canvas> element with class .rough-canvas
+            const rc = rough.canvas(canvas);                                                        //Creates a Rough.js canvas context on that <canvas> so we can draw sketchy shapes
+
+            canvas.width = card.offsetWidth;
+            canvas.height = card.offsetHeight;
+
+            rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4,                                 //Draws a wiggly rectangle around the card                           
+                {
+                    stroke: '#fff200',                                                              //Yellow color for the border
+                    strokeWidth: 3,                                                                 //Border thickness
+                    roughness: 3,                                                                   //Sets the roughness of the border
+                    bowing: 2                                                                       //Sets the wobble or curve of the lines
+                });
+        });
+    </script>
+    <script>                                                                                        //ROUGH.JS
+        const counters = document.querySelectorAll('.counter');                                     //Handles count-up animations
+        const speed = 500;                                                                          //Lower = Faster
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = Math.ceil(target / speed);
+
+                    if (count < target) {
+                        counter.innerText = count + increment;
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + (target === 100 ? '%' : '+');
+                    }
+                };
+                updateCount();
+            });
+        };
+        const section = document.getElementById('milestones');                                      //Trigger animation on scroll into view
+        let started = false;
+        window.addEventListener('scroll', () => {
+            const rect = section.getBoundingClientRect();
+            if (!started && rect.top < window.innerHeight) {
+                animateCounters();
+                started = true;
+            }
+        });    
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".value-card");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");                                         //Trigger animation
+                        observer.unobserve(entry.target);                                           //Animate once
+                    }
+                });
+            }, { threshold: 0.2 }); //Trigger when 20% visible
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+    <script>                                                                                        //ANIMATION ON SCROLL
+        const elements = document.querySelectorAll('.slide-left, .slide-right');                    //Trigger animation when elements scroll into view
+        function checkInView() {
+            const triggerBottom = window.innerHeight * 0.8;                                         //80% down viewport
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < triggerBottom) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkInView);
+        window.addEventListener('load', checkInView);
+    </script>
+    <script>                                                                                        //SCROLL UP BUTTON 
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+        window.addEventListener('scroll', () => {                                                   //Show button after scrolling down 300px
+            if (window.scrollY > 300) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        });
+
+        scrollUpBtn.addEventListener('click', () => {                                               //Smooth slow scroll to top
+            const scrollDuration = 15;                                                            //Milliseconds, adjust for speed
+            const scrollStep = -window.scrollY / (scrollDuration / 15);                             //Pixels per step
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                    window.scrollBy(0, scrollStep);
+                } else {
+                    clearInterval(scrollInterval);
+                }
+            }, 15);                                                                                 //Every 15ms
         });
     </script>
 </body>
