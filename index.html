@@ -19,7 +19,7 @@
     <!--- Rough.js for hand-drawn effect -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!--- Bootstrap Icons link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--- Font Awesome link -->
     <link
         href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue&family=Patrick+Hand&family=Gloria+Hallelujah&family=Short+Stack&family=Bubblegum+Sans&family=Delius+Swash+Caps&family=Boogaloo&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&display=swap"
@@ -83,7 +83,6 @@
             </div>
         </nav>
     </header>
-
     <main class="main-content"> <!--- Hero Section -->
         <section class="text-center py-5">
             <div class="container hero-container mt-5">
@@ -94,100 +93,140 @@
                 <!--- lead → makes the text stand out as a lead paragraph -->
                 <!--- mb-4 → bottom margin -->
             </div>
-            <div class="mt-3">
+            <div class="mt-3 mb-5 pb-5">
                 <a href="pages/admission.html" class="btn btn-primary btn-lg">
                     <span class="font-love">Register your child</span>
                 </a>
             </div>
         </section>
-        <br><br> <!-- empty rows -->
-        <section id="playful-illustration" class="py-5 position-relative">
-    <div class="container text-center">
-        <h2 class="display-5 mb-4">Our Values</h2>
-        <p class="lead font-love text-success mb-5">Learning through play, creativity, and care.</p>
+        <br><br> <!--- empty rows -->
+        <br><br> <!--- empty rows -->
+        <br><br> <!--- empty rows -->
+        <br><br> <!--- empty rows -->
+        <section id="playful-illustration" class="py-5 mt-5 position-relative">
+            <div class="container text-center">
+                <div class="heading-block mb-5">
+                    <h2 class="display-5 mb-2 heading-with-zigzag slide-left">Our Values</h2>
+                    <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                        <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                            class="zigzag-line" />
+                    </svg>
+                    <p class="lead font-love text-muted slide-right">Learning through play, creativity, and care.</p>
+                </div>
 
-        <!-- Row 1: Card Left -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-6">
-                <div class="value-card mx-auto text-center">
-                    <img src="images/value_1.png" alt="Bee" class="floating-icon mb-3">
-                    <h5 class="text-primary">Teamwork</h5>
-                    <p>We grow together like a buzzing hive.</p>
+                <!--- Card 1 + Arrow -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="value-card text-center">
+                            <img src="images/value_1.png" alt="Bee" class="floating-icon mb-3">
+                            <h5 class="text-primary">Teamwork</h5>
+                            <p>We grow together like a buzzing hive.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center pe-5">
+                        <svg width="100%" height="100" viewBox="0 0 150 100">
+                            <path d="M0,20 Q175,-30 150,80" stroke="Yellow" stroke-width="4" fill="transparent"
+                                stroke-linecap="round" marker-end="url(#arrow1)" />
+                            <defs>
+                                <marker id="arrow1" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+                                    <path d="M0,0 Q5,5 0,10 L9,5 Z" fill="Yellow" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <!--- Arrow + Card 2 -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <svg width="100%" height="100" viewBox="0 0 150 100">
+                            <path d="M150,20 Q-30,-20 0,80" stroke="Yellow" stroke-width="4" fill="transparent"
+                                stroke-linecap="round" marker-end="url(#arrow2)" />
+                            <defs>
+                                <marker id="arrow2" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+                                    <path d="M0,0 Q5,5 0,10 L9,5 Z" fill="Yellow" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="value-card text-center">
+                            <img src="images/value_2.png" alt="Honey Jar" class="floating-icon mb-3">
+                            <h5 class="text-primary">Care</h5>
+                            <p>Sweet and nurturing like honey.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Arrow + Card 3 -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="value-card text-center">
+                            <img src="images/value_3.png" alt="Pencil" class="floating-icon mb-3">
+                            <h5 class="text-primary">Creativity</h5>
+                            <p>Every child's imagination matters.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <svg width="100%" height="100" viewBox="0 0 150 100">
+                            <path d="M0,20 Q175,-30 150,80" stroke="Yellow" stroke-width="4" fill="transparent"
+                                stroke-linecap="round" marker-end="url(#arrow3)" />
+                            <defs>
+                                <marker id="arrow3" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+                                    <path d="M0,0 Q5,5 0,10 L9,5 Z" fill="Yellow" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <!--- Card 4 no arrow -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="value-card text-center">
+                            <img src="images/value_4.png" alt="Toy Block" class="floating-icon mb-3">
+                            <h5 class="text-primary">Fun</h5>
+                            <p>Play is the foundation of learning.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6"></div>
-        </div>
-
-        <!-- Row 2: Card Right -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div class="value-card mx-auto text-center">
-                    <img src="images/value_2.png" alt="Honey Jar" class="floating-icon mb-3">
-                    <h5 class="text-primary">Care</h5>
-                    <p>Sweet and nurturing like honey.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Row 3: Card Left -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-6">
-                <div class="value-card mx-auto text-center">
-                    <img src="images/value_3.png" alt="Pencil" class="floating-icon mb-3">
-                    <h5 class="text-primary">Creativity</h5>
-                    <p>Every child's imagination matters.</p>
-                </div>
-            </div>
-            <div class="col-md-6"></div>
-        </div>
-
-        <!-- Row 4: Card Right -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div class="value-card mx-auto text-center">
-                    <img src="images/value_4.png" alt="Toy Block" class="floating-icon mb-3">
-                    <h5 class="text-primary">Fun</h5>
-                    <p>Play is the foundation of learning.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-        
-        <svg class="zigzag-hr" viewBox="0 0 200 20" preserveAspectRatio="none">
-            <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10" class="zigzag-line"/>
-        </svg>
-
-        <section id="our-process" class="torn-section py-5 position-relative"> <!--- Our Daily Process Section -->  
+        </section>
+        <br><br> <!--- Spacer -->
+        <section id="our-process" class="torn-section py-5 position-relative"> <!--- Our Daily Process Section -->
             <div class="container content position-relative">
-                <h2 class="display-5 mb-4 text-center text-primary">Our Daily Journey</h2>
-                <p class="lead mb-5 text-center font-love text-muted">
-                    A full day of care, learning, play, and growth — step by step from morning to afternoon.
-                </p>
-        
+                <div class="heading-block text-center">
+                    <h2 class="display-5 mb-4 text-center text-primary heading-with-zigzag slide-right">
+                        Our Daily Journey
+                    </h2>
+                    <svg class="zigzag-hr zigzag-yellow" viewBox="0 0 200 20" preserveAspectRatio="none">
+                        <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 
+                                            120,10 140,0 160,10 180,0 200,10" class="zigzag-line" />
+                    </svg>
+                    <p class="lead mb-5 text-center font-love text-muted slide-left">
+                        A full day of care, learning, play, and growth — step by step from morning to afternoon.
+                    </p>
+                </div>
                 <div class="row g-4">
-                    <!-- Step 1 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="process-card p-4 h-100 text-center">
-                            <img src="images/drop-off.png" alt="Drop Off" class="process-icon mb-3">
+                            <img src="images/proc_1.png" alt="Drop Off" class="process-icon mb-3">
                             <h5 class="text-primary">Drop-Off</h5>
                             <span class="badge bg-warning text-dark mb-3">07:00 – 08:30</span>
                             <p class="text-muted">
-                                Parents hand over their little bees with a smile. Our teachers welcome each child warmly,
-                                ensuring they feel comfortable and excited. Morning greetings, bag check-ins, and settling
+                                Parents hand over their little bees with a smile. Our teachers welcome each child
+                                warmly,
+                                ensuring they feel comfortable and excited. Morning greetings, bag check-ins, and
+                                settling
                                 into the classroom start the day on a positive note.
                             </p>
                         </div>
                     </div>
-        
-                    <!-- Step 2 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="process-card p-4 h-100 text-center">
-                            <img src="images/learning.png" alt="Learning" class="process-icon mb-3">
+                            <img src="images/proc_2.png" alt="Learning" class="process-icon mb-3">
                             <h5 class="text-primary">Learning & Play</h5>
                             <span class="badge bg-warning text-dark mb-3">08:30 – 11:30</span>
                             <p class="text-muted">
@@ -197,11 +236,9 @@
                             </p>
                         </div>
                     </div>
-        
-                    <!-- Step 3 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="process-card p-4 h-100 text-center">
-                            <img src="images/meals.png" alt="Meals" class="process-icon mb-3">
+                            <img src="images/proc_3.png" alt="Meals" class="process-icon mb-3">
                             <h5 class="text-primary">Meals & Rest</h5>
                             <span class="badge bg-warning text-dark mb-3">11:30 – 13:30</span>
                             <p class="text-muted">
@@ -211,16 +248,16 @@
                             </p>
                         </div>
                     </div>
-        
-                    <!-- Step 4 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="process-card p-4 h-100 text-center">
-                            <img src="images/pick-up.png" alt="Pick Up" class="process-icon mb-3">
+                            <img src="images/proc_4.png" alt="Pick Up" class="process-icon mb-3">
                             <h5 class="text-primary">Pick-Up</h5>
                             <span class="badge bg-warning text-dark mb-3">14:00 – 17:00</span>
                             <p class="text-muted">
-                                Parents return to collect their children, who leave with stories, new skills, and smiles.
-                                Teachers provide a short update on each child’s day, ensuring parents stay connected with
+                                Parents return to collect their children, who leave with stories, new skills, and
+                                smiles.
+                                Teachers provide a short update on each child’s day, ensuring parents stay connected
+                                with
                                 their learning journey.
                             </p>
                         </div>
@@ -232,8 +269,12 @@
         <section class="py-5 text-center"> <!--- Features Section -->
             <div class="container">
                 <div class="feature-caption">
-                    <h2 class="display-5">We are the <span class="text-primary">best</span></h2>
-                    <p class="lead mb-5 text-primary">Excellence in early childhood education.</p>
+                    <h2 class="display-5 slide-left">We are the <span class="text-primary">best</span></h2>
+                    <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                        <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                            class="zigzag-line" />
+                    </svg>
+                    <p class="lead mb-5 text-primary slide-right">Excellence in early childhood education.</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <!--- Card 1 -->
@@ -243,6 +284,10 @@
                             <div class="content">
                                 <div class="icon mb-3"><i class="bi bi-palette fs-1 text-primary"></i></div>
                                 <h5>Creative Learning</h5>
+                                <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                                    <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                                        class="zigzag-line" />
+                                </svg>
                                 <p>Hands-on activities to develop imagination and critical thinking.</p>
                             </div>
                         </div>
@@ -254,6 +299,10 @@
                             <div class="content">
                                 <div class="icon mb-3"><i class="bi bi-mortarboard fs-1 text-primary"></i></div>
                                 <h5>Experienced Teachers</h5>
+                                <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                                    <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                                        class="zigzag-line" />
+                                </svg>
                                 <p>Our staff are passionate, qualified, and caring educators.</p>
                             </div>
                         </div>
@@ -265,6 +314,10 @@
                             <div class="content">
                                 <div class="icon mb-3"><i class="bi bi-puzzle fs-1 text-primary"></i></div>
                                 <h5>Active Play</h5>
+                                <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                                    <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                                        class="zigzag-line" />
+                                </svg>
                                 <p>Physical activities to keep kids healthy, happy, and energetic.</p>
                             </div>
                         </div>
@@ -276,6 +329,10 @@
                             <div class="content">
                                 <div class="icon mb-3"><i class="bi bi-house-heart fs-1 text-primary"></i></div>
                                 <h5>Fun & Safe Environment</h5>
+                                <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                                    <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                                        class="zigzag-line" />
+                                </svg>
                                 <p>Our classrooms are safe, cheerful, and full of joy!</p>
                             </div>
                         </div>
@@ -319,13 +376,22 @@
         <section id="intro" class="py-5"> <!---Intro and Feature Section-->
             <div class="container">
                 <div class="row align-items-center gx-5">
-                    <div class="intro-card col-lg-3 mb-4 mb-lg-0"> <!--- Left: Intro -->
-                        <h6 class="text-uppercase fw-bold text-center">Who are we...</h6>
-                        <p>
-                            Ma'Nanto Academy founded in 2017, based in the township of Kagiso.
-                            <br /> We are a preschool that equips learners with the cognitive, physical,
-                            emotional and social skills for a happy and confident start to school careers.
-                        </p>
+                    <div class="col-lg-3 mb-4 mb-lg-0"> <!--- Left: Intro -->
+                        <div class="intro-card  slide-left">
+                            <h6 class="text-uppercase fw-bold text-center">Who are we...</h6>
+                            <p>
+                                Ma'Nanto Academy founded in 2017, based in the township of Kagiso.
+                                <br /> We are a preschool that equips learners with the cognitive, physical,
+                                emotional and social skills for a happy and confident start to school careers.
+                            </p>
+                        </div>
+                        <div class="mt-3"> <!--- Google Map iframe -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.8793040576325!2d27.79343507541391!3d-26.168059977098864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a3e6e7e9b02f%3A0x71268bbc215e23a4!2sMa%20%E2%80%99Nanto%20Academy!5e0!3m2!1sen!2sza!4v1759446206483!5m2!1sen!2sza"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                     <div class="col-lg-6 mb-4 mb-lg-0"> <!--- Center: Carousel -->
                         <div id="introCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -381,94 +447,135 @@
                             <p>Tel: 087 183 6053<br>Email: info@MaNantoAcademy.co.za</p>
                         </div>
                         <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-dark"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="btn btn-dark"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="btn btn-dark"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="btn btn-dark"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.facebook.com/p/Ma-nanto-Academy-100063521501954/" class="btn btn-dark"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?url=YOUR_URL" class="btn btn-dark" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?url=YOUR_URL" class="btn btn-dark"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" class="btn btn-dark"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-youtube"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <hr style="width: 50%; margin: 20px auto;" />
-        <section class="py-5 mt-5"> <!--- Last Content Section -->
-            <div class="py-5"> <!--- py-5 → vertical padding on the top and bottom of the section (y-axis) -->
-                <div class="container-fluid"> <!--- Main/mother container for the section -->
-                    <div class="row g-4"> <!--- align items in a row and apply gutter spacing g-4 between them -->
-                        <div class="col-12 col-md-4"> <!--- Right Column: Why choose us -->
-                            <div class="why-choose-honey-jar">
-                                <h2 class="jar-title">Why Choose Us?</h2>
-                                <ul class="list-unstyled why-us-list">
-                                    <li class="animate__animated animate__fadeInUp">Experienced Instructors</li>
-                                    <li class="animate__animated animate__zoomIn">Flexible Learning Options</li>
-                                    <li class="animate__animated animate__fadeInRight">Strong Parent Involvement</li>
-                                    <li class="animate__animated animate__fadeInUp">Creative Learning Activities</li>
-                                    <li class="animate__animated animate__fadeInRight">Safe and Fun Environment</li>
-                                    <li class="animate__animated animate__fadeInLeft">Comprehensive Curriculum</li>
-                                    <li class="animate__animated animate__zoomIn">Focus on Holistic Growth</li>
-                                    <li class="animate__animated animate__fadeInLeft">Modern Facilities</li>
-                                    <li class="animate__animated animate__fadeInUp">Small Class Sizes</li>
-                                    <li class="animate__animated animate__zoomIn">Affordable Tuition</li>
-                                </ul>
+
+        <section id="more-info" class="py-5 bg-light mt-5">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-4"> <!--- Column 1: Why Choose Us -->
+                        <div class="card h-100 p-3 shadow-sm">
+                            <h3 class="fw-bold mb-3 text-center">So Why Choose Us?</h3>
+                            <ul class="list-unstyled why-us-list mt-3">
+                                <li class="animate__animated animate__fadeInUp">Experienced Instructors</li>
+                                <li class="animate__animated animate__zoomIn">Flexible Learning Options</li>
+                                <li class="animate__animated animate__fadeInRight">Strong Parent Involvement</li>
+                                <li class="animate__animated animate__fadeInUp">Creative Learning Activities</li>
+                                <li class="animate__animated animate__fadeInRight">Safe and Fun Environment</li>
+                                <li class="animate__animated animate__fadeInLeft">Comprehensive Curriculum</li>
+                                <li class="animate__animated animate__zoomIn">Focus on Holistic Growth</li>
+                                <li class="animate__animated animate__fadeInLeft">Modern Facilities</li>
+                                <li class="animate__animated animate__fadeInUp">Small Class Sizes</li>
+                                <li class="animate__animated animate__zoomIn">Affordable Tuition</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4"> <!--- Column 2: Subscribe Form -->
+                        <div class="card h-100 p-4 shadow-sm subscribe-card">
+                            <h3 class="fw-bold mb-3 text-center">Get School News & Updates</h3>
+                            <form id="subscribeForm">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <button type="submit" class="btn subscribe-btn">
+                                    Subscribe <span class="arrow">→</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4"> <!--- Column 3: Write a Review -->
+                        <div class="card h-100 p-3 shadow-sm">
+                            <h3 class="fw-bold mb-3 text-center">Tell Us What You Think...</h3>
+                            <form id="reviewForm">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="3" placeholder="Your Review"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 text-muted">What Other Parents Say...</h2>
+                     <svg class="zigzag-hr zigzag-blue" viewBox="0 0 200 20" preserveAspectRatio="none">
+                        <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
+                            class="zigzag-line" />
+                    </svg>
+                    <p class="lead">Real reviews from our happy parents</p>
+                </div>
+                <div class="row">
+                    <!-- Review 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">"Amazing service! Everything was fast and easy."</p>
+                                <h6 class="mt-3 mb-0">– Jane Doe</h6>
+                                <small class="text-muted">5/5 stars</small>
                             </div>
                         </div>
-                        <div class="col-1"></div> <!--- Spacer column -->
-                        <div class="col-12 col-md-7 position-relative">
-                            <div class="reviews-honey-jar"> <!--- Left Column: Reviews -->
-                                <div class="reviews-list">
-                                    <h2 class="jar-title mb-3">What other parents say...</h2>
-
-                                    <div class="reviews-text">
-                                        <p>
-                                            ⭐⭐⭐⭐⭐ November 17, 2024 <br>
-                                            1️ MaNanto is a registered institution fully compliant <br>with safety,
-                                            health,
-                                            and environmental management laws. <br>
-                                            2️ Sina Nanto believes the best way to help children <br> succeed is to
-                                            teach
-                                            them to be creative, confident, <br> and analytical thinkers.<br>
-                                            3️ MaNanto Academy offers a research-based curriculum<br> that ensures that
-                                            all
-                                            learning outcomes are achieved.<br>
-                                            4️ MaNanto Academy adheres to hygiene <br>regulations and nutrition
-                                            standards.<br>
-                                            5️ Sina has built relationships with <br>doctors, nurses, and health
-                                            advisors.<br>
-                                            6️ MaNanto Academy is a place where learning is fun.
-                                        </p>
-                                    </div>
-                                </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">"I love this company! Highly recommend to everyone."</p>
+                                <h6 class="mt-3 mb-0">– John Smith</h6>
+                                <small class="text-muted">5/5 stars</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">"Professional and friendly. Great experience overall."</p>
+                                <h6 class="mt-3 mb-0">– Sarah Lee</h6>
+                                <small class="text-muted">4.5/5 stars</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--- Review Form -->
-        <div class="col-12 col-md-2">
-            <div class="card">
-                <h3 class="mb-2">Tell us what you think...</h3>
-                <form id="review-form" class="review-form">
-                    <div class="mb-2">
-                        <input type="text" id="reviewer-name" class="form-control" placeholder="Your Name" required />
-                    </div>
-                    <div class="mb-2">
-                        <input type="email" id="reviewer-email" class="form-control" placeholder="Your Email"
-                            required />
-                    </div>
-                    <div class="mb-2">
-                        <textarea id="review-message" class="form-control" rows="3" placeholder="Your Review"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit Review</button>
-                </form>
-                <div id="review-success" class="alert alert-success mt-3 d-none">
-                    ✅ Thank you! Your review has been submitted.
-                </div>
-            </div>
-        </div>
     </main>
-    <footer class="beeful py-4 text-white"> <!--- Footer Section -->
+    <footer class="beeful py-4 text-primary"> <!--- Footer Section -->
         <div class="container">
             <div class="row">
                 <!-- Left -->
@@ -496,6 +603,13 @@
             </div>
         </div>
     </footer>
+    <button id="scrollUpBtn" class="btn btn-warning btn-lg" title="Go to top"> <!--- Scroll Up Button -->
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/27871836053" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <!--- WhatsApp Floating Button -->
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <script>                                                                                        //SCROLLED.JS
         window.addEventListener('scroll', function ()                                               //Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
         {
@@ -529,18 +643,14 @@
     <script>                                                                                        //ROUGH.JS
         const counters = document.querySelectorAll('.counter');                                     //Handles count-up animations
         const speed = 500;                                                                          //Lower = Faster
-        const animateCounters = () => 
-        {
-            counters.forEach(counter => 
-            {
-                const updateCount = () => 
-                {
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
                     const increment = Math.ceil(target / speed);
 
-                    if (count < target) 
-                    {
+                    if (count < target) {
                         counter.innerText = count + increment;
                         setTimeout(updateCount, 20);
                     } else {
@@ -550,16 +660,68 @@
                 updateCount();
             });
         };
-            const section = document.getElementById('milestones');                                      //Trigger animation on scroll into view
-            let started = false;
-            window.addEventListener('scroll', () => {
-                const rect = section.getBoundingClientRect();
-                if (!started && rect.top < window.innerHeight) 
-                {
-                    animateCounters();
-                    started = true;
+        const section = document.getElementById('milestones');                                      //Trigger animation on scroll into view
+        let started = false;
+        window.addEventListener('scroll', () => {
+            const rect = section.getBoundingClientRect();
+            if (!started && rect.top < window.innerHeight) {
+                animateCounters();
+                started = true;
+            }
+        });    
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".value-card");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");                                         //Trigger animation
+                        observer.unobserve(entry.target);                                           //Animate once
+                    }
+                });
+            }, { threshold: 0.2 }); //Trigger when 20% visible
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+    <script>                                                                                        //ANIMATION ON SCROLL
+        const elements = document.querySelectorAll('.slide-left, .slide-right');                    //Trigger animation when elements scroll into view
+        function checkInView() {
+            const triggerBottom = window.innerHeight * 0.8;                                         //80% down viewport
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < triggerBottom) {
+                    el.classList.add('active');
                 }
-            });    
+            });
+        }
+
+        window.addEventListener('scroll', checkInView);
+        window.addEventListener('load', checkInView);
+    </script>
+    <script>                                                                                        //SCROLL UP BUTTON 
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+        window.addEventListener('scroll', () => {                                                   //Show button after scrolling down 300px
+            if (window.scrollY > 300) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        });
+
+        scrollUpBtn.addEventListener('click', () => {                                               //Smooth slow scroll to top
+            const scrollDuration = 15;                                                            //Milliseconds, adjust for speed
+            const scrollStep = -window.scrollY / (scrollDuration / 15);                             //Pixels per step
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                    window.scrollBy(0, scrollStep);
+                } else {
+                    clearInterval(scrollInterval);
+                }
+            }, 15);                                                                                 //Every 15ms
+        });
     </script>
 </body>
 
