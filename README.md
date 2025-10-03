@@ -19,6 +19,54 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 ## Part 2: Project Updates & Enhancements  
 
+# Changelog  
+
+All notable changes to this project will be documented in this file.  
+This project follows [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).  
+
+---
+
+## [v1.0.0] - 2025-09-15  
+- Project setup completed.  
+- Basic page structure (Home, About, Gallery, Services, Registration, Contact).  
+- Initial wireframes created.  
+- Added basic Bootstrap layout and styling.  
+
+---
+
+## [v1.1.0] - 2025-09-25  
+- Updated project timeframe.  
+- Refined wireframes for all pages.  
+- Applied dynamic and playful preschool styling.  
+- Introduced new typography and visual style guide.  
+- Added responsive techniques for forms and images.  
+
+---
+
+## [v1.2.0] - 2025-10-01  
+- Added new Media pages to showcase events.  
+- Captured screenshots at different screen sizes for testing.  
+- Tested across multiple browsers (Chrome, Edge, Firefox, Safari).  
+- Verified responsive behavior and cross-device compatibility.  
+
+---
+
+## [v1.3.0] - 2025-10-03  
+- Improved accessibility (color contrast, font sizes, form labels).  
+- Added hover states and animations for playful interactions.  
+- Enhanced footer with social links and contact information.  
+
+---
+
+## [Unreleased] - Planned  
+- Add blog/news section for updates.  
+- Create parent portal with login for progress tracking.  
+- Add interactive learning games or quizzes.  
+- Optimize performance with lazy loading and image compression.  
+- Expand accessibility support (screen readers, multi-language support).  
+
+---
+
 ### Project Timeframe  
 - Adjusted and finalized to reflect the current development progress.  
 - Incorporated milestones for design, development, and testing phases.  
