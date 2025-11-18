@@ -14,23 +14,53 @@ This project aims to upgrade and enhance the existing website of an organisation
 
 In later phases, additional features will be integrated, including:
 - PHP-based components such as online payments
-- Learner portals for streamlined interaction with students and staff
+- Learner portals for streamlined interaction with students and staff.
 At this stage, the focus is on delivering a complete visual and functional makeover of the current website.
 
-## Part 2: Project Updates & Enhancements  
+## Project Updates & Enhancements  
 
 # Changelog  
 
 All notable changes to this project will be documented in this file.  
-This project follows [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).  
+---
+
+#The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
+  code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
+
+## [v1.4.0] - 2025-11-18
+
+- Made the “Our Values” cards into bouncing bubbles.
+- Made sure text and images fit nicely inside the bubbles on all screens.
+- Tweaked the bubble animations so they stay inside the section and don’t go off-screen.
+- Unified navbar behavior: blur effect now works on scroll for all pages.
+- Updated Privacy Policy link to open in a popup instead of a separate page.
 
 ---
 
-## [v1.0.0] - 2025-09-15  
-- Project setup completed.  
-- Basic page structure (Home, About, Gallery, Services, Registration, Contact).  
-- Initial wireframes created.  
-- Added basic Bootstrap layout and styling.  
+## [v1.5.0] - 2025-11-19
+- Changed the “Register your child” button to open a modal instead of redirecting.
+- Built a scrollable registration modal with proper validations:
+    - Child’s name and date of birth → automatically calculates age.
+    - Select class applying for.
+    - Parent phone must start with +27.
+    - Parent email must be valid.
+- Added file uploads for three required documents: birth certificate, immunization records, parent ID.
+- Made the modal fully responsive on smaller screens.
+
+---
+
+## [v1.3.0] - 2025-10-03  
+- Improved accessibility (color contrast, font sizes, form labels).  
+- Added hover states and animations for playful interactions.  
+- Enhanced footer with social links and contact information.  
+
+---
+
+## [v1.2.0] - 2025-10-01  
+- Added new Media pages to showcase events.  
+- Captured screenshots at different screen sizes for testing.  
+- Tested across multiple browsers (Chrome, Edge, Firefox, Safari).  
+- Verified responsive behavior and cross-device compatibility.  
 
 ---
 
@@ -43,18 +73,11 @@ This project follows [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PAT
 
 ---
 
-## [v1.2.0] - 2025-10-01  
-- Added new Media pages to showcase events.  
-- Captured screenshots at different screen sizes for testing.  
-- Tested across multiple browsers (Chrome, Edge, Firefox, Safari).  
-- Verified responsive behavior and cross-device compatibility.  
-
----
-
-## [v1.3.0] - 2025-10-03  
-- Improved accessibility (color contrast, font sizes, form labels).  
-- Added hover states and animations for playful interactions.  
-- Enhanced footer with social links and contact information.  
+## [v1.0.0] - 2025-09-15  
+- Project setup completed.  
+- Basic page structure (Home, About, Gallery, Services, Registration, Contact).  
+- Initial wireframes created.  
+- Added basic Bootstrap layout and styling.  
 
 ---
 
@@ -63,12 +86,11 @@ This project follows [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PAT
 - Create parent portal with login for progress tracking.  
 - Add interactive learning games or quizzes.  
 - Optimize performance with lazy loading and image compression.  
-- Expand accessibility support (screen readers, multi-language support).  
+- Expand accessibility support (screen readers, multi-language support). 
 
----
 
 ### Project Timeframe  
-- Adjusted and finalized to reflect the current development progress.  
+- Adjusted and finalised to reflect the current development progress.  
 - Incorporated milestones for design, development, and testing phases.  
 
 ### Wireframes  

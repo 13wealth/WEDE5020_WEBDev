@@ -3,12 +3,12 @@
    ====================================================================================== */
 body { 
     font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
-    background: #fffbee;                                                                          /* Soft light yellow for bee theme */
+    background: #fffbee;                                                                                      /* Soft light yellow for bee theme */
     color: #333;
-    padding-top: 100px;                                                                             /* Space for fixed navbar */
+    padding-top: 100px;                                                                                         /* Space for fixed navbar */
 }
 
-body::before {                                                                                      /* Background Image */
+body::before {                                                                                                  /* Background Image */
     content: "";
     position: fixed;
     top: 0;
@@ -28,11 +28,11 @@ body::before {                                                                  
 }
 
 h2, h5, h6 {
-    color: yellow;                                                                                /* Honey-yellow headings */
+    color: yellow;                                                                                            /* Honey-yellow headings */
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Chewy', cursive;                                                                    /* Fun, playful font for headings */
+  font-family: 'Chewy', cursive;                                                                                /* Fun, playful font for headings */
 }
 
                                     /* WhatsApp Floating Button */
@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
     height: 60px;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;                                                                    /* WhatsApp green */
+    background-color: #25d366;                                                                                /* WhatsApp green */
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -53,13 +53,13 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease-in-out;
-    text-decoration: none;                                                                          /* 🚀 removes underline */
+    text-decoration: none;                                                                                      /* Removes underline */
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    background-color: #20b955;                                                                    /* darker green on hover */
-    text-decoration: none;                                                                          /* make sure it never shows underline */
+    background-color: #20b955;                                                                                /* darker green on hover */
+    text-decoration: none;                                                                                      /* make sure it never shows underline */
 }
 
 
@@ -72,27 +72,27 @@ h1, h2, h3, h4 {
 
                                         /* Heading styling */
 .heading-with-zigzag {
-    display: inline-block;                                                                          /* shrink heading to text width */
+    display: inline-block;                                                                                      /* shrink heading to text width */
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-.zigzag-hr {                                                                                        /* Zigzag line styling */
+.zigzag-hr {                                                                                                    /* Zigzag line styling */
     display: block;
-    width: fit-content;                                                                             /* shrink to content width (heading) */
-    max-width: 100%;                                                                                /* responsive on small screens */
+    width: fit-content;                                                                                         /* shrink to content width (heading) */
+    max-width: 100%;                                                                                            /* responsive on small screens */
     height: 15px;
-    margin: 5px auto 10px;                                                                          /* spacing: top 5px, bottom 10px, centered */
+    margin: 5px auto 10px;                                                                                      /* spacing: top 5px, bottom 10px, centered */
 }
 
 /* Blue zigzag for this section */
 .zigzag-hr.zigzag-blue .zigzag-line {
-    stroke: blue;                                                                                 /* set zigzag color */
+    stroke: blue;                                                                                             /* set zigzag color */
     stroke-width: 3;
     fill: none;
 }
 
-.zigzag-hr.zigzag-yellow .zigzag-line {                                                             /* Optional: Yellow variant */
+.zigzag-hr.zigzag-yellow .zigzag-line {                                                                         /* Optional: Yellow variant */
     stroke: yellow;
     stroke-width: 3;
     fill: none;
@@ -143,19 +143,19 @@ h1, h2, h3, h4 {
 
 }
 
-.dropdown:hover .dropdown-menu {                                                                    /* Dropdown on hover */
+.dropdown:hover .dropdown-menu {                                                                                /* Dropdown on hover */
     display: block;
 }
 
-.navbar.scrolled {                                                                                  /* Smooth transition for background and shadow */
-    backdrop-filter: blur(10px);                                                                    /* Blurs the background behind navbar */
+.navbar.scrolled {                                                                                              /* Smooth transition for background and shadow */
+    backdrop-filter: blur(10px);                                                                                /* Blurs the background behind navbar */
     background-color: transparent; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                                                     /* Shadow below navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                                                                 /* Shadow below navbar */
     transition: all 0.3s ease;
 }
 
 .navbar a.nav-link,
-.navbar-brand {                                                                                     /* Smooth transition for text color if needed */
+.navbar-brand {                                                                                                 /* Smooth transition for text color if needed */
     transition: color 0.3s ease;
 }
 
@@ -165,14 +165,14 @@ h1, h2, h3, h4 {
 
 .hero-container {
     border-radius: 12px;
-     padding: clamp(5rem, 7vw, 10rem) 2rem;                                                         /* top/bottom responsive, left/right fixed */
+     padding: clamp(5rem, 7vw, 10rem) 2rem;                                                                     /* top/bottom responsive, left/right fixed */
     color: white;
-    position: sticky;                                                                               /* keeps hero content in place during scroll */
-    top: 0;                                                                                         /* starts at top of viewport */
+    position: sticky;                                                                                           /* keeps hero content in place during scroll */
+    top: 0;                                                                                                     /* starts at top of viewport */
     background: url("https://images.unsplash.com/photo-1588072432836-e10032774350") 
                 no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;                                                                   /* parallax for bg */
+    background-attachment: fixed;                                                                               /* parallax for bg */
     overflow: hidden;
     z-index: 0;
 }
@@ -184,14 +184,14 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(55, 52, 52, 0.3);                                                            /* darker overlay */
+    background: rgba(55, 52, 52, 0.3);                                                                        /* darker overlay */
     border-radius: 12px;
     z-index: 0;
 }
 
 .hero-container * {
     position: relative;
-    z-index: 1;                                                                                     /* text above overlay */
+    z-index: 1;                                                                                                 /* text above overlay */
 }
 
 /* Text styling */
@@ -235,47 +235,47 @@ h1, h2, h3, h4 {
 }
 
 .intro-card {
-    border: 3px dashed #6476e0;                                                                   /* funky dashed border */
-    border-radius: 20px 5px 25px 10px;                                                              /* playful uneven rounding */
+    border: 3px dashed #6476e0;                                                                               /* funky dashed border */
+    border-radius: 20px 5px 25px 10px;                                                                          /* playful uneven rounding */
     padding: 20px;
     background: transparent;
-    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);                                                 /* subtle lift */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);                                                             /* subtle lift */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .intro-card:hover {
-    transform: rotate(7deg) scale(1.03);                                                            /* fun tilt on hover */
+    transform: rotate(7deg) scale(1.03);                                                                        /* fun tilt on hover */
     box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 
 #introCarousel {
-    max-height: 500px;                                                                               /* Limit carousel height */
-    border-radius: 15px;                                                                             /* Rounded corners */
-    overflow: hidden;                                                                                /* Keeps images inside rounded edges */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);                                                     /* Soft shadow */
+    max-height: 500px;                                                                                          /* Limit carousel height */
+    border-radius: 15px;                                                                                        /* Rounded corners */
+    overflow: hidden;                                                                                           /* Keeps images inside rounded edges */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);                                                                /* Soft shadow */
 }
 
 #introCarousel .carousel-inner img {
-    height: 100%;                                                                                   /* Sets image height to fill container */
-    object-fit: cover;                                                                              /* Keeps aspect ratio, crops nicely */
+    height: 100%;                                                                                               /* Sets image height to fill container */
+    object-fit: cover;                                                                                          /* Keeps aspect ratio, crops nicely */
 }
 
-#introCarousel .carousel-caption h5 {                                                               /* Ensure captions remain readable */
+#introCarousel .carousel-caption h5 {                                                                           /* Ensure captions remain readable */
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .info-card {
-    border-radius: 12px;                                                                            /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);                                                    /* Base shadow */
-    transition: transform 0.3s, box-shadow 0.3s;                                                    /* Smooth hover animation */
+    border-radius: 12px;                                                                                        /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);                                                                /* Base shadow */
+    transition: transform 0.3s, box-shadow 0.3s;                                                                /* Smooth hover animation */
 }
 
 .info-card:hover {
-    transform: translateY(-5px);                                                                    /* Lift effect */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);                                                    /* Stronger shadow on hover */
+    transform: translateY(-5px);                                                                                /* Lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);                                                                /* Stronger shadow on hover */
 }
                                 /*=== Statistics Card Styles ===*/                 
 .stat-card h3 {
@@ -307,7 +307,7 @@ h1, h2, h3, h4 {
     animation: crazy-rotate 1s infinite;
 }
 
-@keyframes crazy-rotate {                                                                           /* Crazy rotation keyframes */
+@keyframes crazy-rotate {                                                                                       /* Crazy rotation keyframes */
     0% { transform: rotate(0deg) scale(1.05); }
     10% { transform: rotate(10deg) scale(1.07); }
     20% { transform: rotate(-8deg) scale(1.06); }
@@ -323,7 +323,7 @@ h1, h2, h3, h4 {
 
 .feature-card .content {
     position: relative;
-    z-index: 1;                                                                                     /* text above canvas */
+    z-index: 1;                                                                                                 /* text above canvas */
 }
 
 .feature-card canvas.rough-canvas {
@@ -332,7 +332,7 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;                                                                           /* allows hover on card */
+    pointer-events: none;                                                                                       /* allows hover on card */
 }
 
 .feature-card .icon {
@@ -341,7 +341,7 @@ h1, h2, h3, h4 {
                                     /*=== Our Values ===*/
 #playful-illustration {
   position: relative;
-  z-index: 1;                                                                                       /* ensures overlay is behind content */
+  z-index: 1;                                                                                                   /* ensures overlay is behind content */
 }
 
 #playful-illustration::before {
@@ -351,9 +351,9 @@ h1, h2, h3, h4 {
   left: 0;
   width: 100%;
   height: 100%;
-   background: #FF6F61;                                                                           /* playful coral pop */
-  z-index: -1;                                                                                      /* push behind the text/cards */
-  pointer-events: none;                                                                             /* make sure overlay doesn’t block clicks */
+   background: #FF6F61;                                                                                       /* playful coral pop */
+  z-index: -1;                                                                                                  /* push behind the text/cards */
+  pointer-events: none;                                                                                         /* make sure overlay doesn’t block clicks */
 }
 
 .values {
@@ -367,16 +367,16 @@ h1, h2, h3, h4 {
     overflow: hidden;
     position: relative;
     padding: 2rem;
-    background: rgba(255, 165, 0, 0.6);                                                           /* semi-transparent playful orange */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);                                                       /* slightly stronger shadow */
+    background: rgba(255, 165, 0, 0.6);                                                                       /* semi-transparent playful orange */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);                                                                   /* slightly stronger shadow */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
-    animation: float 4s ease-in-out infinite;                                                       /* subtle floating animation */
+    animation: float 4s ease-in-out infinite;                                                                   /* subtle floating animation */
 }
 
 .value-card:hover {
-    transform: translateY(-10px) rotate(-1deg);                                                     /* playful hover effect */
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);                                                     /* stronger shadow on hover */
+    transform: translateY(-10px) rotate(-1deg);                                                                 /* playful hover effect */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);                                                                 /* stronger shadow on hover */
 }
 
 .value-card img.floating-icon {
@@ -385,12 +385,12 @@ h1, h2, h3, h4 {
     object-fit: contain;
     display: block;
     margin: 0 auto 15px auto;
-    animation: icon-float 3s ease-in-out infinite;                                                  /* floating icon */
+    animation: icon-float 3s ease-in-out infinite;                                                              /* floating icon */
 }
 
 .value-card h5 {
     font-size: 1.25rem;
-    color: #ff7f50;                                                                               /* fun coral color */
+    color: #ff7f50;                                                                                           /* fun coral color */
     margin-bottom: 10px;
 }
 
@@ -450,10 +450,10 @@ h1, h2, h3, h4 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: column;                                                                           /* ensures badge, text, etc. flow neatly */
+  flex-direction: column;                                                                                       /* ensures badge, text, etc. flow neatly */
   justify-content: flex-start;
-  height: 100%;                                                                                     /* stretch equally */
-  min-height: 420px;                                                                                /* makes them tall */
+  height: 100%;                                                                                                 /* stretch equally */
+  min-height: 420px;                                                                                            /* makes them tall */
 }
 
 .process-card:hover {
@@ -474,10 +474,10 @@ h1, h2, h3, h4 {
 }
 
                                 /*=== Why choose us ===*/
-.why-us-list {                                                                                      /*padding-top: 2rem;*/
+.why-us-list {                                                                                                  /*padding-top: 2rem;*/
     
-    list-style: none;                                                                               /* Remove default bullets */ 
-    padding-left: auto;                                                                             /* Apply indentation for all items */
+    list-style: none;                                                                                           /* Remove default bullets */ 
+    padding-left: auto;                                                                                         /* Apply indentation for all items */
     margin: 0;
     color: #333;
 }
@@ -485,10 +485,10 @@ h1, h2, h3, h4 {
 .why-us-list li {
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    position: relative;                                                                             /* Avoids fading out */
-    padding-left: 0;                                                                                /* Keep animation from shifting layout */                                                                        /* Space for checkmark */
-    text-align: center;                                                                               /* Vertical spacing */
-    color: #8B0000;                                                                               /* Ensure left alignment */
+    position: relative;                                                                                         /* Avoids fading out */
+    padding-left: 0;                                                                                            /* Keep animation from shifting layout */                                                                        /* Space for checkmark */
+    text-align: center;                                                                                         /* Vertical spacing */
+    color: #8B0000;                                                                                           /* Ensure left alignment */
     margin-bottom: 10px;
 }
 
@@ -586,6 +586,69 @@ form button:hover {
     transform: scale(1.05);
 }
 
+/* ======================================================================================
+                                        MODAL
+   ====================================================================================== */
+/* Modal header styling */
+#registrationModal .modal-header {
+    background-color: #FF6F61; /* playful coral color matching hero section */
+    color: white;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Modal title */
+#registrationModal .modal-title {
+    font-family: 'Font Love', cursive; 
+    font-weight: 700;
+}
+
+/* Modal body */
+#registrationModal .modal-body {
+    background: #fff8f6; /* soft playful background */
+    padding: 2rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Form inputs */
+#registrationModal .form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid #FF6F61;
+}
+
+#registrationModal .form-control:focus {
+    box-shadow: 0 0 8px rgba(255,111,97,0.5);
+    border-color: #FF6F61;
+}
+
+/* Submit button */
+#registrationModal .btn-primary {
+    background-color: #FF6F61;
+    border-color: #FF6F61;
+    font-weight: 600;
+    font-family: 'Font Love', cursive;
+    transition: all 0.3s ease;
+}
+
+#registrationModal .btn-primary:hover {
+    background-color: #e65b50;
+    border-color: #e65b50;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 576px) {
+    #registrationModal .modal-body {
+        padding: 1.5rem;
+    }
+    #registrationModal .btn-primary {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 /* ======================================================================================
                                     CONTACT INFO
@@ -649,7 +712,7 @@ form button:hover {
    ====================================================================================== */
 footer.beeful {
   background-image: url('footer/220302.jpg');
-  background-size: cover;                                                                           /* or “contain” or use “repeat” if pattern */
+  background-size: cover;                                                                                       /* or “contain” or use “repeat” if pattern */
   background-position: center;
   background-repeat: no-repeat;    /* or “repeat” if it’s a tiling pattern */
   color: #fff;                      /* ensure text is visible */
@@ -661,7 +724,7 @@ footer.beeful::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);                                                           /* dark overlay to help text stand out */
+  background-color: rgba(0, 0, 0, 0.4);                                                                       /* dark overlay to help text stand out */
   pointer-events: none;
 }
 
@@ -713,7 +776,7 @@ footer.beeful::before {
     animation-delay: 2s;
 }
  
-.animate__animated {                                                                                /* Keep Animate.css animations final state */
+.animate__animated {                                                                                            /* Keep Animate.css animations final state */
     animation-fill-mode: forwards !important;
 }
 
@@ -799,17 +862,17 @@ footer.beeful::before {
 
                                 /* Our Values */
 
-.value-card {                                                                                       /* Initial hidden state */
+.value-card {                                                                                                   /* Initial hidden state */
   opacity: 0;
-  transform: translateX(100px);                                                                     /* default fly from right */
+  transform: translateX(100px);                                                                                 /* default fly from right */
   transition: all 0.8s ease-out;
 }
 
-.value-card.from-left {                                                                             /* Fly from left */
+.value-card.from-left {                                                                                         /* Fly from left */
   transform: translateX(-100px);
 }
 
-.value-card.show {                                                                                  /* When visible */
+.value-card.show {                                                                                              /* When visible */
   opacity: 1;
   transform: translateX(0);
 }
@@ -818,8 +881,10 @@ footer.beeful::before {
 /* ======================================================================================
                                         RESPONSIVE
    ====================================================================================== */
-@media (max-width: 768px) {
-    .hero-container {
+@media (max-width: 768px) 
+{
+    .hero-container 
+    {
         padding: 50px 15px;
         border-radius: 15px;
     }
@@ -861,13 +926,15 @@ footer.beeful::before {
     }
 }
 
-@media (max-width: 768px) {                                                                         /* shrink logo on tablets/phones */
+@media (max-width: 768px) 
+{                                                                                     /* shrink logo on tablets/phones */
     .logo-img {
         max-height: 50px;
     }
 }
 
-@media (max-width: 576px) {                                                                         /* extra small screens */
+@media (max-width: 576px) 
+{                                                                                     /* extra small screens */
     .logo-img {
         max-height: 40px;
     }
@@ -878,12 +945,35 @@ footer.beeful::before {
     font-family: 'font-short', cursive;
 }
 
-.logo-img {                                                                                         /* Logo Responsiveness */
-    max-height: 120px;                                                                              /* default for desktops */
+.logo-img {                                                                                                     /* Logo Responsiveness */
+    max-height: 120px;                                                                                          /* default for desktops */
     height: auto;
     width: auto;
 }
 
+@media (max-width: 768px)                                                                                       /* Value Section Responsiveness */
+{
+    .value-card {
+        width: 20vw;
+        height: 20vw;
+        font-size: 0.7em;
+    }
+    .value-card img { max-width: 45%; max-height: 45%; }
+    .value-card h5 { font-size: 0.9em; }
+    .value-card p { font-size: 0.7em; }
+}
+
+@media (max-width: 480px) 
+{
+    .value-card {
+        width: 25vw;
+        height: 25vw;
+        font-size: 0.6em;
+    }
+    .value-card img { max-width: 40%; max-height: 40%; }
+    .value-card h5 { font-size: 0.8em; }
+    .value-card p { font-size: 0.6em; }
+}
 
 /* ======================================================================================
                                         FONTS
@@ -902,5 +992,124 @@ footer.beeful::before {
 .font-lucky { font-family: 'Luckiest Guy', cursive; }
 
 
+/* Bubbles wrapper */
+.bubbles-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* responsive height below heading */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Bubble style */
+.value-card {
+    position: absolute;
+    width: 12vw;    /* responsive width */
+    height: 12vw;   /* keep it square */
+    max-width: 200px; 
+    max-height: 200px;
+    min-width: 80px;
+    min-height: 80px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(135,206,250,0.4));
+    border-radius: 50%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -5px -5px 15px rgba(255,255,255,0.5),
+                0 4px 15px rgba(0,0,0,0.2);
+    font-size: 0.8em;  /* base font size */
+}
+
+/* Text inside bubble */
+.value-card h5 {
+    font-size: 1em;
+}
+.value-card p {
+    font-size: 0.8em;
+}
+
+/* Animate bubbles */
+.bubbles-wrapper > .value-card:nth-child(1) { animation: bounce1 14s linear infinite alternate; }
+.bubbles-wrapper > .value-card:nth-child(2) { animation: bounce2 16s linear infinite alternate; }
+.bubbles-wrapper > .value-card:nth-child(3) { animation: bounce3 18s linear infinite alternate; }
+.bubbles-wrapper > .value-card:nth-child(4) { animation: bounce4 20s linear infinite alternate; }
+
+/* Keyframes staying inside wrapper (percentages scale with wrapper) */
+@keyframes bounce1 {
+    0%   { top: 0%; left: 10%; }
+    25%  { top: 10%; left: 85%; }
+    50%  { top: 60%; left: 50%; }
+    75%  { top: 40%; left: 10%; }
+    100% { top: 0%; left: 10%; }
+}
+@keyframes bounce2 {
+    0%   { top: 5%; left: 20%; }
+    25%  { top: 20%; left: 80%; }
+    50%  { top: 50%; left: 60%; }
+    75%  { top: 35%; left: 30%; }
+    100% { top: 5%; left: 20%; }
+}
+@keyframes bounce3 {
+    0%   { top: 10%; left: 10%; }
+    25%  { top: 30%; left: 80%; }
+    50%  { top: 50%; left: 40%; }
+    75%  { top: 25%; left: 20%; }
+    100% { top: 10%; left: 10%; }
+}
+@keyframes bounce4 {
+    0%   { top: 0%; left: 30%; }
+    25%  { top: 20%; left: 70%; }
+    50%  { top: 50%; left: 50%; }
+    75%  { top: 30%; left: 30%; }
+    100% { top: 0%; left: 30%; }
+}
+
+
+
+/* Bubble content styling */
+.value-card {
+    position: absolute;
+    width: 12vw;                 /* responsive */
+    height: 12vw;                /* keep square */
+    max-width: 200px; 
+    max-height: 200px;
+    min-width: 80px;
+    min-height: 80px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(135,206,250,0.4));
+    border-radius: 50%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -5px -5px 15px rgba(255,255,255,0.5),
+                0 4px 15px rgba(0,0,0,0.2);
+    font-size: 0.8em;
+    text-align: center;
+    overflow: hidden;                                                                                           /* Ensures nothing escapes the bubble */
+}
+
+/* Image inside bubble */
+.value-card img {
+    max-width: 50%;                                                                                             /* Shrink image to fit bubble */
+    max-height: 50%;                                                                                            /* Adjust to bubble size */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.3em;
+}
+
+/* Headings and paragraphs inside bubble */
+.value-card h5, .value-card p {
+    width: 90%;                  /* restrict width inside bubble */
+    margin: 0 auto;              /* center text */
+    overflow-wrap: break-word;   /* force wrapping of long words */
+}
+
+/* Font scaling for headings and paragraphs */
+.value-card h5 { font-size: 1em; }
+.value-card p { font-size: 0.8em; }
 
 
