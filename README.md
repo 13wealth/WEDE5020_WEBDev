@@ -24,8 +24,8 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 All notable changes to this project will be documented in this file.  
 ---
 
-#The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
-  code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
+The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
+code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
 
 ## [v1.4.0] - 2025-11-18
 
