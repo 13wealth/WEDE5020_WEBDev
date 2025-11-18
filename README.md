@@ -1,6 +1,5 @@
 # Project: Website Enhancement for Education Organisation
 
-<h2><u>Part 1</u></h2>
 This project aims to upgrade and enhance the existing website of an organisation operating in the Education sector.
 
 ### The primary objectives are:
