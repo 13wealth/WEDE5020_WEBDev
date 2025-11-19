@@ -293,6 +293,10 @@ h1, h2, h3, h4 {
                                         CARDS
    ====================================================================================== */
 
+.card {
+    background-color: #f4f4f4;
+    }   
+
                                 /*=== Feature Card Styles ===*/
 
 .feature-card {
@@ -473,9 +477,8 @@ h1, h2, h3, h4 {
   border-radius: 12px;
 }
 
-                                /*=== Why choose us ===*/
+                                        /*=== Why choose us ===*/
 .why-us-list {                                                                                                  /*padding-top: 2rem;*/
-    
     list-style: none;                                                                                           /* Remove default bullets */ 
     padding-left: auto;                                                                                         /* Apply indentation for all items */
     margin: 0;
@@ -483,25 +486,26 @@ h1, h2, h3, h4 {
 }
 
 .why-us-list li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     position: relative;                                                                                         /* Avoids fading out */
     padding-left: 0;                                                                                            /* Keep animation from shifting layout */                                                                        /* Space for checkmark */
-    text-align: center;                                                                                         /* Vertical spacing */
+    text-align: left;                                                                                         /* Vertical spacing */
     color: #8B0000;                                                                                           /* Ensure left alignment */
     margin-bottom: 10px;
 }
 
-
-                                    /*=== REVIEWS & SUBSCRIBE ===*/
-
-.subscribe-card {
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    padding: 2rem;
+.why-us-list li.animate {                                                                                       /* Apply animation when triggered */
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.subscribe-btn {
+                                        /*=== REVIEWS & SUBSCRIBE ===*/
+
+.submit-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -515,24 +519,25 @@ h1, h2, h3, h4 {
     transition: background 0.3s, transform 0.2s;
 }
 
-.subscribe-btn .arrow {
+.submit-btn .arrow {
     margin-left: 8px;
     font-weight: bold;
     transition: transform 0.2s;
 }
 
-.subscribe-btn:hover {
+.submit-btn:hover {
     background: #6f45e6; /* slightly darker on hover */
     transform: translateY(-2px);
 }
 
-.subscribe-btn:hover .arrow {
+.submit-btn:hover .arrow {
     transform: translateX(4px);
 }
 
 .reviews {
     background: transparent;
 }
+
 
 
 /* ======================================================================================
@@ -711,10 +716,7 @@ form button:hover {
                                         FOOTER
    ====================================================================================== */
 footer.beeful {
-  background-image: url('footer/220302.jpg');
-  background-size: cover;                                                                                       /* or “contain” or use “repeat” if pattern */
-  background-position: center;
-  background-repeat: no-repeat;    /* or “repeat” if it’s a tiling pattern */
+
   color: #fff;                      /* ensure text is visible */
   position: relative;              /* to allow overlays if needed */
   padding: 60px 0;
@@ -860,7 +862,7 @@ footer.beeful::before {
     font-size: 5rem;
 }
 
-                                /* Our Values */
+                                            /*=== Our Values ===*/
 
 .value-card {                                                                                                   /* Initial hidden state */
   opacity: 0;
@@ -877,135 +879,20 @@ footer.beeful::before {
   transform: translateX(0);
 }
 
-
-/* ======================================================================================
-                                        RESPONSIVE
-   ====================================================================================== */
-@media (max-width: 768px) 
-{
-    .hero-container 
-    {
-        padding: 50px 15px;
-        border-radius: 15px;
-    }
-
-    .hero-container h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-container p.lead {
-        font-size: 1.2rem;
-    }
-
-    .hero-container .btn-primary {
-        padding: 10px 20px;
-    }
-
-    .contact-info-card::before {
-        font-size: 3rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9rem;
-    }
-
-    .card,
-    form,
-    .carousel-item {
-        padding: 20px;
-        border-radius: 15px;
-    }
-
-    .card h5 {
-        font-size: 1.1rem;
-    }
-
-    form button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) 
-{                                                                                     /* shrink logo on tablets/phones */
-    .logo-img {
-        max-height: 50px;
-    }
-}
-
-@media (max-width: 576px) 
-{                                                                                     /* extra small screens */
-    .logo-img {
-        max-height: 40px;
-    }
-}
-
-.navbar-nav .nav-link {
-    font-size: clamp(0.85rem, 2vw, 1rem);
-    font-family: 'font-short', cursive;
-}
-
-.logo-img {                                                                                                     /* Logo Responsiveness */
-    max-height: 120px;                                                                                          /* default for desktops */
-    height: auto;
-    width: auto;
-}
-
-@media (max-width: 768px)                                                                                       /* Value Section Responsiveness */
-{
-    .value-card {
-        width: 20vw;
-        height: 20vw;
-        font-size: 0.7em;
-    }
-    .value-card img { max-width: 45%; max-height: 45%; }
-    .value-card h5 { font-size: 0.9em; }
-    .value-card p { font-size: 0.7em; }
-}
-
-@media (max-width: 480px) 
-{
-    .value-card {
-        width: 25vw;
-        height: 25vw;
-        font-size: 0.6em;
-    }
-    .value-card img { max-width: 40%; max-height: 40%; }
-    .value-card h5 { font-size: 0.8em; }
-    .value-card p { font-size: 0.6em; }
-}
-
-/* ======================================================================================
-                                        FONTS
-   ====================================================================================== */
-
-/* Handwriting / playful fonts */
-.font-chewy { font-family: 'Chewy', cursive; }
-.font-comic { font-family: 'Comic Neue', cursive; }
-.font-patrick { font-family: 'Patrick Hand', cursive; }
-.font-gloria { font-family: 'Gloria Hallelujah', cursive; }
-.font-short { font-family: 'Short Stack', cursive; }
-.font-bubblegum { font-family: 'Bubblegum Sans', cursive; }
-.font-delius { font-family: 'Delius Swash Caps', cursive; }
-.font-boogaloo { font-family: 'Boogaloo', cursive; }
-.font-love { font-family: 'Love Ya Like A Sister', cursive; }
-.font-lucky { font-family: 'Luckiest Guy', cursive; }
-
-
 /* Bubbles wrapper */
 .bubbles-wrapper {
     position: relative;
     width: 100%;
-    height: 70vh; /* responsive height below heading */
+    height: 70vh;                                                                                               /* Responsive height below heading */
     overflow: hidden;
     margin: 0 auto;
 }
 
-/* Bubble style */
+/* Bubble content and styling */
 .value-card {
     position: absolute;
-    width: 12vw;    /* responsive width */
-    height: 12vw;   /* keep it square */
+    width: 12vw;                                                                                                /* Responsive width */
+    height: 12vw;                                                                                               /* Keep it square */
     max-width: 200px; 
     max-height: 200px;
     min-width: 80px;
@@ -1019,7 +906,9 @@ footer.beeful::before {
     align-items: center;
     box-shadow: inset -5px -5px 15px rgba(255,255,255,0.5),
                 0 4px 15px rgba(0,0,0,0.2);
-    font-size: 0.8em;  /* base font size */
+    font-size: 0.8em;                                                                                           /* Base font size */
+    text-align: center;
+    overflow: hidden;                                                                                           /* Ensures nothing escapes the bubble */
 }
 
 /* Text inside bubble */
@@ -1066,31 +955,6 @@ footer.beeful::before {
     100% { top: 0%; left: 30%; }
 }
 
-
-
-/* Bubble content styling */
-.value-card {
-    position: absolute;
-    width: 12vw;                 /* responsive */
-    height: 12vw;                /* keep square */
-    max-width: 200px; 
-    max-height: 200px;
-    min-width: 80px;
-    min-height: 80px;
-    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(135,206,250,0.4));
-    border-radius: 50%;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset -5px -5px 15px rgba(255,255,255,0.5),
-                0 4px 15px rgba(0,0,0,0.2);
-    font-size: 0.8em;
-    text-align: center;
-    overflow: hidden;                                                                                           /* Ensures nothing escapes the bubble */
-}
-
 /* Image inside bubble */
 .value-card img {
     max-width: 50%;                                                                                             /* Shrink image to fit bubble */
@@ -1103,13 +967,129 @@ footer.beeful::before {
 
 /* Headings and paragraphs inside bubble */
 .value-card h5, .value-card p {
-    width: 90%;                  /* restrict width inside bubble */
-    margin: 0 auto;              /* center text */
-    overflow-wrap: break-word;   /* force wrapping of long words */
+    width: 90%;                                                                                                 /* restrict width inside bubble */
+    margin: 0 auto;                                                                                             /* center text */
+    overflow-wrap: break-word;                                                                                  /* force wrapping of long words */
 }
 
 /* Font scaling for headings and paragraphs */
 .value-card h5 { font-size: 1em; }
 .value-card p { font-size: 0.8em; }
 
+
+/* ======================================================================================
+                                        RESPONSIVE
+   ====================================================================================== */
+@media (max-width: 768px) 
+{
+    .hero-container 
+    {
+        padding: 50px 15px;
+        border-radius: 15px;
+    }
+
+    .hero-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-container p.lead {
+        font-size: 1.2rem;
+    }
+
+    .hero-container .btn-primary {
+        padding: 10px 20px;
+    }
+
+    .contact-info-card::before {
+        font-size: 3rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .card,form,
+    .carousel-item {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+.navbar-nav .nav-link {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-family: 'font-short', cursive;
+}
+
+                                            /*=== Logo Responsiveness ===*/
+
+@media (max-width: 768px)                                                                                       /* Shrink logo on tablets/phones */
+{                                                                                                               
+    .logo-img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 576px)                                                                                       /* Extra small screens */
+{                                                                                                               
+    .logo-img {
+        max-height: 40px;
+    }
+}
+
+.logo-img {                                                                                                     
+    max-height: 120px;                                                                                          /* default for desktops */
+    height: auto;
+    width: auto;
+}
+
+                                        /*=== Value Section Responsiveness ===*/  
+
+@media (max-width: 768px)                                                                                       
+{
+    .value-card {
+        width: 20vw;
+        height: 20vw;
+        font-size: 0.7em;
+    }
+    .value-card img { max-width: 45%; max-height: 45%; }
+    .value-card h5 { font-size: 0.9em; }
+    .value-card p { font-size: 0.7em; }
+}
+
+@media (max-width: 480px) 
+{
+    .value-card {
+        width: 25vw;
+        height: 25vw;
+        font-size: 0.6em;
+    }
+    .value-card img { max-width: 30%; max-height: 30%; }
+    .value-card h5 { font-size: 0.8em; }
+    .value-card p { font-size: 0.6em; }
+}
+
+/* ======================================================================================
+                                        FONTS
+   ====================================================================================== */
+
+/* Handwriting / playful fonts */
+.font-chewy { font-family: 'Chewy', cursive; }
+.font-comic { font-family: 'Comic Neue', cursive; }
+.font-patrick { font-family: 'Patrick Hand', cursive; }
+.font-gloria { font-family: 'Gloria Hallelujah', cursive; }
+.font-short { font-family: 'Short Stack', cursive; }
+.font-bubblegum { font-family: 'Bubblegum Sans', cursive; }
+.font-delius { font-family: 'Delius Swash Caps', cursive; }
+.font-boogaloo { font-family: 'Boogaloo', cursive; }
+.font-love { font-family: 'Love Ya Like A Sister', cursive; }
+.font-lucky { font-family: 'Luckiest Guy', cursive; }
 

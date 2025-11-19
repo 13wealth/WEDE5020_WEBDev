@@ -99,7 +99,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="registrationForm" novalidate>
+                            <form id="registrationForm" class="needs-validation shadow-lg" novalidate>
                                 <div class="mb-3">                                                              <!--- Child's name -->
                                     <label for="childName" class="form-label">Child's Name</label>
                                     <input type="text" 
@@ -512,30 +512,30 @@
             </div>
         </section>
 
-        <section id="more-info" class="py-5 bg-light mt-5">
+        <section id="more-info" class="py-5 mt-5">                                                              <!--- SUBSCRIBTION & REVIEWS SECTION-->
             <div class="container">
                 <div class="row gx-5">
-                    <div class="col-lg-4 mb-4"> <!--- Column 1: Why Choose Us -->
-                        <div class="card h-100 p-3 shadow-sm">
-                            <h3 class="fw-bold mb-3 text-center">So Why Choose Us?</h3>
-                            <ul class="list-unstyled why-us-list mt-3">
-                                <li class="animate__animated animate__fadeInUp">Experienced Instructors</li>
-                                <li class="animate__animated animate__zoomIn">Flexible Learning Options</li>
-                                <li class="animate__animated animate__fadeInRight">Strong Parent Involvement</li>
-                                <li class="animate__animated animate__fadeInUp">Creative Learning Activities</li>
-                                <li class="animate__animated animate__fadeInRight">Safe and Fun Environment</li>
-                                <li class="animate__animated animate__fadeInLeft">Comprehensive Curriculum</li>
-                                <li class="animate__animated animate__zoomIn">Focus on Holistic Growth</li>
-                                <li class="animate__animated animate__fadeInLeft">Modern Facilities</li>
-                                <li class="animate__animated animate__fadeInUp">Small Class Sizes</li>
-                                <li class="animate__animated animate__zoomIn">Affordable Tuition</li>
+                    <div class="col-lg-4 mb-4">                                                                 <!--- Column 1: Why choose us -->
+                        <div class="card h-100 p-3 shadow-lg">
+                            <h3 class="fw-bold mb-3 text-center text-primary">So Why Choose Us?</h3>
+                            <ul class="list-unstyled font-love why-us-list mt-3">
+                                <li>🌟 Teachers Who Truly Care</li>
+                                <li>📚 Learning That Fits Every Schedule</li>
+                                <li>🤝 Parents Are Part of the Journey</li>
+                                <li>🎨 Activities That Spark Creativity</li>
+                                <li>🛡️ A Safe Space to Learn and Grow</li>
+                                <li>📘 A Curriculum Designed for Success</li>
+                                <li>🌱 We Grow the Whole Child</li>
+                                <li>🏫 Modern Classrooms With Modern Tools</li>
+                                <li>👨‍👩‍👧 Small Classes, Big Attention</li>
+                                <li>💸 Quality Education Without the High Price Tag</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">                                                                 <!--- Column 2: Subscribe Form -->
-                        <div class="card h-100 p-4 shadow-sm subscribe-card">
-                            <h3 class="fw-bold mb-3 text-center">Get School News & Updates</h3>
-                            <form id="subscribeForm">
+                        <div class="card h-100 p-4 shadow-lg">
+                            <h3 class="fw-bold mb-3 text-center text-primary">Get School News & Updates</h3>
+                            <form id="subscribeForm" class="needs-validation shadow-lg" novalidate>
                                 <div class="mb-2">
                                     <input type="text" class="form-control" placeholder="First Name" required>
                                 </div>
@@ -545,16 +545,17 @@
                                 <div class="mb-3">
                                     <input type="email" class="form-control" placeholder="Email" required>
                                 </div>
-                                <button type="submit" class="btn subscribe-btn">
-                                    Subscribe <span class="arrow">→</span>
+                                <button type="submit" 
+                                        class="btn submit-btn">
+                                        Subscribe <span class="arrow">→</span>
                                 </button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4"> <!--- Column 3: Write a Review -->
-                        <div class="card h-100 p-3 shadow-sm">
-                            <h3 class="fw-bold mb-3 text-center">Tell Us What You Think...</h3>
-                            <form id="reviewForm">
+                    <div class="col-lg-4 mb-4">                                                                 <!--- Column 3: Write a Review -->
+                        <div class="card h-100 p-3 shadow-lg">
+                            <h3 class="fw-bold mb-3 text-center text-primary">Tell Us What You Think...</h3>
+                            <form id="reviewForm" class="needs-validation shadow-lg" novalidate>
                                 <div class="mb-2">
                                     <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
@@ -565,7 +566,10 @@
                                     <textarea class="form-control" rows="3" placeholder="Your Review"
                                         required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+                                <button type="submit" 
+                                        class="btn submit-btn">
+                                        Submit Review
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -581,49 +585,52 @@
                         <polyline points="0,10 20,0 40,10 60,0 80,10 100,0 120,10 140,0 160,10 180,0 200,10"
                             class="zigzag-line" />
                     </svg>
-                    <p class="lead">Real reviews from our happy parents</p>
+                    <p class="lead text-success">Real reviews from our happy parents</p>
                 </div>
                 <div class="row">
                     <!-- Review 1 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"Amazing service! Everything was fast and easy."</p>
-                                <h6 class="mt-3 mb-0">– Jane Doe</h6>
+                                <h6 class="mt-3 mb-0 text-primary">– Jane Doe</h6>
                                 <small class="text-muted">5/5 stars</small>
                             </div>
                         </div>
                     </div>
                     <!-- Review 2 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"I love this company! Highly recommend to everyone."</p>
-                                <h6 class="mt-3 mb-0">– John Smith</h6>
+                                <h6 class="mt-3 mb-0 text-primary">– John Smith</h6>
                                 <small class="text-muted">5/5 stars</small>
                             </div>
                         </div>
                     </div>
                     <!-- Review 3 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"Professional and friendly. Great experience overall."</p>
-                                <h6 class="mt-3 mb-0">– Sarah Lee</h6>
+                                <h6 class="mt-3 mb-0 text-primary">– Sarah Lee</h6>
                                 <small class="text-muted">4.5/5 stars</small>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-4">
+                    <a href="pages/reviews.html" class="btn btn-primary" target="_blank">Read More Reviews</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="beeful py-4 text-primary"> <!--- FOOTER SECTION -->
+    <footer class="beeful py-4 text-primary">                                                                   <!--- FOOTER SECTION -->
         <div class="container">
             <div class="row">
                 <div class="col-md-6">                                                                          <!--- Left -->
-                    <h2 class="fw-bold mb-2">👋 Say Hello!</h2>
+                    <h2 class="fw-bold mb-2 text-muted">👋 Say Hello!</h2>
                     <p class="mb-1">WHERE LEARNING IS FUN!</p>
                     <div class="d-flex gap-2 mt-3">
                         <a href="https://www.facebook.com/p/Ma-nanto-Academy-100063521501954/" 
@@ -659,11 +666,12 @@
             </div>
             <hr class="border-light" />
             <div class="text-center small">
-                <a href="pages/policy.html" class="text-white d-block" target="blank">Privacy Policy</a>        <!--- Opens link in a new tab-->
+                <a href="pages/policy.html" class="text-white d-block" target="_blank">Privacy Policy</a>        <!--- Opens link in a new tab-->
                 <span class="text-white">&copy; 2025 Mananto Academy. All rights reserved.</span>
             </div>
         </div>
     </footer>
+    
     <button id="scrollUpBtn" 
             class="btn btn-warning btn-lg" 
             title="Go to top"> 
@@ -675,6 +683,8 @@
         aria-label="Chat on WhatsApp">                                                                          
         <i class="fab fa-whatsapp"></i>
     </a>                                                                                                        <!--- WhatsApp Floating Button --> 
-    <script src="script.js"></script> 
+
+    <script src="script.js"></script>                                                                           <!--- JavaScript-->
+
 </body>
 </html>

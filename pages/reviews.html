@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <title>Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .reviews-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+
+        .reviews-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .rating-summary {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating-score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .rating-stars {
+            color: #FFA41C;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .write-review-btn {
+            background-color: #FFA41C;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .rating-breakdown {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .rating-bars {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .rating-label {
+            width: 50px;
+            font-size: 14px;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+
+        .bar {
+            height: 100%;
+            background-color: #FFA41C;
+        }
+
+        .rating-count {
+            width: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .customer-images {
+            margin-bottom: 30px;
+        }
+
+        .customer-images h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .reviews-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .total-reviews {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .reviews-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .review {
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .review-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .review-content {
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #0066c0;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .recommendation {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .recommendation-icon {
+            color: green;
+            margin-right: 5px;
+        }
+
+        .reviewer-info {
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+        }
+
+        .review-date {
+            margin-left: 10px;
+        }
+
+        .product-info {
+            color: #0066c0;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reviews-container">
+        <div class="reviews-header">
+            <div class="rating-summary">
+                <div class="rating-score">4.4</div>
+                <div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div>out of 5</div>
+                </div>
+            </div>
+            <button class="write-review-btn">Write a Review</button>
+        </div>
+
+        <div class="rating-breakdown">
+            <div class="rating-bars">
+                <div class="rating-bar">
+                    <div class="rating-label">5 ★</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 68%;"></div>
+                    </div>
+                    <div class="rating-count">406</div>
+                </div>
+                <div class="rating-bar">
+                    <div class="rating-label">4 ★</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 16%;"></div>
+                    </div>
+                    <div class="rating-count">97</div>
+                </div>
+                <div class="rating-bar">
+                    <div class="rating-label">3 ★</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 6%;"></div>
+                    </div>
+                    <div class="rating-count">38</div>
+                </div>
+                <div class="rating-bar">
+                    <div class="rating-label">2 ★</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 2%;"></div>
+                    </div>
+                    <div class="rating-count">14</div>
+                </div>
+                <div class="rating-bar">
+                    <div class="rating-label">1 ★</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 7%;"></div>
+                    </div>
+                    <div class="rating-count">39</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-images">
+            <h3>Customer Images</h3>
+            <!-- Customer images would go here -->
+        </div>
+
+        <div class="reviews-stats">
+            <div class="total-reviews">584 Customer Reviews</div>
+            <div class="reviews-controls">
+                <input type="text" placeholder="Search Reviews">
+                <select>
+                    <option>Sort By</option>
+                    <option>Most Relevant</option>
+                </select>
+                <select>
+                    <option>All Ratings</option>
+                    <option>5 Stars</option>
+                    <option>4 Stars</option>
+                    <option>3 Stars</option>
+                    <option>2 Stars</option>
+                    <option>1 Star</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Exceptional Early Learning Experience</div>
+            <div class="rating-stars">★★★★★</div>
+            <div class="review-content">
+                Mananto Academy has been absolutely wonderful for our daughter! The teachers are caring and creative,
+                and she comes home every day excited to share what she learned. The facilities are clean and safe, and
+                we've seen tremendous growth in her social skills and curiosity about the world around her.
+
+            </div>
+            <div class="recommendation">
+                <span class="recommendation-icon">✓</span>
+                <span>Would Recommend</span>
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Sarah Johnson</span>
+                    <span class="review-date">March 15, 2024</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Great Foundation for Learning</div>
+            <div class="rating-stars">★★★★★</div>
+            <div class="review-content">
+                We couldn't be happier with our experience at Mananto Academy. The curriculum is well-balanced between
+                play and structured learning. Our son has developed such a love for reading and numbers, and the staff
+                communicates regularly about his progress and development milestones.
+
+            </div>
+            <div class="recommendation">
+                <span class="recommendation-icon">✓</span>
+                <span>Would Recommend</span>
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Michael Chen</span>
+                    <span class="review-date">February 28, 2024</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Good Overall with Minor Issues</div>
+            <div class="rating-stars">★★★★☆</div>
+            <div class="review-content">
+                Overall, Mananto Academy is a great preschool. The teachers are dedicated and the environment is
+                nurturing. My only minor complaint is that the outdoor play area could be larger, but our child is happy
+                and learning well. The art program is particularly impressive.
+
+            </div>
+            <div class="recommendation">
+                <span class="recommendation-icon">✓</span>
+                <span>Would Recommend</span>
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Lisa Rodriguez</span>
+                    <span class="review-date">January 12, 2024</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Strong Arts Program</div>
+            <div class="rating-stars">★★★★☆</div>
+            <div class="review-content">
+                Solid preschool with good educational foundation. The art and music programs are particularly strong and
+                our daughter loves the creative activities. Communication from the administration could be more
+                consistent, but the classroom teachers are excellent.
+
+            </div>
+            <div class="recommendation">
+                <span class="recommendation-icon">✓</span>
+                <span>Would Recommend</span>
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">David Thompson</span>
+                    <span class="review-date">December 5, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Mixed Experience This Year</div>
+            <div class="rating-stars">★★★☆☆</div>
+            <div class="review-content">
+                Mananto Academy has its strengths and weaknesses. The curriculum is good and our child has learned a
+                lot, but there's been quite a bit of teacher turnover this year which has been disruptive. The
+                facilities are nice but the tuition feels a bit high.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Amanda Williams</span>
+                    <span class="review-date">November 18, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Some Good Teachers, Some Not</div>
+            <div class="rating-stars">★★★☆☆</div>
+            <div class="review-content">
+                Mixed experience overall. Some teachers are fantastic while others seem overwhelmed. My child enjoys
+                going most days and has made friends, but I wish there was more individual attention and feedback about
+                his development and progress in the program.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Robert Kim</span>
+                    <span class="review-date">October 22, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Communication Needs Improvement</div>
+            <div class="rating-stars">★★☆☆☆</div>
+            <div class="review-content">
+                We've been disappointed with several aspects of Mananto Academy. Communication from the office is poor,
+                and we often find out about events at the last minute. The classroom seems overcrowded, and our daughter
+                hasn't shown much progress in key areas.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Jennifer Martinez</span>
+                    <span class="review-date">September 30, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Nice Facilities But Poor Management</div>
+            <div class="rating-stars">★★☆☆☆</div>
+            <div class="review-content">
+                The facilities are nice but that's about the only positive. The teachers seem disengaged, and we've
+                witnessed several incidents where children's conflicts weren't properly addressed. We're considering
+                switching schools despite the inconvenience.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Kevin O'Malley</span>
+                    <span class="review-date">August 14, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Very Disappointing Experience</div>
+            <div class="rating-stars">★☆☆☆☆</div>
+            <div class="review-content">
+                Our son was consistently coming home upset, and when we raised concerns, the administration was
+                defensive rather than helpful. The safety protocols seem lax, and we witnessed several concerning
+                incidents during drop-off and pick-up times at the school.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">Nicole Brown</span>
+                    <span class="review-date">July 8, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+
+        <div class="review">
+            <div class="review-title">Withdrew After Two Months</div>
+            <div class="rating-stars">★☆☆☆☆</div>
+            <div class="review-content">
+                We withdrew our child after just two months. The environment was chaotic, and the teachers seemed
+                overwhelmed and understaffed. For the high tuition cost, we expected much better quality and attention
+                to individual children's needs and development.
+
+            </div>
+            <div class="reviewer-info">
+                <div>
+                    <span class="reviewer-name">James Wilson</span>
+                    <span class="review-date">June 2, 2023</span>
+                </div>
+            </div>
+            <div class="product-info">From Mananto Academy Preschool Program</div>
+        </div>
+    </div>
+</body>
+</html>

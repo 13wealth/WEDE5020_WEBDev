@@ -23,19 +23,6 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 All notable changes to this project will be documented in this file.  
 ---
 
-The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
-code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
-
-## [v1.4.0] - 2025-11-18
-
-- Made the “Our Values” cards into bouncing bubbles.
-- Made sure text and images fit nicely inside the bubbles on all screens.
-- Tweaked the bubble animations so they stay inside the section and don’t go off-screen.
-- Unified navbar behavior: blur effect now works on scroll for all pages.
-- Updated Privacy Policy link to open in a popup instead of a separate page.
-
----
-
 ## [v1.5.0] - 2025-11-19
 - Changed the “Register your child” button to open a modal instead of redirecting.
 - Built a scrollable registration modal with proper validations:
@@ -45,6 +32,27 @@ code and fix all pages to standard code for head and footer. This is done in [v1
     - Parent email must be valid.
 - Added file uploads for three required documents: birth certificate, immunization records, parent ID.
 - Made the modal fully responsive on smaller screens.
+
+---
+
+The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
+code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
+
+## [v1.4.1] – 2025-11-18
+
+- “Read More Reviews” button linking to reviews.html in the reviews section.
+- Footer section included in about.html with proper social links and contact details.
+- Corrected target="_blank" behaviour so links now reliably open in a new tab.
+- Adjusted footer styling issues in about.html caused by relative paths and Bootstrap conflicts.
+- Checked and standardised all footer text colour and overlay for readability.
+
+## [v1.4.0] - 2025-11-18
+
+- Made the “Our Values” cards into bouncing bubbles.
+- Made sure text and images fit nicely inside the bubbles on all screens.
+- Tweaked the bubble animations so they stay inside the section and don’t go off-screen.
+- Unified navbar behavior: blur effect now works on scroll for all pages.
+- Updated Privacy Policy link to open in a popup instead of a separate page.
 
 ---
 

@@ -1,27 +1,34 @@
 
 //-HOME PAGE
     
-//-Field Validations on the forms 
-    (function() {                                                                                               //-Form validation
-        'use strict'
-        const form = document.getElementById('registrationForm');
+//-Field Validations on all the forms that needs-validation
+    (function () {
+        'use strict';
 
-        form.addEventListener('submit', function(event) 
-        {
-            event.preventDefault();
-            event.stopPropagation();
+        const forms = document.querySelectorAll('.needs-validation');                                           //-Selects all forms that need validation
 
-            if (form.checkValidity())                                                                           //-Form is valid, you can submit to server and show success message
-            {
-                alert('Registration submitted successfully!');
-                form.reset();                                                                                   //-Reset form after message
-                const modalEl = document.getElementById('registrationModal');
-                const modal = bootstrap.Modal.getInstance(modalEl);
-                modal.hide();
-            } else {
-                form.classList.add('was-validated');
-            }
-        }, false)
+        forms.forEach(form => {
+            form.addEventListener('submit', event => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (form.checkValidity()) 
+                {
+                    alert('Form submitted successfully!');
+                    form.reset();
+
+                    const modalEl = form.closest('.modal');                                                     //-If the form is inside a modal, close modal safely
+                    if (modalEl) 
+                    {
+                        const modal = bootstrap.Modal.getInstance(modalEl);
+                        modal?.hide();
+                    }
+
+                } else {
+                    form.classList.add('was-validated');
+                }
+            });
+        });
     })();
 
 //-Calculate the child's age from date of birth entered
@@ -49,7 +56,7 @@
         }
     });
 
-//-SCROLLED.JS
+//-Scrolled.js that controls the navbar blur
     window.addEventListener('scroll', function ()                                                               //-Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
     {
         const navbar = document.querySelector('.navbar');                                                       //-Selects the element with the class .navbar
@@ -61,7 +68,7 @@
         }
     });
     
-//-ROUGH.JS
+//-Rough.js (Feature card)
     document.querySelectorAll('.feature-card').forEach(card =>                                                  //-Handles Rough.js hand-drawn border generator for the feature cards
     {                                                                                                           //-.forEach loops over each one to apply the hand-drawn effect individually
         const canvas = card.querySelector('canvas.rough-canvas');                                               //-Inside each card, we find <canvas> element with class .rough-canvas
@@ -79,7 +86,7 @@
         });
     });
     
-//-ROUGH.JS
+//-Rough.js (Count-up Animations)
     const counters = document.querySelectorAll('.counter');                                                     //-Handles count-up animations
     const speed = 500;                                                                                          //-Lower = Faster
     const animateCounters = () => {
@@ -101,7 +108,8 @@
         });
     };
 
-    const section = document.getElementById('milestones');                                                      //-JS For Statistics Counters
+//-JS For Statistics Counters
+    const section = document.getElementById('milestones');                                                      
     let started = false;
     window.addEventListener('scroll', () => {
         const rect = section.getBoundingClientRect();
@@ -112,7 +120,7 @@
         }
     });    
     
-    
+//-Animation trigger for value card visibility     
     document.addEventListener("DOMContentLoaded", () => {
         const cards = document.querySelectorAll(".value-card");
             const observer = new IntersectionObserver((entries) => {
@@ -128,7 +136,7 @@
         cards.forEach(card => observer.observe(card));
     });
     
-//-ANIMATION ON SCROLL
+//-Animation trigger for heading slide visibility
     const elements = document.querySelectorAll('.slide-left, .slide-right');                                    //-Trigger animation when elements scroll into view
     function checkInView() 
     {
@@ -145,7 +153,7 @@
         window.addEventListener('scroll', checkInView);
         window.addEventListener('load', checkInView);
     
-//-SCROLL UP BUTTON 
+//-Scroll up button 
     const scrollUpBtn = document.getElementById("scrollUpBtn");
     window.addEventListener('scroll', () => {                                                                   //-Show button after scrolling down 300px
     if (window.scrollY > 300) 
@@ -168,7 +176,33 @@
                 }
         }, 15);                                                                                                 //-Every 15ms
     });        
-    
+
+//-Animaion trigger for why us list     
+    document.addEventListener("DOMContentLoaded", () => { 
+        const section = document.querySelector(".why-us-list");
+        const items = section.querySelectorAll("li");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) 
+                    {
+                        items.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.classList.add("animate");
+                            }, index * 120); // staggered animation
+                        });
+                    }
+                });
+            },
+            {
+                threshold: 1.0                                                                                  //-Requires 100% visibility
+            }
+        );
+
+        observer.observe(section);
+    });
+        
 
 //-REGISTRATION PAGE
     document.addEventListener("DOMContentLoaded", function ()                                                   //-Wraps the code to ensure it runs after the DOM is fully loaded
@@ -179,3 +213,53 @@
             alert("Thank you! Your message has been received.");                                                //-Notification when submit is clicked
         });
     });
+
+
+//-ABOUT US
+
+                                                                                        //SCROLLED.JS
+        window.addEventListener('scroll', function ()                                               //Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
+        {
+            const navbar = document.querySelector('.navbar');                                       //Selects the element with the class .navbar
+            if (window.scrollY > 50)                                                                //Checks if the user has scrolled more than 50px from the top
+            {
+                navbar.classList.add('scrolled');                                                   //If true, adds the class scrolled to the navbar
+            } else {
+                navbar.classList.remove('scrolled');                                                //If the scroll position is 50px or less, it removes the scrolled class, returning the navbar to its original style.
+            }
+        });
+    
+                                                                                            //ROUGH.JS
+        document.querySelectorAll('.feature-card').forEach(card =>                                  //Handles Rough.js hand-drawn border generator for the feature cards
+        {                                                                                           //.forEach loops over each one to apply the hand-drawn effect individually
+            const canvas = card.querySelector('canvas.rough-canvas');                               //Inside each card, we find <canvas> element with class .rough-canvas
+            const rc = rough.canvas(canvas);                                                        //Creates a Rough.js canvas context on that <canvas> so we can draw sketchy shapes
+
+            canvas.width = card.offsetWidth;
+            canvas.height = card.offsetHeight;
+
+            rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4,                                 //Draws a wiggly rectangle around the card                           
+                {
+                    stroke: '#fff200',                                                              //Yellow color for the border
+                    strokeWidth: 3,                                                                 //Border thickness
+                    roughness: 3,                                                                   //Sets the roughness of the border
+                    bowing: 2                                                                       //Sets the wobble or curve of the lines
+                });
+        });
+       
+       
+
+//-GENERAL SCRIPTS   
+//-Applies effect when the scroll up button is clicked     
+        scrollUpBtn.addEventListener('click', () => {                                                           //-Smooth slow scroll to top
+            const scrollDuration = 20;                                                                         //-Milliseconds, adjust for speed
+            const scrollStep = -window.scrollY / (scrollDuration / 30);                                         //-Pixels per step
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                    window.scrollBy(0, scrollStep);
+                } else {
+                    clearInterval(scrollInterval);
+                }
+            }, 150);                                                                                 //Every 15ms
+        });
+    
