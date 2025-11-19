@@ -25,9 +25,25 @@ All notable changes to this project will be documented in this file.
 
 **Section 3 of Part 3 is implemented in v1.6.x**
 
+## [v1.6.1] - 2025-11-19
+
+### Security
+- Enabled HTTPS/SSL to secure all pages.
+- Ensured all site resources load over HTTPS.
+
+### Page Performance
+- Improved overall page speed for better user experience.
+- Optimised loading behaviour to support SEO.
+
+### Sitemap
+- Added `sitemap.xml` to help search engines index all pages correctly.
+
+### Robots Rules
+- Added `robots.txt` to guide crawlers and control what search engines can access.
+
 ## [v1.6.0] - 2025-11-19
 
-- Optimized SEO by improving the title tags on each page — now more relevant and keyword-friendly.
+- Optimised SEO by improving the title tags on each page — now more relevant and keyword-friendly.
 - Used appropriate header tags (H1, H2, etc.) to structure content logically for both users and search engines.
 - Named image files descriptively (not generic “image1.jpg”) to improve SEO.
 - Added alt text to images that clearly describes them, helping with accessibility and SEO.
@@ -71,7 +87,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]**
+**Section 1 of Part 3 of the PoE is contained in [v1.4.0 - v1.4.3]**
 
 ## [v1.4.3] – 2025-11-18
 - Global text styling applied across all pages.
