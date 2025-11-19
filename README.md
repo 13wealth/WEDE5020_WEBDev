@@ -59,7 +59,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]** 
+**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]** <br>
 Before integrating our website with the final PoE requirements, the first step is to clean up the current 
 code and ensure that all pages have standardized head and footer sections.
 
