@@ -22,8 +22,24 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 All notable changes to this project will be documented in this file.  
 ---
+**Section 2 of Part 3 is implemented in v1.5.x**
+
+## [v1.5.1] - 2025-11-19
+- Added **validations** for forms:
+  - Register Your Child modal
+  - Registration form under Admission
+  - Enquiries form
+  - Subscribe form
+  - Reviews form
+- Implemented **animations**:
+  - Headings
+  - Motion bees
+  - Text animations on cards
+- Applied **DOM manipulation** to enhance interactivity across web pages.
+- Added **Gallery lightbox** to expand images when clicked for better viewing experience.
 
 ## [v1.5.0] - 2025-11-19
+
 - Changed the “Register your child” button to open a modal instead of redirecting.
 - Built a scrollable registration modal with proper validations:
     - Child’s name and date of birth → automatically calculates age.
@@ -35,17 +51,16 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
-code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
+**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]** 
+Before integrating our website with the final PoE requirements, the first step is to clean up the current 
+code and ensure that all pages have standardized head and footer sections.
 
 ## [v1.4.3] – 2025-11-18
-
 - Global text styling applied across all pages.
 - Images added to the About Us page.
 - Updated typography for better readability and consistency site-wide.
 
 ## [v1.4.2] – 2025-11-18
-
 - Global card styling with dotted borders.
 - Faded bee decorations on cards using CSS pseudo-elements.
 - `.card-decorated` class to apply the style to multiple card types.
@@ -54,7 +69,6 @@ code and fix all pages to standard code for head and footer. This is done in [v1
 - Any card element with the `card-decorated` class will now automatically have the dashed border and subtle bees.
 
 ## [v1.4.1] – 2025-11-18
-
 - “Read More Reviews” button linking to reviews.html in the reviews section.
 - Footer section included in about.html with proper social links and contact details.
 - Corrected target="_blank" behaviour so links now reliably open in a new tab.
@@ -62,7 +76,6 @@ code and fix all pages to standard code for head and footer. This is done in [v1
 - Checked and standardised all footer text colour and overlay for readability.
 
 ## [v1.4.0] - 2025-11-18
-
 - Made the “Our Values” cards into bouncing bubbles.
 - Made sure text and images fit nicely inside the bubbles on all screens.
 - Tweaked the bubble animations so they stay inside the section and don’t go off-screen.

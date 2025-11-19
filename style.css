@@ -159,19 +159,20 @@ h1, h2, h3, h4 {
     transition: color 0.3s ease;
 }
 
+
 /* ======================================================================================
                                         GALLERY
    ====================================================================================== */
 /* Scrollable thumbnails container with hidden scrollbar */
 #thumbnailContainer {
-    max-height: 80vh;        /* Height relative to viewport */
-    overflow-y: scroll;      /* Enable vertical scrolling */
-    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
-    scrollbar-width: none;      /* Hide scrollbar in Firefox */
+    max-height: 80vh;                                                                                           /* Height relative to viewport */
+    overflow-y: scroll;                                                                                         /* Enable vertical scrolling */
+    -ms-overflow-style: none;                                                                                   /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;                                                                                      /* Hide scrollbar in Firefox */
 }
 
 #thumbnailContainer::-webkit-scrollbar {
-    display: none;            /* Hide scrollbar in Chrome, Safari, Opera */
+    display: none;                                                                                              /* Hide scrollbar in Chrome, Safari, Opera */
 }
 
 /* Make all thumbnails uniform */
@@ -197,18 +198,17 @@ h1, h2, h3, h4 {
 /* Fixed height for gallery carousel images */
 #galleryCarousel .carousel-inner,
 #galleryCarousel .carousel-item {
-    height: 500px; /* Adjust this height as needed */
+    height: 500px;                                                                                              /* Adjust this height as needed */
 }
 
 #galleryCarousel .carousel-item img {
-    height: 100%;       /* Fill the parent height */
-    width: auto;        /* Maintain aspect ratio */
-    object-fit: cover;  /* Crop if needed to cover container */
+    height: 100%;                                                                                               /* Fill the parent height */
+    width: auto;                                                                                                /* Maintain aspect ratio */
+    object-fit: cover;                                                                                          /* Crop if needed to cover container */
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 
 /* ======================================================================================
