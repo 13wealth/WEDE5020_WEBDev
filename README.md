@@ -22,6 +22,18 @@ At this stage, the focus is on delivering a complete visual and functional makeo
 
 All notable changes to this project will be documented in this file.  
 ---
+
+**Section 3 of Part 3 is implemented in v1.6.x**
+
+## [v1.6.0] - 2025-11-19
+
+- Optimized SEO by improving the title tags on each page — now more relevant and keyword-friendly.
+- Used appropriate header tags (H1, H2, etc.) to structure content logically for both users and search engines.
+- Named image files descriptively (not generic “image1.jpg”) to improve SEO.
+- Added alt text to images that clearly describes them, helping with accessibility and SEO.
+
+---
+
 **Section 2 of Part 3 is implemented in v1.5.x**
 
 ## [v1.5.2] - 2025-11-19
@@ -59,9 +71,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]** <br>
-Before integrating our website with the final PoE requirements, the first step is to clean up the current 
-code and ensure that all pages have standardized head and footer sections.
+**Section 1 of Part 3 of the PoE is contained in **[v1.4.0 - v1.4.3]**
 
 ## [v1.4.3] – 2025-11-18
 - Global text styling applied across all pages.
