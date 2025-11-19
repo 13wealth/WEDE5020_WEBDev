@@ -447,20 +447,8 @@ h1, h2, h3, h4 {
     100% { transform: translateX(0); opacity: 1; }
 }
 
-                                    /*=== Process Cards ===*/
-.process-card {
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;                                                                                       /* ensures badge, text, etc. flow neatly */
-  justify-content: flex-start;
-  height: 100%;                                                                                                 /* stretch equally */
-  min-height: 420px;                                                                                            /* makes them tall */
-}
 
-.process-card:hover {
+.card-decorated:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
@@ -592,45 +580,42 @@ form button:hover {
 }
 
 /* ======================================================================================
-                                        MODAL
+                                        MODAL & REG FORM
    ====================================================================================== */
-/* Modal header styling */
-#registrationModal .modal-header {
-    background-color: #FF6F61; /* playful coral color matching hero section */
+
+#registrationForm .modal-header {
+    background-color: #FF6F61;                                                                                /* Playful coral color matching hero section */
     color: white;
     border-bottom: none;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-/* Modal title */
-#registrationModal .modal-title {
+#registrationForm .modal-title {
     font-family: 'Font Love', cursive; 
     font-weight: 700;
 }
 
-/* Modal body */
-#registrationModal .modal-body {
-    background: #fff8f6; /* soft playful background */
+#registrationForm .modal-body {
+    background: #fff8f6; /* Soft playful background */
     padding: 2rem;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-/* Form inputs */
-#registrationModal .form-control {
+#registrationForm .form-control {
     border-radius: 8px;
     padding: 0.75rem;
     border: 1px solid #FF6F61;
 }
 
-#registrationModal .form-control:focus {
+#registrationForm .form-control:focus {
     box-shadow: 0 0 8px rgba(255,111,97,0.5);
     border-color: #FF6F61;
 }
 
-/* Submit button */
-#registrationModal .btn-primary {
+
+#registrationForm .btn-primary {
     background-color: #FF6F61;
     border-color: #FF6F61;
     font-weight: 600;
@@ -638,17 +623,17 @@ form button:hover {
     transition: all 0.3s ease;
 }
 
-#registrationModal .btn-primary:hover {
+#registrationForm .btn-primary:hover {
     background-color: #e65b50;
     border-color: #e65b50;
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 576px) {
-    #registrationModal .modal-body {
+    #registrationForm .modal-body {
         padding: 1.5rem;
     }
-    #registrationModal .btn-primary {
+    #registrationForm .btn-primary {
         font-size: 0.9rem;
     }
 }
@@ -658,23 +643,23 @@ form button:hover {
 /* ======================================================================================
                                     CONTACT INFO
    ====================================================================================== */
-.contact-info-card {
+.card-decorated {
     background: #fffbee;
     border: 3px dashed #f4b400;
     position: relative;
     overflow: hidden;
 }
 
-.contact-info-card h5 {
+.card-decorated h5 {
     color: #ff9900;
 }
 
-.contact-info-card ul li {
+.card-decorated ul li {
     margin-bottom: 0.7rem;
     font-size: 0.95rem;
 }
 
-.contact-info-card i {
+.card-decorated i {
     color: #ff9900;
 }
 
@@ -716,9 +701,8 @@ form button:hover {
                                         FOOTER
    ====================================================================================== */
 footer.beeful {
-
-  color: #fff;                      /* ensure text is visible */
-  position: relative;              /* to allow overlays if needed */
+  color: #fff;                                                                                                /* ensure text is visible */
+  position: relative;                                                                                           /* to allow overlays if needed */
   padding: 60px 0;
 }
 
@@ -830,7 +814,7 @@ footer.beeful::before {
 }
 
                                     /*=== Decorative bees in cards/forms ===*/
-.contact-info-card::before {
+.card-decorated::before {
     content: "🐝";
     font-size: 5rem;
     position: absolute;
@@ -839,7 +823,7 @@ footer.beeful::before {
     opacity: 0.1;
 }
 
-.contact-info-card::after {
+.card-decorated::after {
     content: "🐝";
     font-size: 4rem;
     position: absolute;
@@ -1000,7 +984,7 @@ footer.beeful::before {
         padding: 10px 20px;
     }
 
-    .contact-info-card::before {
+    .card-decorated::before {
         font-size: 3rem;
     }
 

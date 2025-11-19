@@ -1,36 +1,4 @@
 
-//-HOME PAGE
-    
-//-Field Validations on all the forms that needs-validation
-    (function () {
-        'use strict';
-
-        const forms = document.querySelectorAll('.needs-validation');                                           //-Selects all forms that need validation
-
-        forms.forEach(form => {
-            form.addEventListener('submit', event => {
-                event.preventDefault();
-                event.stopPropagation();
-
-                if (form.checkValidity()) 
-                {
-                    alert('Form submitted successfully!');
-                    form.reset();
-
-                    const modalEl = form.closest('.modal');                                                     //-If the form is inside a modal, close modal safely
-                    if (modalEl) 
-                    {
-                        const modal = bootstrap.Modal.getInstance(modalEl);
-                        modal?.hide();
-                    }
-
-                } else {
-                    form.classList.add('was-validated');
-                }
-            });
-        });
-    })();
-
 //-Calculate the child's age from date of birth entered
     const dobInput = document.getElementById('dob');                                                            //-Get references to the input fields
     const ageInput = document.getElementById('childAge');
@@ -54,36 +22,6 @@
         } else {
             ageInput.value = '';
         }
-    });
-
-//-Scrolled.js that controls the navbar blur
-    window.addEventListener('scroll', function ()                                                               //-Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
-    {
-        const navbar = document.querySelector('.navbar');                                                       //-Selects the element with the class .navbar
-        if (window.scrollY > 50)                                                                                //-Checks if the user has scrolled more than 50px from the top
-        {
-            navbar.classList.add('scrolled');                                                                   //-If true, adds the class scrolled to the navbar
-        } else {
-            navbar.classList.remove('scrolled');                                                                //-If the scroll position is 50px or less, it removes the scrolled class, returning the navbar to its original style.
-        }
-    });
-    
-//-Rough.js (Feature card)
-    document.querySelectorAll('.feature-card').forEach(card =>                                                  //-Handles Rough.js hand-drawn border generator for the feature cards
-    {                                                                                                           //-.forEach loops over each one to apply the hand-drawn effect individually
-        const canvas = card.querySelector('canvas.rough-canvas');                                               //-Inside each card, we find <canvas> element with class .rough-canvas
-        const rc = rough.canvas(canvas);                                                                        //-Creates a Rough.js canvas context on that <canvas> so we can draw sketchy shapes
-
-        canvas.width = card.offsetWidth;
-        canvas.height = card.offsetHeight;
-
-        rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4,                                                 //-Draws a wiggly rectangle around the card                           
-        {
-            stroke: '#fff200',                                                                                //-Yellow color for the border
-            strokeWidth: 3,                                                                                     //-Border thickness
-            roughness: 3,                                                                                       //-Sets the roughness of the border
-            bowing: 2                                                                                           //-Sets the wobble or curve of the lines
-        });
     });
     
 //-Rough.js (Count-up Animations)
@@ -149,33 +87,8 @@
             }
         });
     }
-
         window.addEventListener('scroll', checkInView);
         window.addEventListener('load', checkInView);
-    
-//-Scroll up button 
-    const scrollUpBtn = document.getElementById("scrollUpBtn");
-    window.addEventListener('scroll', () => {                                                                   //-Show button after scrolling down 300px
-    if (window.scrollY > 300) 
-        {
-            scrollUpBtn.style.display = "block";
-        } else {
-            scrollUpBtn.style.display = "none";
-        }
-    });
-
-    scrollUpBtn.addEventListener('click', () => {                                                               //-Smooth slow scroll to top
-    const scrollDuration = 15;                                                                                  //-Milliseconds, adjust for speed
-    const scrollStep = -window.scrollY / (scrollDuration / 15);                                                 //-Pixels per step
-    const scrollInterval = setInterval(() => {
-        if (window.scrollY !== 0) 
-        {
-            window.scrollBy(0, scrollStep);
-        } else {
-                clearInterval(scrollInterval);
-                }
-        }, 15);                                                                                                 //-Every 15ms
-    });        
 
 //-Animaion trigger for why us list     
     document.addEventListener("DOMContentLoaded", () => { 
@@ -190,7 +103,7 @@
                         items.forEach((item, index) => {
                             setTimeout(() => {
                                 item.classList.add("animate");
-                            }, index * 120); // staggered animation
+                            }, index * 120);                                                                    //-Staggered animation
                         });
                     }
                 });
@@ -202,10 +115,9 @@
 
         observer.observe(section);
     });
-        
 
-//-REGISTRATION PAGE
-    document.addEventListener("DOMContentLoaded", function ()                                                   //-Wraps the code to ensure it runs after the DOM is fully loaded
+//-Wraps the code to ensure it runs after the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function ()                                                   
     {
         document.getElementById("admissionForm").addEventListener("submit", function (e) 
         {
@@ -214,52 +126,79 @@
         });
     });
 
-
-//-ABOUT US
-
-                                                                                        //SCROLLED.JS
-        window.addEventListener('scroll', function ()                                               //Listens for the scroll event on the window: Every time the user scrolls up or down, this function runs.
+//-Scroll up button 
+    const scrollUpBtn = document.getElementById("scrollUpBtn");
+    window.addEventListener('scroll', () => {                                                                   //-Show button after scrolling down 300px
+    if (window.scrollY > 300) 
         {
-            const navbar = document.querySelector('.navbar');                                       //Selects the element with the class .navbar
-            if (window.scrollY > 50)                                                                //Checks if the user has scrolled more than 50px from the top
-            {
-                navbar.classList.add('scrolled');                                                   //If true, adds the class scrolled to the navbar
-            } else {
-                navbar.classList.remove('scrolled');                                                //If the scroll position is 50px or less, it removes the scrolled class, returning the navbar to its original style.
-            }
-        });
-    
-                                                                                            //ROUGH.JS
-        document.querySelectorAll('.feature-card').forEach(card =>                                  //Handles Rough.js hand-drawn border generator for the feature cards
-        {                                                                                           //.forEach loops over each one to apply the hand-drawn effect individually
-            const canvas = card.querySelector('canvas.rough-canvas');                               //Inside each card, we find <canvas> element with class .rough-canvas
-            const rc = rough.canvas(canvas);                                                        //Creates a Rough.js canvas context on that <canvas> so we can draw sketchy shapes
+            scrollUpBtn.style.display = "block";
+        } else {
+            scrollUpBtn.style.display = "none";
+        }
+    });
 
-            canvas.width = card.offsetWidth;
-            canvas.height = card.offsetHeight;
+//-Universal navbar blur for all pages
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (!navbar) return;
 
-            rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4,                                 //Draws a wiggly rectangle around the card                           
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+//-Field Validations on all the forms that needs-validation
+    (function () {
+        'use strict';
+
+        const forms = document.querySelectorAll('.needs-validation');                                           //-Selects all forms that need validation
+
+        forms.forEach(form => {
+            form.addEventListener('submit', event => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (form.checkValidity()) 
                 {
-                    stroke: '#fff200',                                                              //Yellow color for the border
-                    strokeWidth: 3,                                                                 //Border thickness
-                    roughness: 3,                                                                   //Sets the roughness of the border
-                    bowing: 2                                                                       //Sets the wobble or curve of the lines
-                });
-        });
-       
-       
+                    alert('Form submitted successfully!');
+                    form.reset();
 
-//-GENERAL SCRIPTS   
-//-Applies effect when the scroll up button is clicked     
-        scrollUpBtn.addEventListener('click', () => {                                                           //-Smooth slow scroll to top
-            const scrollDuration = 20;                                                                         //-Milliseconds, adjust for speed
-            const scrollStep = -window.scrollY / (scrollDuration / 30);                                         //-Pixels per step
-            const scrollInterval = setInterval(() => {
-                if (window.scrollY !== 0) {
-                    window.scrollBy(0, scrollStep);
+                    const modalEl = form.closest('.modal');                                                     //-If the form is inside a modal, close modal safely
+                    if (modalEl) 
+                    {
+                        const modal = bootstrap.Modal.getInstance(modalEl);
+                        modal?.hide();
+                    }
+
                 } else {
-                    clearInterval(scrollInterval);
+                    form.classList.add('was-validated');
                 }
-            }, 150);                                                                                 //Every 15ms
+            });
         });
-    
+    })();
+
+    //-Rough.js (Feature card)
+    document.querySelectorAll('.feature-card').forEach(card =>                                                  //-Handles Rough.js hand-drawn border generator for the feature cards
+    {                                                                                                           //-.forEach loops over each one to apply the hand-drawn effect individually
+        const canvas = card.querySelector('canvas.rough-canvas');                                               //-Inside each card, we find <canvas> element with class .rough-canvas
+        const rc = rough.canvas(canvas);                                                                        //-Creates a Rough.js canvas context on that <canvas> so we can draw sketchy shapes
+
+        canvas.width = card.offsetWidth;
+        canvas.height = card.offsetHeight;
+
+        rc.rectangle(2, 2, canvas.width - 4, canvas.height - 4,                                                 //-Draws a wiggly rectangle around the card                           
+        {
+            stroke: '#fff200',                                                                                //-Yellow color for the border
+            strokeWidth: 3,                                                                                     //-Border thickness
+            roughness: 3,                                                                                       //-Sets the roughness of the border
+            bowing: 2                                                                                           //-Sets the wobble or curve of the lines
+        });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();                                                                     //Stops the form from submitting and refreshing
+            const name = document.getElementById("name").value;                                     //Gets the name value and return it in the notification
+            alert("Thank you " + name + "! Your message has been received.");                       //Notification when clicking the send button
+        });

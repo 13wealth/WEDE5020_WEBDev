@@ -38,6 +38,15 @@ All notable changes to this project will be documented in this file.
 The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
 code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
 
+## [v1.4.2] – 2025-11-18
+
+- Global card styling with dotted borders.
+- Faded bee decorations on cards using CSS pseudo-elements.
+- `.card-decorated` class to apply the style to multiple card types.
+- Updated `.contact-info-card` to use the new global card styling.
+- Made decorative elements reusable across the website.
+- Any card element with the `card-decorated` class will now automatically have the dashed border and subtle bees.
+
 ## [v1.4.1] – 2025-11-18
 
 - “Read More Reviews” button linking to reviews.html in the reviews section.

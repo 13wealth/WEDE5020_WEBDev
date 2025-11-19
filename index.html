@@ -48,7 +48,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarCenter">             <!--- Nav links -->
                         <ul class="navbar-nav text-center">
-                            <li class="nav-item mx-lg-2"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link active" href="index.html">Home</a></li>
                             <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/about.html">About</a></li>
                             <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
                             <li class="nav-item dropdown mx-lg-2">
@@ -80,18 +80,18 @@
                 <button type="button" 
                         class="btn btn-primary btn-lg" 
                         data-bs-toggle="modal" 
-                        data-bs-target="#registrationModal">
+                        data-bs-target="#registrationForm">
                     <span class="font-love">Register your child</span>
                 </button>                                                                                       <!--- Button triggers modal -->
             </div>
         </section>
 
-        <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+        <div class="modal fade" id="registrationForm" tabindex="-1" aria-labelledby="registrationFormLabel"
                 aria-hidden="true">                                                                             <!--- MODAL-->
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content shadow-lg">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="registrationModalLabel">Register Your Child</h5>
+                            <h5 class="modal-title" id="registrationFormLabel">Register Your Child</h5>
                             <button type="button" 
                                     class="btn-close" 
                                     data-bs-dismiss="modal" 
@@ -99,7 +99,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="registrationForm" class="needs-validation shadow-lg" novalidate>
+                            <form id="registrationForm" class="card-decorated needs-validation shadow-lg" novalidate>
                                 <div class="mb-3">                                                              <!--- Child's name -->
                                     <label for="childName" class="form-label">Child's Name</label>
                                     <input type="text" 
@@ -239,7 +239,7 @@
                 </div>
                 <div class="row g-4">                                                                           
                     <div class="col-md-6 col-lg-3">                                                             <!--- Drop off Card -->
-                        <div class="process-card p-4 h-100 text-center">
+                        <div class="card-decorated p-4 h-100 text-center">
                             <img src="images/proc_1.png" alt="Drop Off" class="process-icon mb-3">
                             <h5 class="text-primary">Drop-Off</h5>
                             <span class="badge bg-warning text-dark mb-3">07:00 – 08:30</span>
@@ -253,7 +253,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">                                                             <!--- Learn & Play Card -->
-                        <div class="process-card p-4 h-100 text-center">
+                        <div class="card-decorated p-4 h-100 text-center">
                             <img src="images/proc_2.png" alt="Learning" class="process-icon mb-3">
                             <h5 class="text-primary">Learning & Play</h5>
                             <span class="badge bg-warning text-dark mb-3">08:30 – 11:30</span>
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">                                                             <!--- Meals & Rest Card -->
-                        <div class="process-card p-4 h-100 text-center">
+                        <div class="card-decorated p-4 h-100 text-center">
                             <img src="images/proc_3.png" alt="Meals" class="process-icon mb-3">
                             <h5 class="text-primary">Meals & Rest</h5>
                             <span class="badge bg-warning text-dark mb-3">11:30 – 13:30</span>
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">                                                             <!--- Pick-up Card -->
-                        <div class="process-card p-4 h-100 text-center">
+                        <div class="card-decorated p-4 h-100 text-center">
                             <img src="images/proc_4.png" alt="Pick Up" class="process-icon mb-3">
                             <h5 class="text-primary">Pick-Up</h5>
                             <span class="badge bg-warning text-dark mb-3">14:00 – 17:00</span>
@@ -518,7 +518,7 @@
                     <div class="col-lg-4 mb-4">                                                                 <!--- Column 1: Why choose us -->
                         <div class="card h-100 p-3 shadow-lg">
                             <h3 class="fw-bold mb-3 text-center text-primary">So Why Choose Us?</h3>
-                            <ul class="list-unstyled font-love why-us-list mt-3">
+                            <ul class="card-decorated list-unstyled font-love why-us-list mt-3">
                                 <li>🌟 Teachers Who Truly Care</li>
                                 <li>📚 Learning That Fits Every Schedule</li>
                                 <li>🤝 Parents Are Part of the Journey</li>
@@ -535,7 +535,7 @@
                     <div class="col-lg-4 mb-4">                                                                 <!--- Column 2: Subscribe Form -->
                         <div class="card h-100 p-4 shadow-lg">
                             <h3 class="fw-bold mb-3 text-center text-primary">Get School News & Updates</h3>
-                            <form id="subscribeForm" class="needs-validation shadow-lg" novalidate>
+                            <form id="subscribeForm" class="card-decorated needs-validation shadow-lg" novalidate>
                                 <div class="mb-2">
                                     <input type="text" class="form-control" placeholder="First Name" required>
                                 </div>
@@ -555,7 +555,7 @@
                     <div class="col-lg-4 mb-4">                                                                 <!--- Column 3: Write a Review -->
                         <div class="card h-100 p-3 shadow-lg">
                             <h3 class="fw-bold mb-3 text-center text-primary">Tell Us What You Think...</h3>
-                            <form id="reviewForm" class="needs-validation shadow-lg" novalidate>
+                            <form id="reviewForm" class="card-decorated needs-validation shadow-lg" novalidate>
                                 <div class="mb-2">
                                     <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
@@ -590,7 +590,7 @@
                 <div class="row">
                     <!-- Review 1 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-lg">
+                        <div class="card-decorated card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"Amazing service! Everything was fast and easy."</p>
                                 <h6 class="mt-3 mb-0 text-primary">– Jane Doe</h6>
@@ -600,7 +600,7 @@
                     </div>
                     <!-- Review 2 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-lg">
+                        <div class="card-decorated card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"I love this company! Highly recommend to everyone."</p>
                                 <h6 class="mt-3 mb-0 text-primary">– John Smith</h6>
@@ -610,7 +610,7 @@
                     </div>
                     <!-- Review 3 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-lg">
+                        <div class="card-decorated card h-100 shadow-lg">
                             <div class="card-body">
                                 <p class="card-text">"Professional and friendly. Great experience overall."</p>
                                 <h6 class="mt-3 mb-0 text-primary">– Sarah Lee</h6>
