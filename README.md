@@ -24,6 +24,14 @@ All notable changes to this project will be documented in this file.
 ---
 **Section 2 of Part 3 is implemented in v1.5.x**
 
+## [v1.5.2] - 2025-11-19
+- Added a rounded (“race-track”) search box in the navbar on the index page.
+- Included a search icon (🔍) next to the input box.
+- Changed the form so it doesn’t submit to /search (prevents “Cannot GET /search” error).
+- Updated the HTML/CSS so the search bar is styled as a pill (fully rounded ends).
+- Implemented client-side in-page search (using JavaScript) so the user input filters content on the page.
+- Removed previous broken behavior and made the search work dynamically on the page.
+
 ## [v1.5.1] - 2025-11-19
 - Added **validations** for forms:
   - Register Your Child modal
@@ -42,7 +50,7 @@ All notable changes to this project will be documented in this file.
 
 - Changed the “Register your child” button to open a modal instead of redirecting.
 - Built a scrollable registration modal with proper validations:
-    - Child’s name and date of birth → automatically calculates age.
+    - Child’s name and date of birth: automatically calculates age.
     - Select class applying for.
     - Parent phone must start with +27.
     - Parent email must be valid.

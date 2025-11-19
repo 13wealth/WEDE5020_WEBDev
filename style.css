@@ -161,6 +161,41 @@ h1, h2, h3, h4 {
 
 
 /* ======================================================================================
+                                    SEARCH BOX
+   ====================================================================================== */
+
+   .navbar-search-form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;                                                                                   /* white background */
+    border-radius: 50px;                                                                                        /* pill / race-track shape */
+    overflow: hidden;
+    padding: 2px 5px;
+}
+
+.navbar-search-form input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 50px 0 0 50px;                                                                               /* rounded left side */
+    width: 180px;                                                                                               /* adjust width as needed */
+}
+
+.navbar-search-form button {
+    border: none;
+    background-color: #007bff;                                                                                /* blue button */
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 0 50px 50px 0;                                                                               /* rounded right side */
+    cursor: pointer;
+}
+
+.navbar-search-form button:hover {
+    background-color: #0056b3;                                                                                /* darker blue on hover */
+}
+
+
+/* ======================================================================================
                                         GALLERY
    ====================================================================================== */
 /* Scrollable thumbnails container with hidden scrollbar */

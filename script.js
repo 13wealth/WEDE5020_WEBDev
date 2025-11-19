@@ -197,8 +197,7 @@
         });
     });
 
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault();                                                                     //Stops the form from submitting and refreshing
-            const name = document.getElementById("name").value;                                     //Gets the name value and return it in the notification
-            alert("Thank you " + name + "! Your message has been received.");                       //Notification when clicking the send button
-        });
+    
+
+
+

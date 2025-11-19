@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Mananto Academy | Home</title>
+    <title>Home | Mananto Academy</title>
     <meta charset="utf-8" />                                                                                    <!--- Sets character encoding -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />                                      <!--- Makes layout responsive -->
     <link rel="icon" href="../icons/favicon.ico" type="image/x-icon" />                                         <!--- Website favicon -->
@@ -32,18 +32,12 @@
             <div class="container justify-content-center">
                 <div class="d-flex flex-column flex-lg-row align-items-center">                                 <!--- Centered wrapper for logo + nav -->
                     <a class="navbar-brand mb-2 mb-lg-0 me-lg-3" href="index.html">                             <!--- Logo -->
-                        <img src="images/logo-removebg.png" 
-                             alt="Mananto Academy" 
-                             class="logo-img img-fluid rounded" />
+                        <img src="images/logo-removebg.png" alt="Mananto Academy" class="logo-img img-fluid rounded" />
                     </a>
                     <!--- hamburger button -->
-                    <button class="navbar-toggler mb-2 mb-lg-0" 
-                            type="button" 
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarCenter" 
-                            aria-controls="navbarCenter" 
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
+                    <button class="navbar-toggler mb-2 mb-lg-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCenter" aria-controls="navbarCenter" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarCenter">             <!--- Nav links -->
@@ -52,8 +46,7 @@
                             <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/about.html">About</a></li>
                             <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
                             <li class="nav-item dropdown mx-lg-2">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Services</a>
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="pages/classes.html">Classes</a></li>
                                     <li><a class="dropdown-item" href="pages/transport.html">Transportation</a></li>
@@ -61,16 +54,22 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/admission.html">Registration</a></li>
+                            <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/admission.html">Registration</a>
+                            </li>
                             <li class="nav-item mx-lg-2"><a class="nav-link" href="pages/contact.html">Contact</a></li>
                         </ul>
+                        <form class="navbar-search-form ms-lg-3" aonsubmit="return handleSearch(event)">        <!--- Search Box -->
+                            <input type="text" name="query" placeholder="Search..." />
+                            <button type="submit">🔍</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="main-content">                                                                                 
-        <section class="text-center py-5"> <!-- HERO SECTION -->
+    <main class="main-content">
+
+        <section class="text-center py-5">                                                                      <!--- HERO SECTION -->
             <div class="container hero-container mt-5">
                 <h1 class="display-4 mb-4">Welcome to Mananto Academy</h1>
                 <p class="mb-0">WHERE LEARNING IS FUN</p>
