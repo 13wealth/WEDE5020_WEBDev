@@ -160,6 +160,58 @@ h1, h2, h3, h4 {
 }
 
 /* ======================================================================================
+                                        GALLERY
+   ====================================================================================== */
+/* Scrollable thumbnails container with hidden scrollbar */
+#thumbnailContainer {
+    max-height: 80vh;        /* Height relative to viewport */
+    overflow-y: scroll;      /* Enable vertical scrolling */
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;      /* Hide scrollbar in Firefox */
+}
+
+#thumbnailContainer::-webkit-scrollbar {
+    display: none;            /* Hide scrollbar in Chrome, Safari, Opera */
+}
+
+/* Make all thumbnails uniform */
+.gallery-thumb {
+    width: 100%;             
+    aspect-ratio: 1 / 1;     
+    object-fit: cover;       
+}
+
+/* Fixed right carousel */
+@media(min-width: 768px) {   
+    .col-md-6.py-5 {
+        position: sticky;
+        top: 100px;           
+        height: calc(80vh);   
+    }
+    .carousel-inner img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Fixed height for gallery carousel images */
+#galleryCarousel .carousel-inner,
+#galleryCarousel .carousel-item {
+    height: 500px; /* Adjust this height as needed */
+}
+
+#galleryCarousel .carousel-item img {
+    height: 100%;       /* Fill the parent height */
+    width: auto;        /* Maintain aspect ratio */
+    object-fit: cover;  /* Crop if needed to cover container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ======================================================================================
                                         HERO SECTION
    ====================================================================================== */
 

@@ -38,6 +38,12 @@ All notable changes to this project will be documented in this file.
 The first thing to do before intergrating our website to the final PoE requirements is to clean our current 
 code and fix all pages to standard code for head and footer. This is done in [v1.4.0 - v1.4.3]
 
+## [v1.4.3] – 2025-11-18
+
+- Global text styling applied across all pages.
+- Images added to the About Us page.
+- Updated typography for better readability and consistency site-wide.
+
 ## [v1.4.2] – 2025-11-18
 
 - Global card styling with dotted borders.
